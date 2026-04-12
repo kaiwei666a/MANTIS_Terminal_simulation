@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  sftp:
+    image: atmoz/sftp:latest
+    container_name: terminal_sftp
+    ports:
+      - "8022:22"
+    # `atmoz/sftp` expects user definitions as the container command in the form
+    # username:password:UID[:GID[:dir]]
+    command: "sftpuser:password:1001:1001:upload"
+    volumes:
+      - scp_data:/home/sftpuser/upload
+    restart: unless-stopped
+
+volumes:
+  scp_data:

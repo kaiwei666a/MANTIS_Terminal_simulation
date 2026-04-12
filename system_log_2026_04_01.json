@@ -1,0 +1,277 @@
+{
+  "uploaded_files": [
+    {
+      "timestamp": "2026-03-17T18:13:27Z",
+      "file_name": "sshd",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/.3091128726641165959/sshd",
+      "docker_path": "/home/sftpuser/upload/.3091128726641165959/sshd",
+      "size": 1703936,
+      "sha256": "187b67e5e2116293144f4009b1f224ed09eea924dd4ade00741a66792a63b45a",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-17T18:29:28Z",
+      "file_name": "sshd",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/.2942523829577161477/sshd",
+      "docker_path": "/home/sftpuser/upload/.2942523829577161477/sshd",
+      "size": 30304472,
+      "sha256": "94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2040352069a75da4c00",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T04:52:23Z",
+      "file_name": "sshd",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/.7055135987244422953/sshd",
+      "docker_path": "/home/sftpuser/upload/.7055135987244422953/sshd",
+      "size": 30304472,
+      "sha256": "94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2040352069a75da4c00",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T12:42:56Z",
+      "file_name": "HT01t0f0",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/tmp/HT01t0f0",
+      "docker_path": "/home/sftpuser/upload/tmp/HT01t0f0",
+      "size": 4745,
+      "sha256": "6d1fe6ab3cd04ca5d1ab790339ee2b6577553bc042af3b7587ece0c195267c9b",
+      "proto": "scp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "clean.sh",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/clean.sh",
+      "docker_path": "/home/sftpuser/upload/clean.sh",
+      "size": 795,
+      "sha256": "d46555af1173d22f07c37ef9c1e0e74fd68db022f2b6fb3ab5388d2c5bc6a98e",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "redtail.arm7",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/redtail.arm7",
+      "docker_path": "/home/sftpuser/upload/redtail.arm7",
+      "size": 1299516,
+      "sha256": "3625d068896953595e75df328676a08bc071977ac1ff95d44b745bbcb7018c6f",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "redtail.arm8",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/redtail.arm8",
+      "docker_path": "/home/sftpuser/upload/redtail.arm8",
+      "size": 1560860,
+      "sha256": "dbb7ebb960dc0d5a480f97ddde3a227a2d83fcaca7d37ae672e6a0a6785631e9",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "redtail.i686",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/redtail.i686",
+      "docker_path": "/home/sftpuser/upload/redtail.i686",
+      "size": 1748196,
+      "sha256": "048e374baac36d8cf68dd32e48313ef8eb517d647548b1bf5f26d2d0e2e3cdc7",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "redtail.x86_64",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/redtail.x86_64",
+      "docker_path": "/home/sftpuser/upload/redtail.x86_64",
+      "size": 1880264,
+      "sha256": "59c29436755b0778e968d49feeae20ed65f5fa5e35f9f7965b8ed93420db91e5",
+      "proto": "sftp",
+      "av_status": "not_available"
+    },
+    {
+      "timestamp": "2026-03-18T19:07:44Z",
+      "file_name": "setup.sh",
+      "local_path": "/home/kaikai/Documents/Terminal-simulation/scp_root/setup.sh",
+      "docker_path": "/home/sftpuser/upload/setup.sh",
+      "size": 1951,
+      "sha256": "783adb7ad6b16fe9818f3e6d48b937c3ca1994ef24e50865282eeedeab7e0d59",
+      "proto": "sftp",
+      "av_status": "not_available"
+    }
+  ],
+  "filesystem": {
+    "/upload": {
+      "files": [
+        "setup.sh",
+        "sshd",
+        "clean.sh",
+        "redtail.arm7",
+        "redtail.arm8",
+        "redtail.i686",
+        "redtail.x86_64",
+        "HT01t0f0"
+      ],
+      "folders": {},
+      "file_contents": {},
+      "file_meta": {
+        "setup.sh": {
+          "mode_octal": "0644",
+          "size": 1951,
+          "hash": "783adb7ad6b16fe9818f3e6d48b937c3ca1994ef24e50865282eeedeab7e0d59",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "sshd": {
+          "mode_octal": "0644",
+          "size": 30304472,
+          "hash": "94f2e4d8d4436874785cd14e6e6d403507b8750852f7f2040352069a75da4c00",
+          "mtime": "2026-03-18T04:52:23Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "clean.sh": {
+          "mode_octal": "0644",
+          "size": 795,
+          "hash": "d46555af1173d22f07c37ef9c1e0e74fd68db022f2b6fb3ab5388d2c5bc6a98e",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "redtail.arm7": {
+          "mode_octal": "0644",
+          "size": 1299516,
+          "hash": "3625d068896953595e75df328676a08bc071977ac1ff95d44b745bbcb7018c6f",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "redtail.arm8": {
+          "mode_octal": "0644",
+          "size": 1560860,
+          "hash": "dbb7ebb960dc0d5a480f97ddde3a227a2d83fcaca7d37ae672e6a0a6785631e9",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "redtail.i686": {
+          "mode_octal": "0644",
+          "size": 1748196,
+          "hash": "048e374baac36d8cf68dd32e48313ef8eb517d647548b1bf5f26d2d0e2e3cdc7",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "redtail.x86_64": {
+          "mode_octal": "0644",
+          "size": 1880264,
+          "hash": "59c29436755b0778e968d49feeae20ed65f5fa5e35f9f7965b8ed93420db91e5",
+          "mtime": "2026-03-18T19:07:44Z",
+          "source_proto": "sftp",
+          "av_status": "not_available"
+        },
+        "HT01t0f0": {
+          "mode_octal": "0644",
+          "size": 4745,
+          "hash": "6d1fe6ab3cd04ca5d1ab790339ee2b6577553bc042af3b7587ece0c195267c9b",
+          "mtime": "2026-03-18T12:42:56Z",
+          "source_proto": "scp",
+          "av_status": "not_available"
+        }
+      },
+      "dir_mode": "drwxr-xr-x",
+      "dir_mtime": "2026-03-18T19:07:44Z"
+    }
+  },
+  "timestamp": "2026-03-18T19:07:44Z",
+  "step": 3,
+  "cwd": "/home/user",
+  "last_output": "",
+  "identity": {
+    "user": "user",
+    "uid": 1000,
+    "gid": 1000,
+    "euid": 1000,
+    "egid": 1000,
+    "groups": [
+      1000
+    ]
+  },
+  "privilege": {
+    "sudo_available": true,
+    "umask": "0022"
+  },
+  "persistence": {
+    "systemd": {
+      "enabled_units": [],
+      "unit_hashes": {}
+    },
+    "cron": {
+      "system_crontab_hash": "",
+      "user_crontabs_hash": {}
+    },
+    "ssh": {
+      "authorized_keys_hash": {}
+    }
+  },
+  "network": {
+    "listening_ports": [],
+    "firewall": {
+      "rules_hash": ""
+    },
+    "routing": {
+      "routes_hash": ""
+    },
+    "interfaces": {
+      "interfaces_hash": ""
+    }
+  },
+  "critical_configs": {
+    "files": {
+      "/etc/shadow": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/sudoers": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/resolv.conf": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/ssh/sshd_config": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/passwd": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/hosts": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/crontab": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      }
+    }
+  }
+}
