@@ -1,0 +1,66 @@
+﻿{"session_id":"sess_001","t":0,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_001","t":1,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":2,"command":"ls -al","output":"README.txt  main.py  logs"}
+{"session_id":"sess_001","t":3,"command":"cd logs","output":""}
+{"session_id":"sess_001","t":4,"command":"pwd","output":"/home/user/logs"}
+{"session_id":"sess_001","t":5,"command":"ls","output":"access.log  error.log"}
+{"session_id":"sess_001","t":6,"command":"pwdd","output":"bash: pwdd: command not found"}
+{"session_id":"sess_001","t":7,"command":"ls -al","output":"access.log  error.log"}
+{"session_id":"sess_001","t":8,"command":"cat access.log","output":""}
+{"session_id":"sess_001","t":9,"command":"cat error.log","output":""}
+{"session_id":"sess_001","t":10,"command":"cat user.log","output":"cat: user.log: No such file or directory"}
+{"session_id":"sess_001","t":11,"command":"cat /root/secret.txt","output":"cat: /root/secret.txt: No such file or directory"}
+{"session_id":"sess_001","t":12,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":13,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":14,"command":"cd documents","output":""}
+{"session_id":"sess_001","t":15,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_001","t":16,"command":"touch notes.txt","output":""}
+{"session_id":"sess_001","t":17,"command":"ls","output":"README.txt  main.py  notes.txt  logs"}
+{"session_id":"sess_001","t":18,"command":"cat notes.txt","output":""}
+{"session_id":"sess_001","t":19,"command":"cats notes.txt","output":"bash: cats: command not found"}
+{"session_id":"sess_001","t":20,"command":"touch draft.txt","output":""}
+{"session_id":"sess_001","t":21,"command":"ls -al","output":"README.txt  main.py  notes.txt  draft.txt  logs"}
+{"session_id":"sess_001","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":23,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":24,"command":"cd projects","output":""}
+{"session_id":"sess_001","t":25,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  logs"}
+{"session_id":"sess_001","t":26,"command":"cd demo","output":""}
+{"session_id":"sess_001","t":27,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":28,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  logs"}
+{"session_id":"sess_001","t":29,"command":"touch app.py","output":""}
+{"session_id":"sess_001","t":30,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  app.py  logs"}
+{"session_id":"sess_001","t":31,"command":"cat app.py","output":""}
+{"session_id":"sess_001","t":32,"command":"touch README.md","output":""}
+{"session_id":"sess_001","t":33,"command":"ls -al","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":34,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":35,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":37,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":38,"command":"uname","output":"Linux"}
+{"session_id":"sess_001","t":39,"command":"uname -a","output":"Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux"}
+{"session_id":"sess_001","t":40,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_001","t":41,"command":"id -u","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_001","t":42,"command":"whoami","output":"user"}
+{"session_id":"sess_001","t":43,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":44,"command":"cd logs","output":""}
+{"session_id":"sess_001","t":45,"command":"ls","output":"access.log  error.log"}
+{"session_id":"sess_001","t":46,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":47,"command":"cd documents","output":""}
+{"session_id":"sess_001","t":48,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":49,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":50,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":51,"command":"ls -al","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":52,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_001","t":53,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":54,"command":"ls","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":55,"command":"ls -al","output":"README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs"}
+{"session_id":"sess_001","t":56,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_001","t":57,"command":"whoami","output":"user"}
+{"session_id":"sess_001","t":58,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_001","t":59,"command":"uname","output":"Linux"}
+{"session_id":"sess_001","t":60,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_001","t":61,"command":"find . -maxdepth 2 -type f","output":"bash: find: command not found"}
+{"session_id":"sess_001","t":62,"command":"find . -maxdepth 2 -type d","output":"bash: find: command not found"}
+{"session_id":"sess_001","t":63,"command":"stat README.txt","output":"bash: stat: command not found"}
+{"session_id":"sess_001","t":64,"command":"head -n 5 README.txt","output":"bash: head: command not found"}
+{"session_id":"sess_001","t":65,"command":"tail -n 5 README.txt","output":"bash: tail: command not found"}

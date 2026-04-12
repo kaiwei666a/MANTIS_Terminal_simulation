@@ -1,0 +1,1019 @@
+﻿{"session_id": "sess_001", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 2, "command": "ls -al", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 3, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 4, "command": "pwd", "output": "/home/user/logs", "stdout": "/home/user/logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 5, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 6, "command": "pwdd", "output": "bash: pwdd: command not found", "stdout": "bash: pwdd: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 7, "command": "ls -al", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 8, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 9, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 10, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 11, "command": "cat /root/secret.txt", "output": "cat: /root/secret.txt: No such file or directory", "stdout": "cat: /root/secret.txt: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 12, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 13, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 14, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 15, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 16, "command": "touch notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 17, "command": "ls", "output": "README.txt  main.py  notes.txt  logs", "stdout": "README.txt  main.py  notes.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 18, "command": "cat notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 19, "command": "cats notes.txt", "output": "bash: cats: command not found", "stdout": "bash: cats: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 20, "command": "touch draft.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 21, "command": "ls -al", "output": "README.txt  main.py  notes.txt  draft.txt  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 22, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 23, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 24, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 25, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 26, "command": "cd demo", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 27, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 28, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 29, "command": "touch app.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 30, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 31, "command": "cat app.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 32, "command": "touch README.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 33, "command": "ls -al", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 34, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 35, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 36, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 37, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 38, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 39, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 40, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 41, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 42, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 43, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 44, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 45, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 46, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 47, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 48, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 49, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 51, "command": "ls -al", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 52, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 53, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 54, "command": "ls", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 55, "command": "ls -al", "output": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stdout": "README.txt  main.py  notes.txt  draft.txt  app.py  README.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 56, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 57, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 58, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 59, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 60, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_001", "t": 61, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 62, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 63, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 64, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_001", "t": 65, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 2, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 4, "command": "cd test", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 5, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 6, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 7, "command": "touch main.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 8, "command": "pyhton main.py", "output": "bash: pyhton: command not found", "stdout": "bash: pyhton: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 9, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 10, "command": "cat main.py", "output": "# demo entry\n", "stdout": "# demo entry\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 11, "command": "touch utils.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 12, "command": "ls -al", "output": "README.txt  main.py  utils.py  logs", "stdout": "README.txt  main.py  utils.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 13, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 14, "command": "ls", "output": "README.txt  main.py  utils.py  logs", "stdout": "README.txt  main.py  utils.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 15, "command": "cd sample", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 16, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 17, "command": "ls", "output": "README.txt  main.py  utils.py  logs", "stdout": "README.txt  main.py  utils.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 18, "command": "touch run.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 19, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  logs", "stdout": "README.txt  main.py  utils.py  run.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 20, "command": "cat run.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 21, "command": "chmod 999 run.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 22, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 23, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 24, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 25, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 26, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  logs", "stdout": "README.txt  main.py  utils.py  run.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 27, "command": "touch report.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 28, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  report.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 29, "command": "cat report.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 30, "command": "touch todo.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 31, "command": "ls -al", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 32, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 33, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 34, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 35, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 36, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 37, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 38, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 39, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 40, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 41, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 42, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 43, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 44, "command": "ls -al", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 45, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 46, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 47, "command": "cd test", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 48, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 49, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 50, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 52, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 53, "command": "ls", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 54, "command": "ls -al", "output": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stdout": "README.txt  main.py  utils.py  run.sh  report.txt  todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 55, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 56, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 57, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 58, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 59, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 60, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 61, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 62, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 63, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 64, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 65, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 66, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 67, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 68, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 69, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 70, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 71, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 72, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 73, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 74, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 75, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_002", "t": 76, "command": "cd tmp", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_002", "t": 77, "command": "ls logs", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 2, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 4, "command": "touch key.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 5, "command": "ls", "output": "README.txt  main.py  key.txt  logs", "stdout": "README.txt  main.py  key.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 6, "command": "cat key.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 7, "command": "touch memo.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 8, "command": "ls -al", "output": "README.txt  main.py  key.txt  memo.txt  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 9, "command": "cd /does/not/exist", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 10, "command": "cd documnts", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 11, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 12, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 13, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 14, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 15, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 16, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 17, "command": "ls -al", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 18, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 19, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 20, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 21, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 22, "command": "cd alpha", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 23, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 24, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 25, "command": "touch config.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 26, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 27, "command": "cat config.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 28, "command": "touch index.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 29, "command": "ls -al", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 30, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 31, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 32, "command": "cd beta", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 33, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 34, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 35, "command": "touch server.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 36, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 37, "command": "cat server.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 38, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 39, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 40, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 41, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 42, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 43, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 44, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 45, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 46, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 47, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 48, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 49, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 50, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 52, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 53, "command": "ls", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 54, "command": "ls -al", "output": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stdout": "README.txt  main.py  key.txt  memo.txt  config.json  index.js  server.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 55, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 56, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 57, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 58, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 59, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 60, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 61, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 62, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 63, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 64, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 65, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 66, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 67, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 68, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 69, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_003", "t": 70, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_003", "t": 71, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 2, "command": "ls -al", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 3, "command": "cd home", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 4, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 5, "command": "cd user", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 6, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 7, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 8, "command": "touch profile.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 9, "command": "ls", "output": "README.txt  main.py  profile.txt  logs", "stdout": "README.txt  main.py  profile.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 10, "command": "cat profile.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 11, "command": "touch history.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 12, "command": "ls -al", "output": "README.txt  main.py  profile.txt  history.txt  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 13, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 14, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 15, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 16, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 17, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 18, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 19, "command": "cd cli", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 20, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 21, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 22, "command": "touch app.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 23, "command": "touch package.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 24, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 25, "command": "cat pakage.json", "output": "cat: pakage.json: No such file or directory", "stdout": "cat: pakage.json: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 26, "command": "cat app.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 27, "command": "cat package.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 28, "command": "ls -al", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 29, "command": "sudo shutdownn now", "output": "bash: sudo: command not found", "stdout": "bash: sudo: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 30, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 31, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 32, "command": "cd docs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 33, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 34, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 35, "command": "touch guide.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 36, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 37, "command": "cat guide.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 38, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 39, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 40, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 41, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 42, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 43, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 44, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 45, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 46, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 47, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 48, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 49, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 50, "command": "ls -al", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 52, "command": "ls", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 53, "command": "ls -al", "output": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stdout": "README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 54, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 55, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 56, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 57, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 58, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 59, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 60, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 61, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 62, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 63, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 64, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 65, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 66, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 67, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 68, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 69, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 70, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 71, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 72, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 73, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 74, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_004", "t": 75, "command": "cd tmp", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_004", "t": 76, "command": "ls logs", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 2, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 3, "command": "cat READNE.txt", "output": "cat: READNE.txt: No such file or directory", "stdout": "cat: READNE.txt: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 4, "command": "touch file_test.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 5, "command": "ls", "output": "README.txt  main.py  file_test.txt  logs", "stdout": "README.txt  main.py  file_test.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 6, "command": "cat file_test.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 7, "command": "touch doc.text", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 8, "command": "ls -al", "output": "README.txt  main.py  file_test.txt  doc.text  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 9, "command": "cat doc.text", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 10, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 11, "command": "pwd", "output": "/home/user/logs", "stdout": "/home/user/logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 12, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 13, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 14, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 15, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 16, "command": "sl", "output": "bash: sl: command not found", "stdout": "bash: sl: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 17, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 18, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 19, "command": "touch meeting.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 20, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 21, "command": "cat meeting.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 22, "command": "touch plan.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 23, "command": "ls -al", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 24, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 25, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 26, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 27, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 28, "command": "cd sandbox", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 29, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 30, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 31, "command": "touch test.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 32, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 33, "command": "cat test.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 34, "command": "touch vars.env", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 35, "command": "ls -al", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 36, "command": "rm important.txttt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 37, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 38, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 39, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 40, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 41, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 42, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 43, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 44, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 45, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 46, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 47, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 48, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 49, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 51, "command": "ls -al", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 52, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 53, "command": "ls", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 54, "command": "ls -al", "output": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stdout": "README.txt  main.py  file_test.txt  doc.text  meeting.txt  plan.txt  test.sh  vars.env  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 55, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 56, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 57, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 58, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 59, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 60, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 61, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 62, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 63, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 64, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 65, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 66, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 67, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 68, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 69, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_005", "t": 70, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 71, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 72, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 73, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 74, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_005", "t": 75, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 2, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 3, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 4, "command": "cd test123", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 5, "command": "pwd", "output": "/home/user/logs", "stdout": "/home/user/logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 6, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 7, "command": "touch trace.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 8, "command": "ls", "output": "access.log  error.log  trace.log", "stdout": "access.log  error.log  trace.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 9, "command": "cat trace.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 10, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 11, "command": "ls -al", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 12, "command": "cat access.log", "output": "cat: access.log: No such file or directory", "stdout": "cat: access.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 13, "command": "cat error.log", "output": "cat: error.log: No such file or directory", "stdout": "cat: error.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 14, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 15, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 16, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 17, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 18, "command": "touch notes.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 19, "command": "ls", "output": "README.txt  main.py  notes.md  logs", "stdout": "README.txt  main.py  notes.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 20, "command": "cat notes.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 21, "command": "touch tasks.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 22, "command": "ls -al", "output": "README.txt  main.py  notes.md  tasks.md  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 23, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 24, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 25, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 26, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 27, "command": "cd monitor", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 28, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 29, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 30, "command": "touch monitor.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 31, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 32, "command": "cat monitor.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 33, "command": "touch requirements.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 34, "command": "ls -al", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 35, "command": "grep -R password /root", "output": "bash: grep: command not found", "stdout": "bash: grep: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 36, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 37, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 38, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 39, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 40, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 41, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 42, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 43, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 44, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 45, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 46, "command": "ls", "output": "access.log  error.log  trace.log", "stdout": "access.log  error.log  trace.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 47, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 48, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 49, "command": "ls -al", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 51, "command": "ls", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 52, "command": "ls -al", "output": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stdout": "README.txt  main.py  notes.md  tasks.md  monitor.py  requirements.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 53, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 54, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 55, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 56, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 57, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 58, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 59, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 60, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 61, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 62, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 63, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 64, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 65, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 66, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 67, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_006", "t": 68, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 69, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 70, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 71, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 72, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 73, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_006", "t": 74, "command": "cd tmp", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 2, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 4, "command": "touch summary.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 5, "command": "ls", "output": "README.txt  main.py  summary.txt  logs", "stdout": "README.txt  main.py  summary.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 6, "command": "cat summary.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 7, "command": "touch archive.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 8, "command": "ls -al", "output": "README.txt  main.py  summary.txt  archive.txt  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 9, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 10, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 11, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 12, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 13, "command": "cd api", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 14, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 15, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 16, "command": "touch server.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 17, "command": "touch routes.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 18, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 19, "command": "cat server.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 20, "command": "cat route.py", "output": "cat: route.py: No such file or directory", "stdout": "cat: route.py: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 21, "command": "cat routes.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 22, "command": "ls -al", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 23, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 24, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 25, "command": "cd web", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 26, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 27, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 28, "command": "touch index.html", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 29, "command": "touch style.css", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 30, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 31, "command": "cat index.html", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 32, "command": "cat style.css", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 33, "command": "ls -al", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 34, "command": "mv missing.txt archive.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 35, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 36, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 37, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 38, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 39, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 40, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 41, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 42, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 43, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 44, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 45, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 46, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 47, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 48, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 49, "command": "ls -al", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 51, "command": "ls", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 52, "command": "ls -al", "output": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stdout": "README.txt  main.py  summary.txt  archive.txt  server.py  routes.py  index.html  style.css  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 53, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 54, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 55, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 56, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 57, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 58, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 59, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 60, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 61, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 62, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 63, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 64, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 65, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 66, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 67, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 68, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 69, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 70, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 71, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 72, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 73, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 74, "command": "cd tmp", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 75, "command": "ls logs", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_007", "t": 76, "command": "ls documents", "output": "ls: cannot access 'documents': No such file or directory", "stdout": "ls: cannot access 'documents': No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_007", "t": 77, "command": "ls projects", "output": "ls: cannot access 'projects': No such file or directory", "stdout": "ls: cannot access 'projects': No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 2, "command": "mkdir backup", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 3, "command": "ls", "output": "README.txt  main.py  logs  backup", "stdout": "README.txt  main.py  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 4, "command": "cd backup", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 5, "command": "pwd", "output": "/home/user/backup", "stdout": "/home/user/backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 6, "command": "touch data.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 7, "command": "touch list.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 8, "command": "ls", "output": "data.txt  list.txt", "stdout": "data.txt  list.txt", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 9, "command": "lss", "output": "bash: lss: command not found", "stdout": "bash: lss: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 10, "command": "cat data.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 11, "command": "cat list.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 12, "command": "ls -al", "output": "data.txt  list.txt", "stdout": "data.txt  list.txt", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 13, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 14, "command": "ls", "output": "README.txt  main.py  logs  backup", "stdout": "README.txt  main.py  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 15, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 16, "command": "ls", "output": "README.txt  main.py  logs  backup", "stdout": "README.txt  main.py  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 17, "command": "touch backup_notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 18, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 19, "command": "cat backup_notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 20, "command": "touch backup_plan.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 21, "command": "ls -al", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 22, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 23, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 24, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 25, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 26, "command": "cd restore", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 27, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 28, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 29, "command": "touch restore.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 30, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 31, "command": "cat restore.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 32, "command": "touch README.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 33, "command": "ls -al", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 34, "command": "curl http://127.0.0.1:99999", "output": "bash: curl: command not found", "stdout": "bash: curl: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 35, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 36, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 37, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 38, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 39, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 40, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 41, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 42, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 43, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 44, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 45, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 46, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 47, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 48, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 49, "command": "rmdir backup", "output": "bash: rmdir: command not found", "stdout": "bash: rmdir: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 51, "command": "ls -al", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 52, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 53, "command": "ls", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 54, "command": "ls -al", "output": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stdout": "README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 55, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 56, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 57, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 58, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 59, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_008", "t": 60, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 61, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 62, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 63, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_008", "t": 64, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 2, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 4, "command": "cd demo", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 5, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 6, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 7, "command": "touch app.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 8, "command": "touch util.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 9, "command": "ls", "output": "README.txt  main.py  app.js  util.js  logs", "stdout": "README.txt  main.py  app.js  util.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 10, "command": "cat app.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 11, "command": "cat util.js", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 12, "command": "ls -al", "output": "README.txt  main.py  app.js  util.js  logs", "stdout": "README.txt  main.py  app.js  util.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 13, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 14, "command": "ls", "output": "README.txt  main.py  app.js  util.js  logs", "stdout": "README.txt  main.py  app.js  util.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 15, "command": "cd data", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 16, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 17, "command": "ls", "output": "README.txt  main.py  app.js  util.js  logs", "stdout": "README.txt  main.py  app.js  util.js  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 18, "command": "touch sample.csv", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 19, "command": "touch input.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 20, "command": "ls", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 21, "command": "cat sample.csv", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 22, "command": "cat input.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 23, "command": "ls -al", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 24, "command": "pythonx script.py", "output": "bash: pythonx: command not found", "stdout": "bash: pythonx: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 25, "command": "pwc", "output": "bash: pwc: command not found", "stdout": "bash: pwc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 26, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 27, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 28, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 29, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 30, "command": "ls", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 31, "command": "touch readme.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 32, "command": "ls", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 33, "command": "cat readme.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 34, "command": "touch changelog.md", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 35, "command": "ls -al", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 36, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 37, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 38, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 39, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 40, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 41, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 42, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 43, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 44, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 45, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 46, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 47, "command": "ls", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 48, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 49, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 50, "command": "ls -al", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 52, "command": "ls", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 53, "command": "ls -al", "output": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stdout": "README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 54, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 55, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 56, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 57, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 58, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 59, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 60, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 61, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 62, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 63, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 64, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 65, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 66, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 67, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 68, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_009", "t": 69, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_009", "t": 70, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 2, "command": "cd home", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 4, "command": "cd kali", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 5, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 6, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 7, "command": "touch notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 8, "command": "ls", "output": "README.txt  main.py  notes.txt  logs", "stdout": "README.txt  main.py  notes.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 9, "command": "cat notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 10, "command": "touch tasks.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 11, "command": "ls -al", "output": "README.txt  main.py  notes.txt  tasks.txt  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 12, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 13, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 14, "command": "cd user", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 15, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 16, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 17, "command": "touch .profile", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 18, "command": "ls -al", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 19, "command": "cat .profle", "output": "cat: .profle: No such file or directory", "stdout": "cat: .profle: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 20, "command": "cat .profile", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 21, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 22, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 23, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 24, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 25, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 26, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 27, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 28, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 29, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 30, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 31, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 32, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 33, "command": "cd tools", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 34, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 35, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 36, "command": "touch clean.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 37, "command": "touch build.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 38, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 39, "command": "cat clean.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 40, "command": "cat build.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 41, "command": "ls -al", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 42, "command": "usermod -aG sudo ghost", "output": "bash: usermod: command not found", "stdout": "bash: usermod: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 43, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 44, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 45, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 46, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 47, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 48, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 49, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 52, "command": "ls", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 53, "command": "ls -al", "output": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stdout": "README.txt  main.py  notes.txt  tasks.txt  .profile  clean.sh  build.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 54, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 55, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 56, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 57, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 58, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 59, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 60, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 61, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 62, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 63, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 64, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 65, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_010", "t": 66, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 67, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_010", "t": 68, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 2, "command": "touch doc.text", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 3, "command": "ls", "output": "README.txt  main.py  doc.text  logs", "stdout": "README.txt  main.py  doc.text  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 4, "command": "cat doc.text", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 5, "command": "touch file_test.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 6, "command": "ls -al", "output": "README.txt  main.py  doc.text  file_test.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 7, "command": "cat file_test.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 8, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 9, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 10, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 11, "command": "touch weekly.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 12, "command": "touch ideas.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 13, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 14, "command": "cat weekly.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 15, "command": "cat ideas.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 16, "command": "ls -al", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 17, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 18, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 19, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 20, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 21, "command": "cd notes", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 22, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 23, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 24, "command": "touch notes.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 25, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 26, "command": "cat notes.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 27, "command": "ls -laa", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 28, "command": "touch helper.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 29, "command": "ls -al", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 30, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 31, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 32, "command": "cd scripts", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 33, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 34, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 35, "command": "touch deploy.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 36, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 37, "command": "cat deploy.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 38, "command": "scp nowhere.txt root@badhost:/tmp", "output": "bash: scp: command not found", "stdout": "bash: scp: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 39, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 40, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 41, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 42, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 43, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 44, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 45, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 46, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 47, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 48, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 49, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 50, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 52, "command": "ls -al", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 53, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 54, "command": "ls", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 55, "command": "ls -al", "output": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stdout": "README.txt  main.py  doc.text  file_test.txt  weekly.txt  ideas.txt  notes.py  helper.py  deploy.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 56, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 57, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 58, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 59, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 60, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 61, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 62, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 63, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 64, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 65, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 66, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 67, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 68, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 69, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 70, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_011", "t": 71, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 72, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_011", "t": 73, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 2, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 3, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 4, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 5, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 6, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 7, "command": "ls -al", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 8, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 9, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 10, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 11, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 12, "command": "touch report.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 13, "command": "touch status.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 14, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 15, "command": "cat report.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 16, "command": "cat status.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 17, "command": "ls -al", "output": "README.txt  main.py  report.txt  status.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 18, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 19, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 20, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 21, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 22, "command": "cd ops", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 23, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 24, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 25, "command": "touch deploy.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 26, "command": "touch config.yml", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 27, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 28, "command": "cat config.ymll", "output": "cat: config.ymll: No such file or directory", "stdout": "cat: config.ymll: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 29, "command": "cat deploy.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 30, "command": "cat config.yml", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 31, "command": "ls -al", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 32, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 33, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 34, "command": "cd test", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 35, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 36, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 37, "command": "touch case1.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 38, "command": "touch case2.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 39, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 40, "command": "cat case1.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 41, "command": "cat case2.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 42, "command": "chown root:root case1.txttt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 43, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 44, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 45, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 46, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 47, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 48, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 49, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 50, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 51, "command": "ls -al", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 52, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 53, "command": "ls", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 54, "command": "ls -al", "output": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stdout": "README.txt  main.py  report.txt  status.txt  deploy.py  config.yml  case1.txt  case2.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 55, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 56, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 57, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 58, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 59, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 60, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 61, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 62, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 63, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 64, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 65, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 66, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 67, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 68, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 69, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_012", "t": 70, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_012", "t": 71, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 0, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 1, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 2, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 4, "command": "cd runner", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 5, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 6, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 7, "command": "touch run.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 8, "command": "touch stop.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 9, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 10, "command": "chmod +x runn.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 11, "command": "cat run.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 12, "command": "cat stop.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 13, "command": "ls -al", "output": "README.txt  main.py  run.sh  stop.sh  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 14, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 15, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 16, "command": "cd parser", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 17, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 18, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 19, "command": "touch parse.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 20, "command": "touch data.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 21, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 22, "command": "cat parse.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 23, "command": "cat data.json", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 24, "command": "ls -al", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 25, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 26, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 27, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 28, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 29, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 30, "command": "touch parser_notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 31, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 32, "command": "cat parser_notes.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 33, "command": "touch parser_todo.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 34, "command": "ls -al", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 35, "command": "dd if=/dev/zero of=/nope bs=1M count=1", "output": "bash: dd: command not found", "stdout": "bash: dd: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 36, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 37, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 38, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 39, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 40, "command": "cat access.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 41, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 42, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 43, "command": "uname -a", "output": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stdout": "Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 44, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 45, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 46, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 47, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 48, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 49, "command": "ls -al", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 50, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 51, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 52, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 53, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 54, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 55, "command": "ls", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 56, "command": "ls -al", "output": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stdout": "README.txt  main.py  run.sh  stop.sh  parse.py  data.json  parser_notes.txt  parser_todo.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 57, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 58, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 59, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 60, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 61, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 62, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 63, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 64, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 65, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 66, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 67, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 68, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 69, "command": "history", "output": "bash: history: command not found", "stdout": "bash: history: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 70, "command": "ps", "output": "bash: ps: command not found", "stdout": "bash: ps: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 71, "command": "date", "output": "Sat Apr 11 14:55:18 EDT 2026", "stdout": "Sat Apr 11 14:55:18 EDT 2026", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_013", "t": 72, "command": "hostname", "output": "bash: hostname: command not found", "stdout": "bash: hostname: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 73, "command": "env", "output": "bash: env: command not found", "stdout": "bash: env: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 74, "command": "clear", "output": "bash: clear: command not found", "stdout": "bash: clear: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 75, "command": "true", "output": "bash: true: command not found", "stdout": "bash: true: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 76, "command": "falsee", "output": "bash: falsee: command not found", "stdout": "bash: falsee: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_013", "t": 77, "command": "cat missing.file", "output": "cat: missing.file: No such file or directory", "stdout": "cat: missing.file: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 0, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 1, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 2, "command": "lsdqawq", "output": "bash: lsdqawq: command not found", "stdout": "bash: lsdqawq: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 3, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 4, "command": "cd logs", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 5, "command": "pwd", "output": "/home/user/logs", "stdout": "/home/user/logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 6, "command": "ls", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 7, "command": "cat user.log", "output": "cat: user.log: No such file or directory", "stdout": "cat: user.log: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 8, "command": "cat error.log", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 9, "command": "ls -al", "output": "access.log  error.log", "stdout": "access.log  error.log", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 10, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 11, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 12, "command": "cd documents", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 13, "command": "ls", "output": "README.txt  main.py  logs", "stdout": "README.txt  main.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 14, "command": "touch incident.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 15, "command": "ls", "output": "README.txt  main.py  incident.txt  logs", "stdout": "README.txt  main.py  incident.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 16, "command": "cat incident.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 17, "command": "touch followup.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 18, "command": "ls -al", "output": "README.txt  main.py  incident.txt  followup.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 19, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 20, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 21, "command": "cd projects", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 22, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 23, "command": "cd debug", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 24, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 25, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 26, "command": "touch debug.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 27, "command": "touch trace.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 28, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 29, "command": "cat debg.sh", "output": "cat: debg.sh: No such file or directory", "stdout": "cat: debg.sh: No such file or directory", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 30, "command": "cat debug.sh", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 31, "command": "cat trace.txt", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 32, "command": "ls -al", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 33, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 34, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 35, "command": "cd tools", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 36, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 37, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 38, "command": "touch inspect.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 39, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 40, "command": "cat inspect.py", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 41, "command": "sudo sux", "output": "bash: sudo: command not found", "stdout": "bash: sudo: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 42, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 43, "command": "cd ..", "output": "", "stdout": "", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 44, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 45, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 46, "command": "id -u", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 47, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 48, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 49, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 50, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 51, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 52, "command": "ls -al", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 53, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 54, "command": "ls", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 55, "command": "ls -al", "output": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stdout": "README.txt  main.py  incident.txt  followup.txt  debug.sh  trace.txt  inspect.py  logs", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 56, "command": "cat README.txt", "output": "Welcome to the honeypot.\n", "stdout": "Welcome to the honeypot.\n", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 57, "command": "whoami", "output": "user", "stdout": "user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 58, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user)", "stdout": "uid=1000(user) gid=1000(user) groups=1000(user)", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 59, "command": "uname", "output": "Linux", "stdout": "Linux", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 60, "command": "pwd", "output": "/home/user", "stdout": "/home/user", "stderr": "", "exit_code": 0, "success": true}
+{"session_id": "sess_014", "t": 61, "command": "find . -maxdepth 2 -type f", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 62, "command": "find . -maxdepth 2 -type d", "output": "bash: find: command not found", "stdout": "bash: find: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 63, "command": "stat README.txt", "output": "bash: stat: command not found", "stdout": "bash: stat: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 64, "command": "head -n 5 README.txt", "output": "bash: head: command not found", "stdout": "bash: head: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 65, "command": "tail -n 5 README.txt", "output": "bash: tail: command not found", "stdout": "bash: tail: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 66, "command": "wc -l README.txt", "output": "bash: wc: command not found", "stdout": "bash: wc: command not found", "stderr": "", "exit_code": 1, "success": false}
+{"session_id": "sess_014", "t": 67, "command": "echo test", "output": "test", "stdout": "test", "stderr": "", "exit_code": 0, "success": true}

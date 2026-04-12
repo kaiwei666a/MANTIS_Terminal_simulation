@@ -1,0 +1,98 @@
+﻿{"session_id": "sess_021", "t": 0, "command": "lsdqawq", "output": "```bash\nlsdqawq: command not found\n```\n"}
+{"session_id": "sess_021", "t": 1, "command": "ls", "output": "access.log\nerror.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 2, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_021", "t": 3, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 4, "command": "ls", "output": "README.txt\nnormal.txt\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_021", "t": 5, "command": "cd documents", "output": "```plaintext\n/home/user/documents\n```\n"}
+{"session_id": "sess_021", "t": 6, "command": "ls", "output": "key_new.txt\n"}
+{"session_id": "sess_021", "t": 7, "command": "cat key_new.txt", "output": "hello world\nnew\n"}
+{"session_id": "sess_021", "t": 8, "command": "touch qwe.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 9, "command": "ls", "output": "README.txt\nkey_new.txt\nnormal.txt\nqwe.txt\n"}
+{"session_id": "sess_021", "t": 10, "command": "ls -al", "output": "total 16\ndrwxr-xr-x 2 user user 4096 Dec 31 05:04 .\ndrwxr-xr-x 3 user user 4096 Dec 31 05:04 ..\n-rw-r--r-- 1 user user   16 Dec 31 22:14 key_new.txt\n-rw-r--r-- 1 user user    0 Jan  1 00:23 qwe.txt\n"}
+{"session_id": "sess_021", "t": 11, "command": "echo \"hello\" > qwe.txt", "output": "```plaintext\nhello\n```\n"}
+{"session_id": "sess_021", "t": 12, "command": "cat qwe.txt", "output": "hello\n"}
+{"session_id": "sess_021", "t": 13, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 14, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_021", "t": 15, "command": "cd logs", "output": "```plaintext\n/home/user/logs\n```\n"}
+{"session_id": "sess_021", "t": 16, "command": "ls", "output": "access.log\nerror.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 17, "command": "cat user.log", "output": "user4\n"}
+{"session_id": "sess_021", "t": 18, "command": "cp user.log sers.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 19, "command": "ls", "output": "access.log\nerror.log\nsers.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 20, "command": "cat sers.log", "output": "```\nuser4\n```\n"}
+{"session_id": "sess_021", "t": 21, "command": "rm sers.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 22, "command": "ls", "output": "access.log\nerror.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 23, "command": "cat user.log", "output": "```\nuser4\n```\n"}
+{"session_id": "sess_021", "t": 24, "command": "please remove user.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 25, "command": "ls", "output": "access.log\nerror.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 26, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 27, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 28, "command": "cotpwd", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 29, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments/\nlogs/\nprojects/\n"}
+{"session_id": "sess_021", "t": 30, "command": "wqd", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_021", "t": 31, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments/\nlogs/\nprojects/\n"}
+{"session_id": "sess_021", "t": 32, "command": "cd projects", "output": "```plaintext\n/home/user/projects\n```\n"}
+{"session_id": "sess_021", "t": 33, "command": "whoiam", "output": "```\nuser\n```\n"}
+{"session_id": "sess_021", "t": 34, "command": "whoami", "output": "user\n"}
+{"session_id": "sess_021", "t": 35, "command": "ip-a", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 36, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_021", "t": 37, "command": "pwd", "output": "/home/user/projects\n"}
+{"session_id": "sess_021", "t": 38, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 39, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments/\nlogs/\nprojects/\n"}
+{"session_id": "sess_021", "t": 40, "command": "cat README.txt", "output": "Welcome to the system.\n"}
+{"session_id": "sess_021", "t": 41, "command": "echo \"Linux welcom\" > README.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 42, "command": "cat README.txt", "output": "Linux welcom\n"}
+{"session_id": "sess_021", "t": 43, "command": "ls", "output": "README.txt\nnormal.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_021", "t": 44, "command": "echo \"Linux welcom\" >> README.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 45, "command": "cat README.txt", "output": "Linux welcom\nLinux welcom\n"}
+{"session_id": "sess_021", "t": 46, "command": "echo \"Linux welcome\" > README.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 47, "command": "cat README.txt", "output": "Linux welcome\n"}
+{"session_id": "sess_021", "t": 48, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 49, "command": "cp README.txt Welcome.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 50, "command": "ls", "output": "README.txt\nnormal.txt\nWelcome.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_021", "t": 51, "command": "cat Welcome.txt", "output": "Linux welcome\n"}
+{"session_id": "sess_021", "t": 52, "command": "CD LOGS", "output": "```plaintext\n/home/user/logs\n```\n"}
+{"session_id": "sess_021", "t": 53, "command": "ls", "output": "README.txt\nnormal.txt\nWelcome.txt\n"}
+{"session_id": "sess_021", "t": 54, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 55, "command": "cd logs", "output": "```plaintext\n/home/user/logs\n```\n"}
+{"session_id": "sess_021", "t": 56, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_021", "t": 57, "command": "ls", "output": "access.log\nerror.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 58, "command": "ls -al", "output": "```\ntotal 20\ndrwxr-xr-x 2 user user 4096 Jan  1 00:32 .\ndrwxr-xr-x 3 user user 4096 Jan  1 00:32 ..\n-rw-r--r-- 1 user user    0 Dec  3 00:00 access.log\n-rw-r--r-- 1 user user   13 Dec 31 23:27 error.log\n-rw-r--r-- 1 user user    6 Dec 31 23:38 user.log\n```\n"}
+{"session_id": "sess_021", "t": 59, "command": "cat access.log", "output": "\n"}
+{"session_id": "sess_021", "t": 60, "command": "rm access.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 61, "command": "ls", "output": "error.log\nuser.log\n"}
+{"session_id": "sess_021", "t": 62, "command": "touch access.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 63, "command": "ls", "output": "error.log\nuser.log\naccess.log\n"}
+{"session_id": "sess_021", "t": 64, "command": "echo \"acees success\" > access.log", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 65, "command": "cat access.log", "output": "acees success\n"}
+{"session_id": "sess_021", "t": 66, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_021", "t": 67, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 68, "command": "cd a realworld", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 69, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 70, "command": "can you answer my question", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_021", "t": 71, "command": "ip -a", "output": "```plaintext\n```\n"}
+{"session_id": "sess_021", "t": 72, "command": "uname", "output": "Linux\n"}
+{"session_id": "sess_021", "t": 73, "command": "uname -a", "output": "Linux user 5.4.0-104-generic 148-Ubuntu SMP Fri Dec 10 12:34:56 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux\n"}
+{"session_id": "sess_021", "t": 74, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)\n"}
+{"session_id": "sess_021", "t": 75, "command": "id -u", "output": "1000\n"}
+{"session_id": "sess_021", "t": 76, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 77, "command": "id -u", "output": "1000\n"}
+{"session_id": "sess_021", "t": 78, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)\n"}
+{"session_id": "sess_021", "t": 79, "command": "whoami", "output": "user\n"}
+{"session_id": "sess_021", "t": 80, "command": "uname", "output": "Linux\n"}
+{"session_id": "sess_021", "t": 81, "command": "uname -a", "output": "Linux user 5.4.0-42-generic #46-Ubuntu SMP Fri Oct 30 18:12:24 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"}
+{"session_id": "sess_021", "t": 82, "command": "ls -l", "output": "```\ntotal 32\ndrwxr-xr-x  4 user user 4096 Dec 31 04:47 documents\ndrwxr-xr-x  4 user user 4096 Dec 31 05:09 projects\ndrwxr-xr-x  4 user user 4096 Jan  1 00:00 logs\n-rw-r--r--  1 user user   14 Jan  1 00:30 README.txt\n-rw-r--r--  1 user user   15 Dec 31 23:41 normal.txt\n-rw-r--r--  1 user user   14 Jan  1 00:31 Welcome.txt\n```\n"}
+{"session_id": "sess_021", "t": 83, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 84, "command": "ls -al", "output": "total 32\ndrwxr-xr-x  6 user user 4096 Jan  1 00:38 .\ndrwxr-xr-x  3 user user 4096 Jan  1 00:38 ..\n-rw-r--r--  1 user user   14 Jan  1 00:30 README.txt\n-rw-r--r--  1 user user   15 Dec 31 23:41 normal.txt\n-rw-r--r--  1 user user   14 Jan  1 00:31 Welcome.txt\ndrwxr-xr-x  3 user user 4096 Jan  1 00:38 documents\ndrwxr-xr-x  2 user user 4096 Jan  1 00:38 logs\ndrwxr-xr-x  2 user user 4096 Jan  1 00:38 projects\n"}
+{"session_id": "sess_021", "t": 85, "command": "ls", "output": "README.txt  normal.txt  Welcome.txt\ndocuments/   logs/       projects/\n"}
+{"session_id": "sess_021", "t": 86, "command": "ls -al", "output": "total 32\ndrwxr-xr-x  6 user user 4096 Jan  1 00:38 .\ndrwxr-xr-x  3 user user 4096 Jan  1 00:38 ..\n-rw-r--r--  1 user user   14 Jan  1 00:30 README.txt\n-rw-r--r--  1 user user   15 Dec 31 23:41 normal.txt\n-rw-r--r--  1 user user   14 Jan  1 00:31 Welcome.txt\ndrwxr-xr-x  3 user user 4096 Jan  1 00:38 documents\ndrwxr-xr-x  2 user user 4096 Jan  1 00:38 logs\ndrwxr-xr-x  2 user user 4096 Dec 31 05:09 projects\n"}
+{"session_id": "sess_021", "t": 87, "command": "cd logs", "output": "```\n/home/user/logs\n```\n"}
+{"session_id": "sess_021", "t": 88, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_021", "t": 89, "command": "ls", "output": "error.log\nuser.log\naccess.log\n"}
+{"session_id": "sess_021", "t": 90, "command": "ls -al", "output": "```\ntotal 12\ndrwxr-xr-x 2 user user 4096 Jan  1 00:34 .\ndrwxr-xr-x 3 user user 4096 Jan  1 00:34 ..\n-rw-r--r-- 1 user user   13 Dec 31 23:27 error.log\n-rw-r--r-- 1 user user    6 Dec 31 23:38 user.log\n-rw-r--r-- 1 user user   14 Jan  1 00:34 access.log\n```\n"}
+{"session_id": "sess_021", "t": 91, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_021", "t": 92, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_021", "t": 93, "command": "ls", "output": "README.txt\nWelcome.txt\nnormal.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_021", "t": 94, "command": "uname -a", "output": "Linux user 5.4.0-42-generic #46-Ubuntu SMP Fri Oct 30 18:12:12 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"}
+{"session_id": "sess_021", "t": 95, "command": "date", "output": "Thu Jan  1 00:39:38 UTC 2026\n"}
+{"session_id": "sess_021", "t": 96, "command": "date -u", "output": "```\n2026-01-01 00:39:40 UTC\n```\n"}
+{"session_id": "sess_021", "t": 97, "command": "username", "output": "```\nuser\n```\n"}

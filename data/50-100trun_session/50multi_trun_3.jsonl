@@ -1,0 +1,49 @@
+﻿{"session_id": "sess_018", "t": 0, "command": "ls", "output": "README.txt\ndoc.text\nfile_test.txt\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 1, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 2, "command": "cat README.txt", "output": "Welcome to the system.\n"}
+{"session_id": "sess_018", "t": 3, "command": "cat file_test.txt", "output": "\n"}
+{"session_id": "sess_018", "t": 4, "command": "rm file_test.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 5, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 6, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 7, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_018", "t": 8, "command": "cat key.txt", "output": "\n"}
+{"session_id": "sess_018", "t": 9, "command": "date", "output": "2025-12-31 21:17:47 UTC\n"}
+{"session_id": "sess_018", "t": 10, "command": "date -u", "output": "2025-12-31 21:18:20 UTC\n"}
+{"session_id": "sess_018", "t": 11, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_018", "t": 12, "command": "echo \"hello\" > key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 13, "command": "cat key.txt", "output": "hello\n"}
+{"session_id": "sess_018", "t": 14, "command": "echo \"world123\" >> key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 15, "command": "cat key.txt", "output": "hello\nworld123\n"}
+{"session_id": "sess_018", "t": 16, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_018", "t": 17, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 18, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 19, "command": "ls -al", "output": "total 16\ndrwxr-xr-x  5 user user 4096 Jan  1  1970 .\ndrwxr-xr-x  3 user user 4096 Jan  1  1970 ..\n-rw-r--r--  1 user user   22 Dec  3  2025 README.txt\n-rw-r--r--  1 user user    0 Dec 31 18:19 doc.text\ndrwxr-xr-x  2 user user 4096 Dec  3  2025 logs\ndrwxr-xr-x  2 user user 4096 Dec 31 05:04 documents\ndrwxr-xr-x  2 user user 4096 Dec 31 04:47 projects\n"}
+{"session_id": "sess_018", "t": 20, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 21, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_018", "t": 22, "command": "cat key.txt", "output": "hello\nworld123\n"}
+{"session_id": "sess_018", "t": 23, "command": "rm key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 24, "command": "ls", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 25, "command": "whoami", "output": "user\n"}
+{"session_id": "sess_018", "t": 26, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 27, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 28, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 29, "command": "ls", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 30, "command": "touch key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 31, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_018", "t": 32, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 33, "command": "cd doucments", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 34, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 35, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 36, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 37, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)\n"}
+{"session_id": "sess_018", "t": 38, "command": "cat README.txt", "output": "Welcome to the system.\n"}
+{"session_id": "sess_018", "t": 39, "command": "ls -al", "output": "total 16\ndrwxr-xr-x  5 user user 4096 Jan  1  1970 .\ndrwxr-xr-x  3 user user 4096 Jan  1  1970 ..\n-rw-r--r--  1 user user   22 Dec  3  2025 README.txt\n-rw-r--r--  1 user user    0 Dec 31 18:19 doc.text\ndrwxr-xr-x  2 user user 4096 Dec  3  2025 logs\ndrwxr-xr-x  2 user user 4096 Dec 31 05:04 documents\ndrwxr-xr-x  2 user user 4096 Dec 31 04:47 projects\n"}
+{"session_id": "sess_018", "t": 40, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_018", "t": 41, "command": "pwd", "output": "/home/user/documents\n"}
+{"session_id": "sess_018", "t": 42, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_018", "t": 43, "command": "cat key.txt", "output": "hello\nworld123\n"}
+{"session_id": "sess_018", "t": 44, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_018", "t": 45, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_018", "t": 46, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_018", "t": 47, "command": "mkdir home", "output": "```plaintext\nmkdir: cannot create directory ‘home’: File exists\n```\n"}
+{"session_id": "sess_018", "t": 48, "command": "pwd", "output": "/home/user\n"}

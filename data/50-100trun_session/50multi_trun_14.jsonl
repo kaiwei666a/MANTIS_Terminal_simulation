@@ -1,0 +1,65 @@
+﻿{"session_id":"sess_008","t":0,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":1,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_008","t":2,"command":"mkdir backup","output":""}
+{"session_id":"sess_008","t":3,"command":"ls","output":"README.txt  main.py  logs  backup"}
+{"session_id":"sess_008","t":4,"command":"cd backup","output":""}
+{"session_id":"sess_008","t":5,"command":"pwd","output":"/home/user/backup"}
+{"session_id":"sess_008","t":6,"command":"touch data.txt","output":""}
+{"session_id":"sess_008","t":7,"command":"touch list.txt","output":""}
+{"session_id":"sess_008","t":8,"command":"ls","output":"data.txt  list.txt"}
+{"session_id":"sess_008","t":9,"command":"lss","output":"bash: lss: command not found"}
+{"session_id":"sess_008","t":10,"command":"cat data.txt","output":""}
+{"session_id":"sess_008","t":11,"command":"cat list.txt","output":""}
+{"session_id":"sess_008","t":12,"command":"ls -al","output":"data.txt  list.txt"}
+{"session_id":"sess_008","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":14,"command":"ls","output":"README.txt  main.py  logs  backup"}
+{"session_id":"sess_008","t":15,"command":"cd documents","output":""}
+{"session_id":"sess_008","t":16,"command":"ls","output":"README.txt  main.py  logs  backup"}
+{"session_id":"sess_008","t":17,"command":"touch backup_notes.txt","output":""}
+{"session_id":"sess_008","t":18,"command":"ls","output":"README.txt  main.py  backup_notes.txt  logs  backup"}
+{"session_id":"sess_008","t":19,"command":"cat backup_notes.txt","output":""}
+{"session_id":"sess_008","t":20,"command":"touch backup_plan.txt","output":""}
+{"session_id":"sess_008","t":21,"command":"ls -al","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup"}
+{"session_id":"sess_008","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":23,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":24,"command":"cd projects","output":""}
+{"session_id":"sess_008","t":25,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup"}
+{"session_id":"sess_008","t":26,"command":"cd restore","output":""}
+{"session_id":"sess_008","t":27,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":28,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  logs  backup"}
+{"session_id":"sess_008","t":29,"command":"touch restore.sh","output":""}
+{"session_id":"sess_008","t":30,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  logs  backup"}
+{"session_id":"sess_008","t":31,"command":"cat restore.sh","output":""}
+{"session_id":"sess_008","t":32,"command":"touch README.md","output":""}
+{"session_id":"sess_008","t":33,"command":"ls -al","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":34,"command":"curl http://127.0.0.1:99999","output":"bash: curl: command not found"}
+{"session_id":"sess_008","t":35,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":36,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":37,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":38,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":39,"command":"cd logs","output":""}
+{"session_id":"sess_008","t":40,"command":"ls","output":"access.log  error.log"}
+{"session_id":"sess_008","t":41,"command":"cat access.log","output":""}
+{"session_id":"sess_008","t":42,"command":"cat error.log","output":""}
+{"session_id":"sess_008","t":43,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":44,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":45,"command":"uname","output":"Linux"}
+{"session_id":"sess_008","t":46,"command":"whoami","output":"user"}
+{"session_id":"sess_008","t":47,"command":"id -u","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_008","t":48,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":49,"command":"rmdir backup","output":"bash: rmdir: command not found"}
+{"session_id":"sess_008","t":50,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":51,"command":"ls -al","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":52,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":53,"command":"ls","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":54,"command":"ls -al","output":"README.txt  main.py  backup_notes.txt  backup_plan.txt  restore.sh  README.md  logs  backup"}
+{"session_id":"sess_008","t":55,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_008","t":56,"command":"whoami","output":"user"}
+{"session_id":"sess_008","t":57,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_008","t":58,"command":"uname","output":"Linux"}
+{"session_id":"sess_008","t":59,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_008","t":60,"command":"find . -maxdepth 2 -type f","output":"bash: find: command not found"}
+{"session_id":"sess_008","t":61,"command":"find . -maxdepth 2 -type d","output":"bash: find: command not found"}
+{"session_id":"sess_008","t":62,"command":"stat README.txt","output":"bash: stat: command not found"}
+{"session_id":"sess_008","t":63,"command":"head -n 5 README.txt","output":"bash: head: command not found"}
+{"session_id":"sess_008","t":64,"command":"tail -n 5 README.txt","output":"bash: tail: command not found"}

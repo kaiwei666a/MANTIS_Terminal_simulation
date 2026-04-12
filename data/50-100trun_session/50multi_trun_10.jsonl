@@ -1,0 +1,77 @@
+﻿{"session_id":"sess_004","t":0,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":1,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_004","t":2,"command":"ls -al","output":"README.txt  main.py  logs"}
+{"session_id":"sess_004","t":3,"command":"cd home","output":""}
+{"session_id":"sess_004","t":4,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_004","t":5,"command":"cd user","output":""}
+{"session_id":"sess_004","t":6,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":7,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_004","t":8,"command":"touch profile.txt","output":""}
+{"session_id":"sess_004","t":9,"command":"ls","output":"README.txt  main.py  profile.txt  logs"}
+{"session_id":"sess_004","t":10,"command":"cat profile.txt","output":""}
+{"session_id":"sess_004","t":11,"command":"touch history.txt","output":""}
+{"session_id":"sess_004","t":12,"command":"ls -al","output":"README.txt  main.py  profile.txt  history.txt  logs"}
+{"session_id":"sess_004","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":14,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  logs"}
+{"session_id":"sess_004","t":15,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":16,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":17,"command":"cd projects","output":""}
+{"session_id":"sess_004","t":18,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  logs"}
+{"session_id":"sess_004","t":19,"command":"cd cli","output":""}
+{"session_id":"sess_004","t":20,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":21,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  logs"}
+{"session_id":"sess_004","t":22,"command":"touch app.js","output":""}
+{"session_id":"sess_004","t":23,"command":"touch package.json","output":""}
+{"session_id":"sess_004","t":24,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs"}
+{"session_id":"sess_004","t":25,"command":"cat pakage.json","output":"cat: pakage.json: No such file or directory"}
+{"session_id":"sess_004","t":26,"command":"cat app.js","output":""}
+{"session_id":"sess_004","t":27,"command":"cat package.json","output":""}
+{"session_id":"sess_004","t":28,"command":"ls -al","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs"}
+{"session_id":"sess_004","t":29,"command":"sudo shutdownn now","output":"bash: sudo: command not found"}
+{"session_id":"sess_004","t":30,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":31,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs"}
+{"session_id":"sess_004","t":32,"command":"cd docs","output":""}
+{"session_id":"sess_004","t":33,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":34,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  logs"}
+{"session_id":"sess_004","t":35,"command":"touch guide.md","output":""}
+{"session_id":"sess_004","t":36,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs"}
+{"session_id":"sess_004","t":37,"command":"cat guide.md","output":""}
+{"session_id":"sess_004","t":38,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":39,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":40,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":41,"command":"cd logs","output":""}
+{"session_id":"sess_004","t":42,"command":"ls","output":"access.log  error.log"}
+{"session_id":"sess_004","t":43,"command":"cat error.log","output":""}
+{"session_id":"sess_004","t":44,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":45,"command":"uname","output":"Linux"}
+{"session_id":"sess_004","t":46,"command":"id -u","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_004","t":47,"command":"whoami","output":"user"}
+{"session_id":"sess_004","t":48,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs"}
+{"session_id":"sess_004","t":49,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":50,"command":"ls -al","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs"}
+{"session_id":"sess_004","t":51,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":52,"command":"ls","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs"}
+{"session_id":"sess_004","t":53,"command":"ls -al","output":"README.txt  main.py  profile.txt  history.txt  app.js  package.json  guide.md  logs"}
+{"session_id":"sess_004","t":54,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_004","t":55,"command":"whoami","output":"user"}
+{"session_id":"sess_004","t":56,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_004","t":57,"command":"uname","output":"Linux"}
+{"session_id":"sess_004","t":58,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_004","t":59,"command":"find . -maxdepth 2 -type f","output":"bash: find: command not found"}
+{"session_id":"sess_004","t":60,"command":"find . -maxdepth 2 -type d","output":"bash: find: command not found"}
+{"session_id":"sess_004","t":61,"command":"stat README.txt","output":"bash: stat: command not found"}
+{"session_id":"sess_004","t":62,"command":"head -n 5 README.txt","output":"bash: head: command not found"}
+{"session_id":"sess_004","t":63,"command":"tail -n 5 README.txt","output":"bash: tail: command not found"}
+{"session_id":"sess_004","t":64,"command":"wc -l README.txt","output":"bash: wc: command not found"}
+{"session_id":"sess_004","t":65,"command":"echo test","output":"test"}
+{"session_id":"sess_004","t":66,"command":"history","output":"bash: history: command not found"}
+{"session_id":"sess_004","t":67,"command":"ps","output":"bash: ps: command not found"}
+{"session_id":"sess_004","t":68,"command":"date","output":"Sat Apr 11 14:55:18 EDT 2026"}
+{"session_id":"sess_004","t":69,"command":"hostname","output":"bash: hostname: command not found"}
+{"session_id":"sess_004","t":70,"command":"env","output":"bash: env: command not found"}
+{"session_id":"sess_004","t":71,"command":"clear","output":"bash: clear: command not found"}
+{"session_id":"sess_004","t":72,"command":"true","output":"bash: true: command not found"}
+{"session_id":"sess_004","t":73,"command":"falsee","output":"bash: falsee: command not found"}
+{"session_id":"sess_004","t":74,"command":"cat missing.file","output":"cat: missing.file: No such file or directory"}
+{"session_id":"sess_004","t":75,"command":"cd tmp","output":""}
+{"session_id":"sess_004","t":76,"command":"ls logs","output":"access.log  error.log"}

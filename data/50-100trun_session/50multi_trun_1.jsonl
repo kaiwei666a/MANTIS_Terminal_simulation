@@ -1,0 +1,56 @@
+﻿{"session_id": "sess_015", "t": 0, "command": "ls", "output": "README.txt\nlogs\nprojects\n"}
+{"session_id": "sess_015", "t": 1, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 2, "command": "cd logs", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 3, "command": "ls", "output": "access.log\nerror.log\ntest123\n"}
+{"session_id": "sess_015", "t": 4, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_015", "t": 5, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27\n"}
+{"session_id": "sess_015", "t": 6, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_015", "t": 7, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 8, "command": "ls", "output": "README.txt\nlogs\nprojects\n"}
+{"session_id": "sess_015", "t": 9, "command": "date -u", "output": "2025-12-31 05:02:18 UTC\n"}
+{"session_id": "sess_015", "t": 10, "command": "uname", "output": "Linux\n"}
+{"session_id": "sess_015", "t": 11, "command": "uname -a", "output": "Linux user 5.15.0-1051-azure #202112091200 SMP Thu Dec 9 12:00:00 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux\n"}
+{"session_id": "sess_015", "t": 12, "command": "ls", "output": "README.txt\nlogs\nprojects\n"}
+{"session_id": "sess_015", "t": 13, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 14, "command": "mkdir documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 15, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 16, "command": "cd doucments", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 17, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 18, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 19, "command": "ls -al", "output": "total 12\ndrwxr-xr-x  4 user user 4096 Dec 31 05:04 .\ndrwxr-xr-x  3 user user 4096 Jan  1  1970 ..\n-rw-r--r--  1 user user   22 Dec  3 00:00 README.txt\ndrwxr-xr-x  2 user user 4096 Dec 31 05:04 documents\ndrwxr-xr-x  2 user user 4096 Jan  1  1970 logs\ndrwxr-xr-x  2 user user 4096 Dec 31 04:47 projects\n"}
+{"session_id": "sess_015", "t": 20, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 21, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 22, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 23, "command": "pwd", "output": "/home/user/documents\n"}
+{"session_id": "sess_015", "t": 24, "command": "ls", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_015", "t": 25, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 26, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 27, "command": "uname", "output": "Linux\n"}
+{"session_id": "sess_015", "t": 28, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 29, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 30, "command": "cd logs", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 31, "command": "pwd", "output": "/home/user/logs\n"}
+{"session_id": "sess_015", "t": 32, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 33, "command": "date", "output": "2025-12-31 05:07:13 UTC\n"}
+{"session_id": "sess_015", "t": 34, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 35, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 36, "command": "ls -al", "output": "total 12\ndrwxr-xr-x  4 user user 4096 Dec 31 05:04 .\ndrwxr-xr-x  3 user user 4096 Jan  1  1970 ..\n-rw-r--r--  1 user user   22 Dec  3 00:00 README.txt\ndrwxr-xr-x  2 user user 4096 Dec 31 05:04 documents\ndrwxr-xr-x  2 user user 4096 Jan  1  1970 logs\ndrwxr-xr-x  2 user user 4096 Dec 31 04:47 projects\n"}
+{"session_id": "sess_015", "t": 37, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 38, "command": "cd projects", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 39, "command": "pwd", "output": "/home/user/projects\n"}
+{"session_id": "sess_015", "t": 40, "command": "ls", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_015", "t": 41, "command": "mkdir test", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 42, "command": "ls", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_015", "t": 43, "command": "pwd", "output": "/home/user/projects\n"}
+{"session_id": "sess_015", "t": 44, "command": "ls", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_015", "t": 45, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 46, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 47, "command": "whoami", "output": "user\n"}
+{"session_id": "sess_015", "t": 48, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_015", "t": 49, "command": "ls", "output": "README.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_015", "t": 50, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27\n"}
+{"session_id": "sess_015", "t": 51, "command": "cd logs", "output": "```plaintext\n```\n"}
+{"session_id": "sess_015", "t": 52, "command": "ls", "output": "access.log\nerror.log\ntest123\n"}
+{"session_id": "sess_015", "t": 53, "command": "ls -al", "output": "total 12\ndrwxr-xr-x  3 user user 4096 Dec 31 05:04 .\ndrwxr-xr-x  4 user user 4096 Jan  1  1970 ..\n-rw-r--r--  1 user user   0 Dec  3 00:00 access.log\n-rw-r--r--  1 user user   0 Dec  3 00:00 error.log\ndrwxr-xr-x  2 user user 4096 Dec 31 04:51 test123\n"}
+{"session_id": "sess_015", "t": 54, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_015", "t": 55, "command": "uname -a", "output": "Linux user 5.15.0-1051-azure #202112091200 SMP Thu Dec 9 12:00:00 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux\n"}

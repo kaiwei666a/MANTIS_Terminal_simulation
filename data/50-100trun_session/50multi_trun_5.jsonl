@@ -1,0 +1,74 @@
+﻿{"session_id": "sess_020", "t": 0, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\n"}
+{"session_id": "sess_020", "t": 1, "command": "cat doc.text", "output": "\n"}
+{"session_id": "sess_020", "t": 2, "command": "rm doc.text", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 3, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 4, "command": "cp README.txt new.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 5, "command": "ls", "output": "README.txt\nnew.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 6, "command": "cat new.txt", "output": "Welcome to the system.\n"}
+{"session_id": "sess_020", "t": 7, "command": "rm new.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 8, "command": "ls", "output": "README.txt\ndocuments\nfolders\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 9, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 10, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 11, "command": "ls", "output": "key.txt\nkey_new.txt\n"}
+{"session_id": "sess_020", "t": 12, "command": "cat key.txt", "output": "hello world\n"}
+{"session_id": "sess_020", "t": 13, "command": "rm key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 14, "command": "ls", "output": "key_new.txt\n"}
+{"session_id": "sess_020", "t": 15, "command": "cat key_new.txt", "output": "hello world\n"}
+{"session_id": "sess_020", "t": 16, "command": "echo \"new\" >> key_new.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 17, "command": "ls", "output": "key_new.txt\n"}
+{"session_id": "sess_020", "t": 18, "command": "cat key_new.txt", "output": "hello world\nnew\n"}
+{"session_id": "sess_020", "t": 19, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_020", "t": 20, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 21, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 22, "command": "cd logs", "output": "```plaintext\n/home/user/logs\n```\n"}
+{"session_id": "sess_020", "t": 23, "command": "ls", "output": "access.log\nerror.log\ntest.txt\n"}
+{"session_id": "sess_020", "t": 24, "command": "cat test.txt", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_020", "t": 25, "command": ";s", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 26, "command": "ls", "output": "access.log\nerror.log\ntest.txt\n"}
+{"session_id": "sess_020", "t": 27, "command": "rm test.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 28, "command": "cat access.log", "output": "\n"}
+{"session_id": "sess_020", "t": 29, "command": "ls", "output": "access.log\nerror.log\ntest123\n"}
+{"session_id": "sess_020", "t": 30, "command": "ls -al", "output": "total 0\ndrwxr-xr-x 2 user user 4096 Dec 31 04:51 test123\n-rw-r--r-- 1 user user    0 Dec 03 00:00 access.log\n-rw-r--r-- 1 user user    0 Dec 03 00:00 error.log\n"}
+{"session_id": "sess_020", "t": 31, "command": "cd ..", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 32, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 33, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 34, "command": "cd projects", "output": "```plaintext\n/home/user/projects\n```\n"}
+{"session_id": "sess_020", "t": 35, "command": "pwd", "output": "/home/user/projects\n"}
+{"session_id": "sess_020", "t": 36, "command": "ls", "output": "test\n"}
+{"session_id": "sess_020", "t": 37, "command": "ls -al", "output": "total 0\ndrwxr-xr-x  2 user user  4096 Dec 31 05:09 test\n"}
+{"session_id": "sess_020", "t": 38, "command": "cd test", "output": "```plaintext\n/home/user/projects/test\n```\n"}
+{"session_id": "sess_020", "t": 39, "command": "pwd", "output": "/home/user/projects/test\n"}
+{"session_id": "sess_020", "t": 40, "command": "cd ..", "output": "```plaintext\n/home/user/projects\n```\n"}
+{"session_id": "sess_020", "t": 41, "command": "ls", "output": "```\ntest\n```\n"}
+{"session_id": "sess_020", "t": 42, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_020", "t": 43, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 44, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 45, "command": "cat README.txt", "output": "Welcome to the system.\n"}
+{"session_id": "sess_020", "t": 46, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 47, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 48, "command": "cd projects", "output": "```plaintext\n/home/user/projects\n```\n"}
+{"session_id": "sess_020", "t": 49, "command": "ls", "output": "```\ntest\n```\n"}
+{"session_id": "sess_020", "t": 50, "command": "cd test", "output": "```plaintext\n/home/user/projects/test\n```\n"}
+{"session_id": "sess_020", "t": 51, "command": "ls", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_020", "t": 52, "command": "touch inner.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 53, "command": "echo \"security\" > inner.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 54, "command": "ls", "output": "inner.txt\n"}
+{"session_id": "sess_020", "t": 55, "command": "cat inner.txt", "output": "security\n"}
+{"session_id": "sess_020", "t": 56, "command": "cd ..", "output": "```\n/home/user/projects\n```\n"}
+{"session_id": "sess_020", "t": 57, "command": "ls", "output": "README.txt\ndocuments\nprojects\nlogs\n"}
+{"session_id": "sess_020", "t": 58, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_020", "t": 59, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_020", "t": 60, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 61, "command": "cd logs", "output": "```\n/home/user/logs\n```\n"}
+{"session_id": "sess_020", "t": 62, "command": "ls", "output": "access.log\nerror.log\ntest123\n"}
+{"session_id": "sess_020", "t": 63, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_020", "t": 64, "command": "ls", "output": "README.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 65, "command": "touch final.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 66, "command": "ls", "output": "README.txt\nfinal.txt\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_020", "t": 67, "command": "ls", "output": "README.txt\nfinal.txt\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_020", "t": 68, "command": "cat final.txt", "output": "\n"}
+{"session_id": "sess_020", "t": 69, "command": "echo \"final\" > final.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_020", "t": 70, "command": "cat final.txt", "output": "final\n"}
+{"session_id": "sess_020", "t": 71, "command": "ls", "output": "README.txt\nfinal.txt\ndocuments/\nlogs/\nprojects/\n"}
+{"session_id": "sess_020", "t": 72, "command": "cd projects", "output": "```plaintext\n/home/user/projects\n```\n"}
+{"session_id": "sess_020", "t": 73, "command": "pwd", "output": "/home/user/projects\n"}

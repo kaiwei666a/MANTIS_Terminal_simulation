@@ -1,0 +1,71 @@
+﻿{"session_id":"sess_009","t":0,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_009","t":1,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":2,"command":"cd projects","output":""}
+{"session_id":"sess_009","t":3,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_009","t":4,"command":"cd demo","output":""}
+{"session_id":"sess_009","t":5,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":6,"command":"ls","output":"README.txt  main.py  logs"}
+{"session_id":"sess_009","t":7,"command":"touch app.js","output":""}
+{"session_id":"sess_009","t":8,"command":"touch util.js","output":""}
+{"session_id":"sess_009","t":9,"command":"ls","output":"README.txt  main.py  app.js  util.js  logs"}
+{"session_id":"sess_009","t":10,"command":"cat app.js","output":""}
+{"session_id":"sess_009","t":11,"command":"cat util.js","output":""}
+{"session_id":"sess_009","t":12,"command":"ls -al","output":"README.txt  main.py  app.js  util.js  logs"}
+{"session_id":"sess_009","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":14,"command":"ls","output":"README.txt  main.py  app.js  util.js  logs"}
+{"session_id":"sess_009","t":15,"command":"cd data","output":""}
+{"session_id":"sess_009","t":16,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":17,"command":"ls","output":"README.txt  main.py  app.js  util.js  logs"}
+{"session_id":"sess_009","t":18,"command":"touch sample.csv","output":""}
+{"session_id":"sess_009","t":19,"command":"touch input.txt","output":""}
+{"session_id":"sess_009","t":20,"command":"ls","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs"}
+{"session_id":"sess_009","t":21,"command":"cat sample.csv","output":""}
+{"session_id":"sess_009","t":22,"command":"cat input.txt","output":""}
+{"session_id":"sess_009","t":23,"command":"ls -al","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs"}
+{"session_id":"sess_009","t":24,"command":"pythonx script.py","output":"bash: pythonx: command not found"}
+{"session_id":"sess_009","t":25,"command":"pwc","output":"bash: pwc: command not found"}
+{"session_id":"sess_009","t":26,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":27,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":28,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":29,"command":"cd documents","output":""}
+{"session_id":"sess_009","t":30,"command":"ls","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  logs"}
+{"session_id":"sess_009","t":31,"command":"touch readme.md","output":""}
+{"session_id":"sess_009","t":32,"command":"ls","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  logs"}
+{"session_id":"sess_009","t":33,"command":"cat readme.md","output":""}
+{"session_id":"sess_009","t":34,"command":"touch changelog.md","output":""}
+{"session_id":"sess_009","t":35,"command":"ls -al","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs"}
+{"session_id":"sess_009","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":37,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":38,"command":"cd logs","output":""}
+{"session_id":"sess_009","t":39,"command":"ls","output":"access.log  error.log"}
+{"session_id":"sess_009","t":40,"command":"cat user.log","output":"cat: user.log: No such file or directory"}
+{"session_id":"sess_009","t":41,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":42,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":43,"command":"uname","output":"Linux"}
+{"session_id":"sess_009","t":44,"command":"uname -a","output":"Linux Dataset_manage 5.15.0-84-generic #93-Ubuntu SMP x86_64 GNU/Linux"}
+{"session_id":"sess_009","t":45,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_009","t":46,"command":"whoami","output":"user"}
+{"session_id":"sess_009","t":47,"command":"ls","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs"}
+{"session_id":"sess_009","t":48,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_009","t":49,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":50,"command":"ls -al","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs"}
+{"session_id":"sess_009","t":51,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":52,"command":"ls","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs"}
+{"session_id":"sess_009","t":53,"command":"ls -al","output":"README.txt  main.py  app.js  util.js  sample.csv  input.txt  readme.md  changelog.md  logs"}
+{"session_id":"sess_009","t":54,"command":"cat README.txt","output":"Welcome to the honeypot.\n"}
+{"session_id":"sess_009","t":55,"command":"whoami","output":"user"}
+{"session_id":"sess_009","t":56,"command":"id","output":"uid=1000(user) gid=1000(user) groups=1000(user)"}
+{"session_id":"sess_009","t":57,"command":"uname","output":"Linux"}
+{"session_id":"sess_009","t":58,"command":"pwd","output":"/home/user"}
+{"session_id":"sess_009","t":59,"command":"find . -maxdepth 2 -type f","output":"bash: find: command not found"}
+{"session_id":"sess_009","t":60,"command":"find . -maxdepth 2 -type d","output":"bash: find: command not found"}
+{"session_id":"sess_009","t":61,"command":"stat README.txt","output":"bash: stat: command not found"}
+{"session_id":"sess_009","t":62,"command":"head -n 5 README.txt","output":"bash: head: command not found"}
+{"session_id":"sess_009","t":63,"command":"tail -n 5 README.txt","output":"bash: tail: command not found"}
+{"session_id":"sess_009","t":64,"command":"wc -l README.txt","output":"bash: wc: command not found"}
+{"session_id":"sess_009","t":65,"command":"echo test","output":"test"}
+{"session_id":"sess_009","t":66,"command":"history","output":"bash: history: command not found"}
+{"session_id":"sess_009","t":67,"command":"ps","output":"bash: ps: command not found"}
+{"session_id":"sess_009","t":68,"command":"date","output":"Sat Apr 11 14:55:18 EDT 2026"}
+{"session_id":"sess_009","t":69,"command":"hostname","output":"bash: hostname: command not found"}
+{"session_id":"sess_009","t":70,"command":"env","output":"bash: env: command not found"}

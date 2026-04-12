@@ -1,0 +1,60 @@
+﻿{"session_id": "sess_019", "t": 0, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\nhome\nkali\n"}
+{"session_id": "sess_019", "t": 1, "command": "rmdir kali", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 2, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\nhome\n"}
+{"session_id": "sess_019", "t": 3, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 4, "command": "cd documents", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 5, "command": "pwd", "output": "/home/user/documents\n"}
+{"session_id": "sess_019", "t": 6, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_019", "t": 7, "command": "cat key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 8, "command": "echo \"hello world\" > key.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 9, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_019", "t": 10, "command": "cat key.txt", "output": "hello world\n"}
+{"session_id": "sess_019", "t": 11, "command": "cd ..", "output": "```plaintext\n/home/user\n```\n"}
+{"session_id": "sess_019", "t": 12, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 13, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\nhome\n"}
+{"session_id": "sess_019", "t": 14, "command": "rmdir home", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 15, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 16, "command": "cat doc.txt", "output": "```plaintext\n\n```\n"}
+{"session_id": "sess_019", "t": 17, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 18, "command": "rm doc.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 19, "command": "id", "output": "uid=1000(user) gid=1000(user) groups=1000(user),27(sudo)\n"}
+{"session_id": "sess_019", "t": 20, "command": "uname", "output": "Linux user 5.4.0-42-generic #46-Ubuntu SMP Fri Oct 30 00:00:00 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\n"}
+{"session_id": "sess_019", "t": 21, "command": "whoami", "output": "user\n"}
+{"session_id": "sess_019", "t": 22, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 23, "command": "df -h", "output": "```plaintext\nFilesystem      Size  Used Avail Use% Mounted on\n/dev/sda1        50G   1G   49G   2% /\ntmpfs           1.9G     0  1.9G   0% /dev/shm\ntmpfs           1.9G  8.0M  1.9G   1% /run\ntmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup\n/dev/sdb1        20G   5G   15G  25% /home\n```\n"}
+{"session_id": "sess_019", "t": 24, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 25, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 26, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 27, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 28, "command": "cd documents", "output": "```plaintext\n/home/user/documents\n```\n"}
+{"session_id": "sess_019", "t": 29, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_019", "t": 30, "command": "cat key.txt", "output": "hello world\n"}
+{"session_id": "sess_019", "t": 31, "command": "ls -al", "output": "total 8\ndrwxr-xr-x 2 user user 4096 Dec 31 05:04 .\ndrwxr-xr-x 3 user user 4096 Dec 31 05:04 ..\n-rw-r--r-- 1 user user    12 Dec 31 21:33 key.txt\n"}
+{"session_id": "sess_019", "t": 32, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_019", "t": 33, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 34, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 35, "command": "cd documents", "output": "```\n/home/user/documents\n```\n"}
+{"session_id": "sess_019", "t": 36, "command": "pwd", "output": "/home/user/documents\n"}
+{"session_id": "sess_019", "t": 37, "command": "ls", "output": "key.txt\n"}
+{"session_id": "sess_019", "t": 38, "command": "cp key.txt key_new.txt", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 39, "command": "ls", "output": "key.txt\nkey_new.txt\n"}
+{"session_id": "sess_019", "t": 40, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_019", "t": 41, "command": "pwd", "output": "/home/user\n"}
+{"session_id": "sess_019", "t": 42, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 43, "command": "mkdir test", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 44, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\ntest\n"}
+{"session_id": "sess_019", "t": 45, "command": "cd test", "output": "```\n/home/user/projects/test\n```\n"}
+{"session_id": "sess_019", "t": 46, "command": "pwd", "output": "/home/user/test\n"}
+{"session_id": "sess_019", "t": 47, "command": "ls", "output": "README.txt\ndoc.text\n"}
+{"session_id": "sess_019", "t": 48, "command": "pwd", "output": "/home/user/test\n"}
+{"session_id": "sess_019", "t": 49, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_019", "t": 50, "command": "ls", "output": "README.txt\ndoc.text\nlogs\ndocuments\nprojects\ntest\n"}
+{"session_id": "sess_019", "t": 51, "command": "rmdir test", "output": "```plaintext\n```\n"}
+{"session_id": "sess_019", "t": 52, "command": "ls", "output": "README.txt\ndoc.text\nlogs\nprojects\ndocuments\n"}
+{"session_id": "sess_019", "t": 53, "command": "cd projects", "output": "```\n/home/user/projects\n```\n"}
+{"session_id": "sess_019", "t": 54, "command": "ls", "output": "```\ntest\n```\n"}
+{"session_id": "sess_019", "t": 55, "command": "cd ..", "output": "```\n/home/user\n```\n"}
+{"session_id": "sess_019", "t": 56, "command": "ls", "output": "README.txt\ndoc.text\ndocuments\nlogs\nprojects\n"}
+{"session_id": "sess_019", "t": 57, "command": "cd documents", "output": "```\n/home/user/documents\n```\n"}
+{"session_id": "sess_019", "t": 58, "command": "ls", "output": "key.txt\nkey_new.txt\n"}
+{"session_id": "sess_019", "t": 59, "command": "cd ..", "output": "```\n/home/user\n```\n"}

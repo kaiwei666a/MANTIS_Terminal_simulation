@@ -1,0 +1,202 @@
+{
+  "timestamp": "2026-04-11T18:55:18Z",
+  "step": 0,
+  "cwd": "/home/user",
+  "identity": {
+    "user": "user",
+    "uid": 1000,
+    "gid": 1000,
+    "euid": 1000,
+    "egid": 1000,
+    "groups": [
+      1000
+    ]
+  },
+  "privilege": {
+    "sudo_available": true,
+    "umask": "0022"
+  },
+  "persistence": {
+    "systemd": {
+      "enabled_units": [],
+      "unit_hashes": {}
+    },
+    "cron": {
+      "system_crontab_hash": "",
+      "user_crontabs_hash": {}
+    },
+    "ssh": {
+      "authorized_keys_hash": {}
+    }
+  },
+  "network": {
+    "listening_ports": [
+      {
+        "proto": "tcp",
+        "ip": "0.0.0.0",
+        "port": 22,
+        "pid": 123,
+        "process": "sshd"
+      },
+      {
+        "proto": "tcp",
+        "ip": "0.0.0.0",
+        "port": 8080,
+        "pid": 456,
+        "process": "java"
+      }
+    ],
+    "firewall": {
+      "rules_hash": ""
+    },
+    "routing": {
+      "routes_hash": ""
+    },
+    "interfaces": {
+      "interfaces_hash": ""
+    }
+  },
+  "critical_configs": {
+    "files": {
+      "/etc/resolv.conf": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/passwd": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/ssh/sshd_config": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/shadow": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/hosts": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/crontab": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      },
+      "/etc/sudoers": {
+        "hash": "",
+        "mode_octal": "0644",
+        "uid": 0,
+        "gid": 0
+      }
+    }
+  },
+  "last_output": "",
+  "vulnerabilities": [
+    "The system exposes a known privilege escalation flaw (CVE-2021-4034) in the 'pkexec' binary from polkit.",
+    "An HTTP service on port 8080 simulates a vulnerable Spring Cloud Function instance (CVE-2022-22963) that allows remote code execution.",
+    "Port 22 is open with weak SSH credentials configured, increasing the risk of brute-force access."
+  ],
+  "filesystem": {
+    "/home/user": {
+      "files": [
+        "README.txt",
+        "main.py"
+      ],
+      "folders": {
+        "logs": {
+          "files": [
+            "access.log",
+            "error.log"
+          ],
+          "folders": {},
+          "file_contents": {
+            "access.log": "",
+            "error.log": ""
+          },
+          "file_meta": {
+            "access.log": {
+              "mode": "-rw-r--r--",
+              "mode_octal": "0644",
+              "uid": 1000,
+              "gid": 1000,
+              "mtime": "2025-12-03T00:00:00Z",
+              "size": 0,
+              "hash": ""
+            },
+            "error.log": {
+              "mode": "-rw-r--r--",
+              "mode_octal": "0644",
+              "uid": 1000,
+              "gid": 1000,
+              "mtime": "2025-12-03T00:00:00Z",
+              "size": 0,
+              "hash": ""
+            }
+          },
+          "dir_mode": "drwxr-xr-x",
+          "dir_mtime": "2025-12-03T00:00:00Z"
+        }
+      },
+      "file_contents": {
+        "README.txt": "Welcome to the honeypot.\n",
+        "main.py": "# demo entry\n"
+      },
+      "file_meta": {
+        "README.txt": {
+          "mode": "-rw-r--r--",
+          "mode_octal": "0644",
+          "uid": 1000,
+          "gid": 1000,
+          "mtime": "2025-12-03T00:00:00Z",
+          "size": 23,
+          "hash": ""
+        },
+        "main.py": {
+          "mode": "-rw-r--r--",
+          "mode_octal": "0644",
+          "uid": 1000,
+          "gid": 1000,
+          "mtime": "2025-12-03T00:00:00Z",
+          "size": 12,
+          "hash": ""
+        }
+      },
+      "dir_mode": "drwxr-xr-x",
+      "dir_mtime": "2025-12-03T00:00:00Z"
+    },
+    "/tmp": {
+      "files": [
+        "exploit.sh"
+      ],
+      "folders": {},
+      "file_contents": {
+        "exploit.sh": "#!/bin/sh\n"
+      },
+      "file_meta": {
+        "exploit.sh": {
+          "mode": "-rwxr-xr-x",
+          "mode_octal": "0755",
+          "uid": 1000,
+          "gid": 1000,
+          "mtime": "2025-12-03T00:00:00Z",
+          "size": 10,
+          "hash": ""
+        }
+      },
+      "dir_mode": "drwxrwxrwt",
+      "dir_mtime": "2025-12-03T00:00:00Z"
+    }
+  }
+}

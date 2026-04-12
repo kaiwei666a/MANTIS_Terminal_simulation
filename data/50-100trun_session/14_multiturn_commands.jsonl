@@ -1,0 +1,1019 @@
+﻿{"session_id":"sess_001","t":0,"command":"ls","output":""}
+{"session_id":"sess_001","t":1,"command":"pwd","output":""}
+{"session_id":"sess_001","t":2,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":3,"command":"cd logs","output":""}
+{"session_id":"sess_001","t":4,"command":"pwd","output":""}
+{"session_id":"sess_001","t":5,"command":"ls","output":""}
+{"session_id":"sess_001","t":6,"command":"pwdd","output":""}
+{"session_id":"sess_001","t":7,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":8,"command":"cat access.log","output":""}
+{"session_id":"sess_001","t":9,"command":"cat error.log","output":""}
+{"session_id":"sess_001","t":10,"command":"cat user.log","output":""}
+{"session_id":"sess_001","t":11,"command":"cat /root/secret.txt","output":""}
+{"session_id":"sess_001","t":12,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":13,"command":"pwd","output":""}
+{"session_id":"sess_001","t":14,"command":"cd documents","output":""}
+{"session_id":"sess_001","t":15,"command":"ls","output":""}
+{"session_id":"sess_001","t":16,"command":"touch notes.txt","output":""}
+{"session_id":"sess_001","t":17,"command":"ls","output":""}
+{"session_id":"sess_001","t":18,"command":"cat notes.txt","output":""}
+{"session_id":"sess_001","t":19,"command":"cats notes.txt","output":""}
+{"session_id":"sess_001","t":20,"command":"touch draft.txt","output":""}
+{"session_id":"sess_001","t":21,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":23,"command":"pwd","output":""}
+{"session_id":"sess_001","t":24,"command":"cd projects","output":""}
+{"session_id":"sess_001","t":25,"command":"ls","output":""}
+{"session_id":"sess_001","t":26,"command":"cd demo","output":""}
+{"session_id":"sess_001","t":27,"command":"pwd","output":""}
+{"session_id":"sess_001","t":28,"command":"ls","output":""}
+{"session_id":"sess_001","t":29,"command":"touch app.py","output":""}
+{"session_id":"sess_001","t":30,"command":"ls","output":""}
+{"session_id":"sess_001","t":31,"command":"cat app.py","output":""}
+{"session_id":"sess_001","t":32,"command":"touch README.md","output":""}
+{"session_id":"sess_001","t":33,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":34,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":35,"command":"ls","output":""}
+{"session_id":"sess_001","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":37,"command":"pwd","output":""}
+{"session_id":"sess_001","t":38,"command":"uname","output":""}
+{"session_id":"sess_001","t":39,"command":"uname -a","output":""}
+{"session_id":"sess_001","t":40,"command":"id","output":""}
+{"session_id":"sess_001","t":41,"command":"id -u","output":""}
+{"session_id":"sess_001","t":42,"command":"whoami","output":""}
+{"session_id":"sess_001","t":43,"command":"ls","output":""}
+{"session_id":"sess_001","t":44,"command":"cd logs","output":""}
+{"session_id":"sess_001","t":45,"command":"ls","output":""}
+{"session_id":"sess_001","t":46,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":47,"command":"cd documents","output":""}
+{"session_id":"sess_001","t":48,"command":"ls","output":""}
+{"session_id":"sess_001","t":49,"command":"cd ..","output":""}
+{"session_id":"sess_001","t":50,"command":"pwd","output":""}
+{"session_id":"sess_001","t":51,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":52,"command":"cat README.txt","output":""}
+{"session_id":"sess_001","t":53,"command":"pwd","output":""}
+{"session_id":"sess_001","t":54,"command":"ls","output":""}
+{"session_id":"sess_001","t":55,"command":"ls -al","output":""}
+{"session_id":"sess_001","t":56,"command":"cat README.txt","output":""}
+{"session_id":"sess_001","t":57,"command":"whoami","output":""}
+{"session_id":"sess_001","t":58,"command":"id","output":""}
+{"session_id":"sess_001","t":59,"command":"uname","output":""}
+{"session_id":"sess_001","t":60,"command":"pwd","output":""}
+{"session_id":"sess_001","t":61,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_001","t":62,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_001","t":63,"command":"stat README.txt","output":""}
+{"session_id":"sess_001","t":64,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_001","t":65,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_002","t":0,"command":"pwd","output":""}
+{"session_id":"sess_002","t":1,"command":"ls","output":""}
+{"session_id":"sess_002","t":2,"command":"cd projects","output":""}
+{"session_id":"sess_002","t":3,"command":"ls","output":""}
+{"session_id":"sess_002","t":4,"command":"cd test","output":""}
+{"session_id":"sess_002","t":5,"command":"pwd","output":""}
+{"session_id":"sess_002","t":6,"command":"ls","output":""}
+{"session_id":"sess_002","t":7,"command":"touch main.py","output":""}
+{"session_id":"sess_002","t":8,"command":"pyhton main.py","output":""}
+{"session_id":"sess_002","t":9,"command":"ls","output":""}
+{"session_id":"sess_002","t":10,"command":"cat main.py","output":""}
+{"session_id":"sess_002","t":11,"command":"touch utils.py","output":""}
+{"session_id":"sess_002","t":12,"command":"ls -al","output":""}
+{"session_id":"sess_002","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":14,"command":"ls","output":""}
+{"session_id":"sess_002","t":15,"command":"cd sample","output":""}
+{"session_id":"sess_002","t":16,"command":"pwd","output":""}
+{"session_id":"sess_002","t":17,"command":"ls","output":""}
+{"session_id":"sess_002","t":18,"command":"touch run.sh","output":""}
+{"session_id":"sess_002","t":19,"command":"ls","output":""}
+{"session_id":"sess_002","t":20,"command":"cat run.sh","output":""}
+{"session_id":"sess_002","t":21,"command":"chmod 999 run.sh","output":""}
+{"session_id":"sess_002","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":23,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":24,"command":"pwd","output":""}
+{"session_id":"sess_002","t":25,"command":"cd documents","output":""}
+{"session_id":"sess_002","t":26,"command":"ls","output":""}
+{"session_id":"sess_002","t":27,"command":"touch report.txt","output":""}
+{"session_id":"sess_002","t":28,"command":"ls","output":""}
+{"session_id":"sess_002","t":29,"command":"cat report.txt","output":""}
+{"session_id":"sess_002","t":30,"command":"touch todo.txt","output":""}
+{"session_id":"sess_002","t":31,"command":"ls -al","output":""}
+{"session_id":"sess_002","t":32,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":33,"command":"pwd","output":""}
+{"session_id":"sess_002","t":34,"command":"cd logs","output":""}
+{"session_id":"sess_002","t":35,"command":"ls","output":""}
+{"session_id":"sess_002","t":36,"command":"cat access.log","output":""}
+{"session_id":"sess_002","t":37,"command":"cat error.log","output":""}
+{"session_id":"sess_002","t":38,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":39,"command":"pwd","output":""}
+{"session_id":"sess_002","t":40,"command":"ls","output":""}
+{"session_id":"sess_002","t":41,"command":"uname","output":""}
+{"session_id":"sess_002","t":42,"command":"id","output":""}
+{"session_id":"sess_002","t":43,"command":"whoami","output":""}
+{"session_id":"sess_002","t":44,"command":"ls -al","output":""}
+{"session_id":"sess_002","t":45,"command":"cd projects","output":""}
+{"session_id":"sess_002","t":46,"command":"ls","output":""}
+{"session_id":"sess_002","t":47,"command":"cd test","output":""}
+{"session_id":"sess_002","t":48,"command":"ls","output":""}
+{"session_id":"sess_002","t":49,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":50,"command":"cd ..","output":""}
+{"session_id":"sess_002","t":51,"command":"pwd","output":""}
+{"session_id":"sess_002","t":52,"command":"pwd","output":""}
+{"session_id":"sess_002","t":53,"command":"ls","output":""}
+{"session_id":"sess_002","t":54,"command":"ls -al","output":""}
+{"session_id":"sess_002","t":55,"command":"cat README.txt","output":""}
+{"session_id":"sess_002","t":56,"command":"whoami","output":""}
+{"session_id":"sess_002","t":57,"command":"id","output":""}
+{"session_id":"sess_002","t":58,"command":"uname","output":""}
+{"session_id":"sess_002","t":59,"command":"pwd","output":""}
+{"session_id":"sess_002","t":60,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_002","t":61,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_002","t":62,"command":"stat README.txt","output":""}
+{"session_id":"sess_002","t":63,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_002","t":64,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_002","t":65,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_002","t":66,"command":"echo test","output":""}
+{"session_id":"sess_002","t":67,"command":"history","output":""}
+{"session_id":"sess_002","t":68,"command":"ps","output":""}
+{"session_id":"sess_002","t":69,"command":"date","output":""}
+{"session_id":"sess_002","t":70,"command":"hostname","output":""}
+{"session_id":"sess_002","t":71,"command":"env","output":""}
+{"session_id":"sess_002","t":72,"command":"clear","output":""}
+{"session_id":"sess_002","t":73,"command":"true","output":""}
+{"session_id":"sess_002","t":74,"command":"falsee","output":""}
+{"session_id":"sess_002","t":75,"command":"cat missing.file","output":""}
+{"session_id":"sess_002","t":76,"command":"cd tmp","output":""}
+{"session_id":"sess_002","t":77,"command":"ls logs","output":""}
+{"session_id":"sess_003","t":0,"command":"ls","output":""}
+{"session_id":"sess_003","t":1,"command":"pwd","output":""}
+{"session_id":"sess_003","t":2,"command":"cd documents","output":""}
+{"session_id":"sess_003","t":3,"command":"ls","output":""}
+{"session_id":"sess_003","t":4,"command":"touch key.txt","output":""}
+{"session_id":"sess_003","t":5,"command":"ls","output":""}
+{"session_id":"sess_003","t":6,"command":"cat key.txt","output":""}
+{"session_id":"sess_003","t":7,"command":"touch memo.txt","output":""}
+{"session_id":"sess_003","t":8,"command":"ls -al","output":""}
+{"session_id":"sess_003","t":9,"command":"cd /does/not/exist","output":""}
+{"session_id":"sess_003","t":10,"command":"cd documnts","output":""}
+{"session_id":"sess_003","t":11,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":12,"command":"pwd","output":""}
+{"session_id":"sess_003","t":13,"command":"cd logs","output":""}
+{"session_id":"sess_003","t":14,"command":"ls","output":""}
+{"session_id":"sess_003","t":15,"command":"cat user.log","output":""}
+{"session_id":"sess_003","t":16,"command":"cat access.log","output":""}
+{"session_id":"sess_003","t":17,"command":"ls -al","output":""}
+{"session_id":"sess_003","t":18,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":19,"command":"pwd","output":""}
+{"session_id":"sess_003","t":20,"command":"cd projects","output":""}
+{"session_id":"sess_003","t":21,"command":"ls","output":""}
+{"session_id":"sess_003","t":22,"command":"cd alpha","output":""}
+{"session_id":"sess_003","t":23,"command":"pwd","output":""}
+{"session_id":"sess_003","t":24,"command":"ls","output":""}
+{"session_id":"sess_003","t":25,"command":"touch config.json","output":""}
+{"session_id":"sess_003","t":26,"command":"ls","output":""}
+{"session_id":"sess_003","t":27,"command":"cat config.json","output":""}
+{"session_id":"sess_003","t":28,"command":"touch index.js","output":""}
+{"session_id":"sess_003","t":29,"command":"ls -al","output":""}
+{"session_id":"sess_003","t":30,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":31,"command":"ls","output":""}
+{"session_id":"sess_003","t":32,"command":"cd beta","output":""}
+{"session_id":"sess_003","t":33,"command":"pwd","output":""}
+{"session_id":"sess_003","t":34,"command":"ls","output":""}
+{"session_id":"sess_003","t":35,"command":"touch server.js","output":""}
+{"session_id":"sess_003","t":36,"command":"ls","output":""}
+{"session_id":"sess_003","t":37,"command":"cat server.js","output":""}
+{"session_id":"sess_003","t":38,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":39,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":40,"command":"pwd","output":""}
+{"session_id":"sess_003","t":41,"command":"uname -a","output":""}
+{"session_id":"sess_003","t":42,"command":"id","output":""}
+{"session_id":"sess_003","t":43,"command":"whoami","output":""}
+{"session_id":"sess_003","t":44,"command":"ls","output":""}
+{"session_id":"sess_003","t":45,"command":"cd documents","output":""}
+{"session_id":"sess_003","t":46,"command":"ls","output":""}
+{"session_id":"sess_003","t":47,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":48,"command":"cd logs","output":""}
+{"session_id":"sess_003","t":49,"command":"ls","output":""}
+{"session_id":"sess_003","t":50,"command":"cd ..","output":""}
+{"session_id":"sess_003","t":51,"command":"pwd","output":""}
+{"session_id":"sess_003","t":52,"command":"pwd","output":""}
+{"session_id":"sess_003","t":53,"command":"ls","output":""}
+{"session_id":"sess_003","t":54,"command":"ls -al","output":""}
+{"session_id":"sess_003","t":55,"command":"cat README.txt","output":""}
+{"session_id":"sess_003","t":56,"command":"whoami","output":""}
+{"session_id":"sess_003","t":57,"command":"id","output":""}
+{"session_id":"sess_003","t":58,"command":"uname","output":""}
+{"session_id":"sess_003","t":59,"command":"pwd","output":""}
+{"session_id":"sess_003","t":60,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_003","t":61,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_003","t":62,"command":"stat README.txt","output":""}
+{"session_id":"sess_003","t":63,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_003","t":64,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_003","t":65,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_003","t":66,"command":"echo test","output":""}
+{"session_id":"sess_003","t":67,"command":"history","output":""}
+{"session_id":"sess_003","t":68,"command":"ps","output":""}
+{"session_id":"sess_003","t":69,"command":"date","output":""}
+{"session_id":"sess_003","t":70,"command":"hostname","output":""}
+{"session_id":"sess_003","t":71,"command":"env","output":""}
+{"session_id":"sess_004","t":0,"command":"pwd","output":""}
+{"session_id":"sess_004","t":1,"command":"ls","output":""}
+{"session_id":"sess_004","t":2,"command":"ls -al","output":""}
+{"session_id":"sess_004","t":3,"command":"cd home","output":""}
+{"session_id":"sess_004","t":4,"command":"ls","output":""}
+{"session_id":"sess_004","t":5,"command":"cd user","output":""}
+{"session_id":"sess_004","t":6,"command":"pwd","output":""}
+{"session_id":"sess_004","t":7,"command":"ls","output":""}
+{"session_id":"sess_004","t":8,"command":"touch profile.txt","output":""}
+{"session_id":"sess_004","t":9,"command":"ls","output":""}
+{"session_id":"sess_004","t":10,"command":"cat profile.txt","output":""}
+{"session_id":"sess_004","t":11,"command":"touch history.txt","output":""}
+{"session_id":"sess_004","t":12,"command":"ls -al","output":""}
+{"session_id":"sess_004","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":14,"command":"ls","output":""}
+{"session_id":"sess_004","t":15,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":16,"command":"pwd","output":""}
+{"session_id":"sess_004","t":17,"command":"cd projects","output":""}
+{"session_id":"sess_004","t":18,"command":"ls","output":""}
+{"session_id":"sess_004","t":19,"command":"cd cli","output":""}
+{"session_id":"sess_004","t":20,"command":"pwd","output":""}
+{"session_id":"sess_004","t":21,"command":"ls","output":""}
+{"session_id":"sess_004","t":22,"command":"touch app.js","output":""}
+{"session_id":"sess_004","t":23,"command":"touch package.json","output":""}
+{"session_id":"sess_004","t":24,"command":"ls","output":""}
+{"session_id":"sess_004","t":25,"command":"cat pakage.json","output":""}
+{"session_id":"sess_004","t":26,"command":"cat app.js","output":""}
+{"session_id":"sess_004","t":27,"command":"cat package.json","output":""}
+{"session_id":"sess_004","t":28,"command":"ls -al","output":""}
+{"session_id":"sess_004","t":29,"command":"sudo shutdownn now","output":""}
+{"session_id":"sess_004","t":30,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":31,"command":"ls","output":""}
+{"session_id":"sess_004","t":32,"command":"cd docs","output":""}
+{"session_id":"sess_004","t":33,"command":"pwd","output":""}
+{"session_id":"sess_004","t":34,"command":"ls","output":""}
+{"session_id":"sess_004","t":35,"command":"touch guide.md","output":""}
+{"session_id":"sess_004","t":36,"command":"ls","output":""}
+{"session_id":"sess_004","t":37,"command":"cat guide.md","output":""}
+{"session_id":"sess_004","t":38,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":39,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":40,"command":"pwd","output":""}
+{"session_id":"sess_004","t":41,"command":"cd logs","output":""}
+{"session_id":"sess_004","t":42,"command":"ls","output":""}
+{"session_id":"sess_004","t":43,"command":"cat error.log","output":""}
+{"session_id":"sess_004","t":44,"command":"cd ..","output":""}
+{"session_id":"sess_004","t":45,"command":"uname","output":""}
+{"session_id":"sess_004","t":46,"command":"id -u","output":""}
+{"session_id":"sess_004","t":47,"command":"whoami","output":""}
+{"session_id":"sess_004","t":48,"command":"ls","output":""}
+{"session_id":"sess_004","t":49,"command":"pwd","output":""}
+{"session_id":"sess_004","t":50,"command":"ls -al","output":""}
+{"session_id":"sess_004","t":51,"command":"pwd","output":""}
+{"session_id":"sess_004","t":52,"command":"ls","output":""}
+{"session_id":"sess_004","t":53,"command":"ls -al","output":""}
+{"session_id":"sess_004","t":54,"command":"cat README.txt","output":""}
+{"session_id":"sess_004","t":55,"command":"whoami","output":""}
+{"session_id":"sess_004","t":56,"command":"id","output":""}
+{"session_id":"sess_004","t":57,"command":"uname","output":""}
+{"session_id":"sess_004","t":58,"command":"pwd","output":""}
+{"session_id":"sess_004","t":59,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_004","t":60,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_004","t":61,"command":"stat README.txt","output":""}
+{"session_id":"sess_004","t":62,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_004","t":63,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_004","t":64,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_004","t":65,"command":"echo test","output":""}
+{"session_id":"sess_004","t":66,"command":"history","output":""}
+{"session_id":"sess_004","t":67,"command":"ps","output":""}
+{"session_id":"sess_004","t":68,"command":"date","output":""}
+{"session_id":"sess_004","t":69,"command":"hostname","output":""}
+{"session_id":"sess_004","t":70,"command":"env","output":""}
+{"session_id":"sess_004","t":71,"command":"clear","output":""}
+{"session_id":"sess_004","t":72,"command":"true","output":""}
+{"session_id":"sess_004","t":73,"command":"falsee","output":""}
+{"session_id":"sess_004","t":74,"command":"cat missing.file","output":""}
+{"session_id":"sess_004","t":75,"command":"cd tmp","output":""}
+{"session_id":"sess_004","t":76,"command":"ls logs","output":""}
+{"session_id":"sess_005","t":0,"command":"ls","output":""}
+{"session_id":"sess_005","t":1,"command":"pwd","output":""}
+{"session_id":"sess_005","t":2,"command":"cat README.txt","output":""}
+{"session_id":"sess_005","t":3,"command":"cat READNE.txt","output":""}
+{"session_id":"sess_005","t":4,"command":"touch file_test.txt","output":""}
+{"session_id":"sess_005","t":5,"command":"ls","output":""}
+{"session_id":"sess_005","t":6,"command":"cat file_test.txt","output":""}
+{"session_id":"sess_005","t":7,"command":"touch doc.text","output":""}
+{"session_id":"sess_005","t":8,"command":"ls -al","output":""}
+{"session_id":"sess_005","t":9,"command":"cat doc.text","output":""}
+{"session_id":"sess_005","t":10,"command":"cd logs","output":""}
+{"session_id":"sess_005","t":11,"command":"pwd","output":""}
+{"session_id":"sess_005","t":12,"command":"ls","output":""}
+{"session_id":"sess_005","t":13,"command":"cat access.log","output":""}
+{"session_id":"sess_005","t":14,"command":"cd ..","output":""}
+{"session_id":"sess_005","t":15,"command":"pwd","output":""}
+{"session_id":"sess_005","t":16,"command":"sl","output":""}
+{"session_id":"sess_005","t":17,"command":"cd documents","output":""}
+{"session_id":"sess_005","t":18,"command":"ls","output":""}
+{"session_id":"sess_005","t":19,"command":"touch meeting.txt","output":""}
+{"session_id":"sess_005","t":20,"command":"ls","output":""}
+{"session_id":"sess_005","t":21,"command":"cat meeting.txt","output":""}
+{"session_id":"sess_005","t":22,"command":"touch plan.txt","output":""}
+{"session_id":"sess_005","t":23,"command":"ls -al","output":""}
+{"session_id":"sess_005","t":24,"command":"cd ..","output":""}
+{"session_id":"sess_005","t":25,"command":"pwd","output":""}
+{"session_id":"sess_005","t":26,"command":"cd projects","output":""}
+{"session_id":"sess_005","t":27,"command":"ls","output":""}
+{"session_id":"sess_005","t":28,"command":"cd sandbox","output":""}
+{"session_id":"sess_005","t":29,"command":"pwd","output":""}
+{"session_id":"sess_005","t":30,"command":"ls","output":""}
+{"session_id":"sess_005","t":31,"command":"touch test.sh","output":""}
+{"session_id":"sess_005","t":32,"command":"ls","output":""}
+{"session_id":"sess_005","t":33,"command":"cat test.sh","output":""}
+{"session_id":"sess_005","t":34,"command":"touch vars.env","output":""}
+{"session_id":"sess_005","t":35,"command":"ls -al","output":""}
+{"session_id":"sess_005","t":36,"command":"rm important.txttt","output":""}
+{"session_id":"sess_005","t":37,"command":"cd ..","output":""}
+{"session_id":"sess_005","t":38,"command":"ls","output":""}
+{"session_id":"sess_005","t":39,"command":"cd ..","output":""}
+{"session_id":"sess_005","t":40,"command":"pwd","output":""}
+{"session_id":"sess_005","t":41,"command":"uname","output":""}
+{"session_id":"sess_005","t":42,"command":"uname -a","output":""}
+{"session_id":"sess_005","t":43,"command":"id","output":""}
+{"session_id":"sess_005","t":44,"command":"whoami","output":""}
+{"session_id":"sess_005","t":45,"command":"ls","output":""}
+{"session_id":"sess_005","t":46,"command":"cd documents","output":""}
+{"session_id":"sess_005","t":47,"command":"ls","output":""}
+{"session_id":"sess_005","t":48,"command":"cd ..","output":""}
+{"session_id":"sess_005","t":49,"command":"cat README.txt","output":""}
+{"session_id":"sess_005","t":50,"command":"pwd","output":""}
+{"session_id":"sess_005","t":51,"command":"ls -al","output":""}
+{"session_id":"sess_005","t":52,"command":"pwd","output":""}
+{"session_id":"sess_005","t":53,"command":"ls","output":""}
+{"session_id":"sess_005","t":54,"command":"ls -al","output":""}
+{"session_id":"sess_005","t":55,"command":"cat README.txt","output":""}
+{"session_id":"sess_005","t":56,"command":"whoami","output":""}
+{"session_id":"sess_005","t":57,"command":"id","output":""}
+{"session_id":"sess_005","t":58,"command":"uname","output":""}
+{"session_id":"sess_005","t":59,"command":"pwd","output":""}
+{"session_id":"sess_005","t":60,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_005","t":61,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_005","t":62,"command":"stat README.txt","output":""}
+{"session_id":"sess_005","t":63,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_005","t":64,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_005","t":65,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_005","t":66,"command":"echo test","output":""}
+{"session_id":"sess_005","t":67,"command":"history","output":""}
+{"session_id":"sess_005","t":68,"command":"ps","output":""}
+{"session_id":"sess_005","t":69,"command":"date","output":""}
+{"session_id":"sess_005","t":70,"command":"hostname","output":""}
+{"session_id":"sess_005","t":71,"command":"env","output":""}
+{"session_id":"sess_005","t":72,"command":"clear","output":""}
+{"session_id":"sess_005","t":73,"command":"true","output":""}
+{"session_id":"sess_005","t":74,"command":"falsee","output":""}
+{"session_id":"sess_005","t":75,"command":"cat missing.file","output":""}
+{"session_id":"sess_006","t":0,"command":"pwd","output":""}
+{"session_id":"sess_006","t":1,"command":"ls","output":""}
+{"session_id":"sess_006","t":2,"command":"cd logs","output":""}
+{"session_id":"sess_006","t":3,"command":"ls","output":""}
+{"session_id":"sess_006","t":4,"command":"cd test123","output":""}
+{"session_id":"sess_006","t":5,"command":"pwd","output":""}
+{"session_id":"sess_006","t":6,"command":"ls","output":""}
+{"session_id":"sess_006","t":7,"command":"touch trace.log","output":""}
+{"session_id":"sess_006","t":8,"command":"ls","output":""}
+{"session_id":"sess_006","t":9,"command":"cat trace.log","output":""}
+{"session_id":"sess_006","t":10,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":11,"command":"ls -al","output":""}
+{"session_id":"sess_006","t":12,"command":"cat access.log","output":""}
+{"session_id":"sess_006","t":13,"command":"cat error.log","output":""}
+{"session_id":"sess_006","t":14,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":15,"command":"pwd","output":""}
+{"session_id":"sess_006","t":16,"command":"cd documents","output":""}
+{"session_id":"sess_006","t":17,"command":"ls","output":""}
+{"session_id":"sess_006","t":18,"command":"touch notes.md","output":""}
+{"session_id":"sess_006","t":19,"command":"ls","output":""}
+{"session_id":"sess_006","t":20,"command":"cat notes.md","output":""}
+{"session_id":"sess_006","t":21,"command":"touch tasks.md","output":""}
+{"session_id":"sess_006","t":22,"command":"ls -al","output":""}
+{"session_id":"sess_006","t":23,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":24,"command":"pwd","output":""}
+{"session_id":"sess_006","t":25,"command":"cd projects","output":""}
+{"session_id":"sess_006","t":26,"command":"ls","output":""}
+{"session_id":"sess_006","t":27,"command":"cd monitor","output":""}
+{"session_id":"sess_006","t":28,"command":"pwd","output":""}
+{"session_id":"sess_006","t":29,"command":"ls","output":""}
+{"session_id":"sess_006","t":30,"command":"touch monitor.py","output":""}
+{"session_id":"sess_006","t":31,"command":"ls","output":""}
+{"session_id":"sess_006","t":32,"command":"cat monitor.py","output":""}
+{"session_id":"sess_006","t":33,"command":"touch requirements.txt","output":""}
+{"session_id":"sess_006","t":34,"command":"ls -al","output":""}
+{"session_id":"sess_006","t":35,"command":"grep -R password /root","output":""}
+{"session_id":"sess_006","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":37,"command":"ls","output":""}
+{"session_id":"sess_006","t":38,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":39,"command":"pwd","output":""}
+{"session_id":"sess_006","t":40,"command":"id","output":""}
+{"session_id":"sess_006","t":41,"command":"id -u","output":""}
+{"session_id":"sess_006","t":42,"command":"whoami","output":""}
+{"session_id":"sess_006","t":43,"command":"uname","output":""}
+{"session_id":"sess_006","t":44,"command":"ls","output":""}
+{"session_id":"sess_006","t":45,"command":"cd logs","output":""}
+{"session_id":"sess_006","t":46,"command":"ls","output":""}
+{"session_id":"sess_006","t":47,"command":"cd ..","output":""}
+{"session_id":"sess_006","t":48,"command":"pwd","output":""}
+{"session_id":"sess_006","t":49,"command":"ls -al","output":""}
+{"session_id":"sess_006","t":50,"command":"pwd","output":""}
+{"session_id":"sess_006","t":51,"command":"ls","output":""}
+{"session_id":"sess_006","t":52,"command":"ls -al","output":""}
+{"session_id":"sess_006","t":53,"command":"cat README.txt","output":""}
+{"session_id":"sess_006","t":54,"command":"whoami","output":""}
+{"session_id":"sess_006","t":55,"command":"id","output":""}
+{"session_id":"sess_006","t":56,"command":"uname","output":""}
+{"session_id":"sess_006","t":57,"command":"pwd","output":""}
+{"session_id":"sess_006","t":58,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_006","t":59,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_006","t":60,"command":"stat README.txt","output":""}
+{"session_id":"sess_006","t":61,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_006","t":62,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_006","t":63,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_006","t":64,"command":"echo test","output":""}
+{"session_id":"sess_006","t":65,"command":"history","output":""}
+{"session_id":"sess_006","t":66,"command":"ps","output":""}
+{"session_id":"sess_006","t":67,"command":"date","output":""}
+{"session_id":"sess_006","t":68,"command":"hostname","output":""}
+{"session_id":"sess_006","t":69,"command":"env","output":""}
+{"session_id":"sess_006","t":70,"command":"clear","output":""}
+{"session_id":"sess_006","t":71,"command":"true","output":""}
+{"session_id":"sess_006","t":72,"command":"falsee","output":""}
+{"session_id":"sess_006","t":73,"command":"cat missing.file","output":""}
+{"session_id":"sess_006","t":74,"command":"cd tmp","output":""}
+{"session_id":"sess_007","t":0,"command":"ls","output":""}
+{"session_id":"sess_007","t":1,"command":"pwd","output":""}
+{"session_id":"sess_007","t":2,"command":"cd documents","output":""}
+{"session_id":"sess_007","t":3,"command":"ls","output":""}
+{"session_id":"sess_007","t":4,"command":"touch summary.txt","output":""}
+{"session_id":"sess_007","t":5,"command":"ls","output":""}
+{"session_id":"sess_007","t":6,"command":"cat summary.txt","output":""}
+{"session_id":"sess_007","t":7,"command":"touch archive.txt","output":""}
+{"session_id":"sess_007","t":8,"command":"ls -al","output":""}
+{"session_id":"sess_007","t":9,"command":"cd ..","output":""}
+{"session_id":"sess_007","t":10,"command":"pwd","output":""}
+{"session_id":"sess_007","t":11,"command":"cd projects","output":""}
+{"session_id":"sess_007","t":12,"command":"ls","output":""}
+{"session_id":"sess_007","t":13,"command":"cd api","output":""}
+{"session_id":"sess_007","t":14,"command":"pwd","output":""}
+{"session_id":"sess_007","t":15,"command":"ls","output":""}
+{"session_id":"sess_007","t":16,"command":"touch server.py","output":""}
+{"session_id":"sess_007","t":17,"command":"touch routes.py","output":""}
+{"session_id":"sess_007","t":18,"command":"ls","output":""}
+{"session_id":"sess_007","t":19,"command":"cat server.py","output":""}
+{"session_id":"sess_007","t":20,"command":"cat route.py","output":""}
+{"session_id":"sess_007","t":21,"command":"cat routes.py","output":""}
+{"session_id":"sess_007","t":22,"command":"ls -al","output":""}
+{"session_id":"sess_007","t":23,"command":"cd ..","output":""}
+{"session_id":"sess_007","t":24,"command":"ls","output":""}
+{"session_id":"sess_007","t":25,"command":"cd web","output":""}
+{"session_id":"sess_007","t":26,"command":"pwd","output":""}
+{"session_id":"sess_007","t":27,"command":"ls","output":""}
+{"session_id":"sess_007","t":28,"command":"touch index.html","output":""}
+{"session_id":"sess_007","t":29,"command":"touch style.css","output":""}
+{"session_id":"sess_007","t":30,"command":"ls","output":""}
+{"session_id":"sess_007","t":31,"command":"cat index.html","output":""}
+{"session_id":"sess_007","t":32,"command":"cat style.css","output":""}
+{"session_id":"sess_007","t":33,"command":"ls -al","output":""}
+{"session_id":"sess_007","t":34,"command":"mv missing.txt archive.txt","output":""}
+{"session_id":"sess_007","t":35,"command":"cd ..","output":""}
+{"session_id":"sess_007","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_007","t":37,"command":"pwd","output":""}
+{"session_id":"sess_007","t":38,"command":"cd logs","output":""}
+{"session_id":"sess_007","t":39,"command":"ls","output":""}
+{"session_id":"sess_007","t":40,"command":"cat user.log","output":""}
+{"session_id":"sess_007","t":41,"command":"cd ..","output":""}
+{"session_id":"sess_007","t":42,"command":"pwd","output":""}
+{"session_id":"sess_007","t":43,"command":"uname -a","output":""}
+{"session_id":"sess_007","t":44,"command":"id","output":""}
+{"session_id":"sess_007","t":45,"command":"whoami","output":""}
+{"session_id":"sess_007","t":46,"command":"ls","output":""}
+{"session_id":"sess_007","t":47,"command":"cat README.txt","output":""}
+{"session_id":"sess_007","t":48,"command":"pwd","output":""}
+{"session_id":"sess_007","t":49,"command":"ls -al","output":""}
+{"session_id":"sess_007","t":50,"command":"pwd","output":""}
+{"session_id":"sess_007","t":51,"command":"ls","output":""}
+{"session_id":"sess_007","t":52,"command":"ls -al","output":""}
+{"session_id":"sess_007","t":53,"command":"cat README.txt","output":""}
+{"session_id":"sess_007","t":54,"command":"whoami","output":""}
+{"session_id":"sess_007","t":55,"command":"id","output":""}
+{"session_id":"sess_007","t":56,"command":"uname","output":""}
+{"session_id":"sess_007","t":57,"command":"pwd","output":""}
+{"session_id":"sess_007","t":58,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_007","t":59,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_007","t":60,"command":"stat README.txt","output":""}
+{"session_id":"sess_007","t":61,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_007","t":62,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_007","t":63,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_007","t":64,"command":"echo test","output":""}
+{"session_id":"sess_007","t":65,"command":"history","output":""}
+{"session_id":"sess_007","t":66,"command":"ps","output":""}
+{"session_id":"sess_007","t":67,"command":"date","output":""}
+{"session_id":"sess_007","t":68,"command":"hostname","output":""}
+{"session_id":"sess_007","t":69,"command":"env","output":""}
+{"session_id":"sess_007","t":70,"command":"clear","output":""}
+{"session_id":"sess_007","t":71,"command":"true","output":""}
+{"session_id":"sess_007","t":72,"command":"falsee","output":""}
+{"session_id":"sess_007","t":73,"command":"cat missing.file","output":""}
+{"session_id":"sess_007","t":74,"command":"cd tmp","output":""}
+{"session_id":"sess_007","t":75,"command":"ls logs","output":""}
+{"session_id":"sess_007","t":76,"command":"ls documents","output":""}
+{"session_id":"sess_007","t":77,"command":"ls projects","output":""}
+{"session_id":"sess_008","t":0,"command":"pwd","output":""}
+{"session_id":"sess_008","t":1,"command":"ls","output":""}
+{"session_id":"sess_008","t":2,"command":"mkdir backup","output":""}
+{"session_id":"sess_008","t":3,"command":"ls","output":""}
+{"session_id":"sess_008","t":4,"command":"cd backup","output":""}
+{"session_id":"sess_008","t":5,"command":"pwd","output":""}
+{"session_id":"sess_008","t":6,"command":"touch data.txt","output":""}
+{"session_id":"sess_008","t":7,"command":"touch list.txt","output":""}
+{"session_id":"sess_008","t":8,"command":"ls","output":""}
+{"session_id":"sess_008","t":9,"command":"lss","output":""}
+{"session_id":"sess_008","t":10,"command":"cat data.txt","output":""}
+{"session_id":"sess_008","t":11,"command":"cat list.txt","output":""}
+{"session_id":"sess_008","t":12,"command":"ls -al","output":""}
+{"session_id":"sess_008","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":14,"command":"ls","output":""}
+{"session_id":"sess_008","t":15,"command":"cd documents","output":""}
+{"session_id":"sess_008","t":16,"command":"ls","output":""}
+{"session_id":"sess_008","t":17,"command":"touch backup_notes.txt","output":""}
+{"session_id":"sess_008","t":18,"command":"ls","output":""}
+{"session_id":"sess_008","t":19,"command":"cat backup_notes.txt","output":""}
+{"session_id":"sess_008","t":20,"command":"touch backup_plan.txt","output":""}
+{"session_id":"sess_008","t":21,"command":"ls -al","output":""}
+{"session_id":"sess_008","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":23,"command":"pwd","output":""}
+{"session_id":"sess_008","t":24,"command":"cd projects","output":""}
+{"session_id":"sess_008","t":25,"command":"ls","output":""}
+{"session_id":"sess_008","t":26,"command":"cd restore","output":""}
+{"session_id":"sess_008","t":27,"command":"pwd","output":""}
+{"session_id":"sess_008","t":28,"command":"ls","output":""}
+{"session_id":"sess_008","t":29,"command":"touch restore.sh","output":""}
+{"session_id":"sess_008","t":30,"command":"ls","output":""}
+{"session_id":"sess_008","t":31,"command":"cat restore.sh","output":""}
+{"session_id":"sess_008","t":32,"command":"touch README.md","output":""}
+{"session_id":"sess_008","t":33,"command":"ls -al","output":""}
+{"session_id":"sess_008","t":34,"command":"curl http://127.0.0.1:99999","output":""}
+{"session_id":"sess_008","t":35,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":36,"command":"ls","output":""}
+{"session_id":"sess_008","t":37,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":38,"command":"pwd","output":""}
+{"session_id":"sess_008","t":39,"command":"cd logs","output":""}
+{"session_id":"sess_008","t":40,"command":"ls","output":""}
+{"session_id":"sess_008","t":41,"command":"cat access.log","output":""}
+{"session_id":"sess_008","t":42,"command":"cat error.log","output":""}
+{"session_id":"sess_008","t":43,"command":"cd ..","output":""}
+{"session_id":"sess_008","t":44,"command":"pwd","output":""}
+{"session_id":"sess_008","t":45,"command":"uname","output":""}
+{"session_id":"sess_008","t":46,"command":"whoami","output":""}
+{"session_id":"sess_008","t":47,"command":"id -u","output":""}
+{"session_id":"sess_008","t":48,"command":"ls","output":""}
+{"session_id":"sess_008","t":49,"command":"rmdir backup","output":""}
+{"session_id":"sess_008","t":50,"command":"pwd","output":""}
+{"session_id":"sess_008","t":51,"command":"ls -al","output":""}
+{"session_id":"sess_008","t":52,"command":"pwd","output":""}
+{"session_id":"sess_008","t":53,"command":"ls","output":""}
+{"session_id":"sess_008","t":54,"command":"ls -al","output":""}
+{"session_id":"sess_008","t":55,"command":"cat README.txt","output":""}
+{"session_id":"sess_008","t":56,"command":"whoami","output":""}
+{"session_id":"sess_008","t":57,"command":"id","output":""}
+{"session_id":"sess_008","t":58,"command":"uname","output":""}
+{"session_id":"sess_008","t":59,"command":"pwd","output":""}
+{"session_id":"sess_008","t":60,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_008","t":61,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_008","t":62,"command":"stat README.txt","output":""}
+{"session_id":"sess_008","t":63,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_008","t":64,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_009","t":0,"command":"ls","output":""}
+{"session_id":"sess_009","t":1,"command":"pwd","output":""}
+{"session_id":"sess_009","t":2,"command":"cd projects","output":""}
+{"session_id":"sess_009","t":3,"command":"ls","output":""}
+{"session_id":"sess_009","t":4,"command":"cd demo","output":""}
+{"session_id":"sess_009","t":5,"command":"pwd","output":""}
+{"session_id":"sess_009","t":6,"command":"ls","output":""}
+{"session_id":"sess_009","t":7,"command":"touch app.js","output":""}
+{"session_id":"sess_009","t":8,"command":"touch util.js","output":""}
+{"session_id":"sess_009","t":9,"command":"ls","output":""}
+{"session_id":"sess_009","t":10,"command":"cat app.js","output":""}
+{"session_id":"sess_009","t":11,"command":"cat util.js","output":""}
+{"session_id":"sess_009","t":12,"command":"ls -al","output":""}
+{"session_id":"sess_009","t":13,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":14,"command":"ls","output":""}
+{"session_id":"sess_009","t":15,"command":"cd data","output":""}
+{"session_id":"sess_009","t":16,"command":"pwd","output":""}
+{"session_id":"sess_009","t":17,"command":"ls","output":""}
+{"session_id":"sess_009","t":18,"command":"touch sample.csv","output":""}
+{"session_id":"sess_009","t":19,"command":"touch input.txt","output":""}
+{"session_id":"sess_009","t":20,"command":"ls","output":""}
+{"session_id":"sess_009","t":21,"command":"cat sample.csv","output":""}
+{"session_id":"sess_009","t":22,"command":"cat input.txt","output":""}
+{"session_id":"sess_009","t":23,"command":"ls -al","output":""}
+{"session_id":"sess_009","t":24,"command":"pythonx script.py","output":""}
+{"session_id":"sess_009","t":25,"command":"pwc","output":""}
+{"session_id":"sess_009","t":26,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":27,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":28,"command":"pwd","output":""}
+{"session_id":"sess_009","t":29,"command":"cd documents","output":""}
+{"session_id":"sess_009","t":30,"command":"ls","output":""}
+{"session_id":"sess_009","t":31,"command":"touch readme.md","output":""}
+{"session_id":"sess_009","t":32,"command":"ls","output":""}
+{"session_id":"sess_009","t":33,"command":"cat readme.md","output":""}
+{"session_id":"sess_009","t":34,"command":"touch changelog.md","output":""}
+{"session_id":"sess_009","t":35,"command":"ls -al","output":""}
+{"session_id":"sess_009","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":37,"command":"pwd","output":""}
+{"session_id":"sess_009","t":38,"command":"cd logs","output":""}
+{"session_id":"sess_009","t":39,"command":"ls","output":""}
+{"session_id":"sess_009","t":40,"command":"cat user.log","output":""}
+{"session_id":"sess_009","t":41,"command":"cd ..","output":""}
+{"session_id":"sess_009","t":42,"command":"pwd","output":""}
+{"session_id":"sess_009","t":43,"command":"uname","output":""}
+{"session_id":"sess_009","t":44,"command":"uname -a","output":""}
+{"session_id":"sess_009","t":45,"command":"id","output":""}
+{"session_id":"sess_009","t":46,"command":"whoami","output":""}
+{"session_id":"sess_009","t":47,"command":"ls","output":""}
+{"session_id":"sess_009","t":48,"command":"cat README.txt","output":""}
+{"session_id":"sess_009","t":49,"command":"pwd","output":""}
+{"session_id":"sess_009","t":50,"command":"ls -al","output":""}
+{"session_id":"sess_009","t":51,"command":"pwd","output":""}
+{"session_id":"sess_009","t":52,"command":"ls","output":""}
+{"session_id":"sess_009","t":53,"command":"ls -al","output":""}
+{"session_id":"sess_009","t":54,"command":"cat README.txt","output":""}
+{"session_id":"sess_009","t":55,"command":"whoami","output":""}
+{"session_id":"sess_009","t":56,"command":"id","output":""}
+{"session_id":"sess_009","t":57,"command":"uname","output":""}
+{"session_id":"sess_009","t":58,"command":"pwd","output":""}
+{"session_id":"sess_009","t":59,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_009","t":60,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_009","t":61,"command":"stat README.txt","output":""}
+{"session_id":"sess_009","t":62,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_009","t":63,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_009","t":64,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_009","t":65,"command":"echo test","output":""}
+{"session_id":"sess_009","t":66,"command":"history","output":""}
+{"session_id":"sess_009","t":67,"command":"ps","output":""}
+{"session_id":"sess_009","t":68,"command":"date","output":""}
+{"session_id":"sess_009","t":69,"command":"hostname","output":""}
+{"session_id":"sess_009","t":70,"command":"env","output":""}
+{"session_id":"sess_010","t":0,"command":"pwd","output":""}
+{"session_id":"sess_010","t":1,"command":"ls","output":""}
+{"session_id":"sess_010","t":2,"command":"cd home","output":""}
+{"session_id":"sess_010","t":3,"command":"ls","output":""}
+{"session_id":"sess_010","t":4,"command":"cd kali","output":""}
+{"session_id":"sess_010","t":5,"command":"pwd","output":""}
+{"session_id":"sess_010","t":6,"command":"ls","output":""}
+{"session_id":"sess_010","t":7,"command":"touch notes.txt","output":""}
+{"session_id":"sess_010","t":8,"command":"ls","output":""}
+{"session_id":"sess_010","t":9,"command":"cat notes.txt","output":""}
+{"session_id":"sess_010","t":10,"command":"touch tasks.txt","output":""}
+{"session_id":"sess_010","t":11,"command":"ls -al","output":""}
+{"session_id":"sess_010","t":12,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":13,"command":"ls","output":""}
+{"session_id":"sess_010","t":14,"command":"cd user","output":""}
+{"session_id":"sess_010","t":15,"command":"pwd","output":""}
+{"session_id":"sess_010","t":16,"command":"ls","output":""}
+{"session_id":"sess_010","t":17,"command":"touch .profile","output":""}
+{"session_id":"sess_010","t":18,"command":"ls -al","output":""}
+{"session_id":"sess_010","t":19,"command":"cat .profle","output":""}
+{"session_id":"sess_010","t":20,"command":"cat .profile","output":""}
+{"session_id":"sess_010","t":21,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":22,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":23,"command":"pwd","output":""}
+{"session_id":"sess_010","t":24,"command":"cd logs","output":""}
+{"session_id":"sess_010","t":25,"command":"ls","output":""}
+{"session_id":"sess_010","t":26,"command":"cat access.log","output":""}
+{"session_id":"sess_010","t":27,"command":"cat error.log","output":""}
+{"session_id":"sess_010","t":28,"command":"cat user.log","output":""}
+{"session_id":"sess_010","t":29,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":30,"command":"pwd","output":""}
+{"session_id":"sess_010","t":31,"command":"cd projects","output":""}
+{"session_id":"sess_010","t":32,"command":"ls","output":""}
+{"session_id":"sess_010","t":33,"command":"cd tools","output":""}
+{"session_id":"sess_010","t":34,"command":"pwd","output":""}
+{"session_id":"sess_010","t":35,"command":"ls","output":""}
+{"session_id":"sess_010","t":36,"command":"touch clean.sh","output":""}
+{"session_id":"sess_010","t":37,"command":"touch build.sh","output":""}
+{"session_id":"sess_010","t":38,"command":"ls","output":""}
+{"session_id":"sess_010","t":39,"command":"cat clean.sh","output":""}
+{"session_id":"sess_010","t":40,"command":"cat build.sh","output":""}
+{"session_id":"sess_010","t":41,"command":"ls -al","output":""}
+{"session_id":"sess_010","t":42,"command":"usermod -aG sudo ghost","output":""}
+{"session_id":"sess_010","t":43,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":44,"command":"cd ..","output":""}
+{"session_id":"sess_010","t":45,"command":"pwd","output":""}
+{"session_id":"sess_010","t":46,"command":"id","output":""}
+{"session_id":"sess_010","t":47,"command":"whoami","output":""}
+{"session_id":"sess_010","t":48,"command":"uname -a","output":""}
+{"session_id":"sess_010","t":49,"command":"ls","output":""}
+{"session_id":"sess_010","t":50,"command":"pwd","output":""}
+{"session_id":"sess_010","t":51,"command":"pwd","output":""}
+{"session_id":"sess_010","t":52,"command":"ls","output":""}
+{"session_id":"sess_010","t":53,"command":"ls -al","output":""}
+{"session_id":"sess_010","t":54,"command":"cat README.txt","output":""}
+{"session_id":"sess_010","t":55,"command":"whoami","output":""}
+{"session_id":"sess_010","t":56,"command":"id","output":""}
+{"session_id":"sess_010","t":57,"command":"uname","output":""}
+{"session_id":"sess_010","t":58,"command":"pwd","output":""}
+{"session_id":"sess_010","t":59,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_010","t":60,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_010","t":61,"command":"stat README.txt","output":""}
+{"session_id":"sess_010","t":62,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_010","t":63,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_010","t":64,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_010","t":65,"command":"echo test","output":""}
+{"session_id":"sess_010","t":66,"command":"history","output":""}
+{"session_id":"sess_010","t":67,"command":"ps","output":""}
+{"session_id":"sess_010","t":68,"command":"date","output":""}
+{"session_id":"sess_011","t":0,"command":"ls","output":""}
+{"session_id":"sess_011","t":1,"command":"pwd","output":""}
+{"session_id":"sess_011","t":2,"command":"touch doc.text","output":""}
+{"session_id":"sess_011","t":3,"command":"ls","output":""}
+{"session_id":"sess_011","t":4,"command":"cat doc.text","output":""}
+{"session_id":"sess_011","t":5,"command":"touch file_test.txt","output":""}
+{"session_id":"sess_011","t":6,"command":"ls -al","output":""}
+{"session_id":"sess_011","t":7,"command":"cat file_test.txt","output":""}
+{"session_id":"sess_011","t":8,"command":"cd documents","output":""}
+{"session_id":"sess_011","t":9,"command":"pwd","output":""}
+{"session_id":"sess_011","t":10,"command":"ls","output":""}
+{"session_id":"sess_011","t":11,"command":"touch weekly.txt","output":""}
+{"session_id":"sess_011","t":12,"command":"touch ideas.txt","output":""}
+{"session_id":"sess_011","t":13,"command":"ls","output":""}
+{"session_id":"sess_011","t":14,"command":"cat weekly.txt","output":""}
+{"session_id":"sess_011","t":15,"command":"cat ideas.txt","output":""}
+{"session_id":"sess_011","t":16,"command":"ls -al","output":""}
+{"session_id":"sess_011","t":17,"command":"cd ..","output":""}
+{"session_id":"sess_011","t":18,"command":"pwd","output":""}
+{"session_id":"sess_011","t":19,"command":"cd projects","output":""}
+{"session_id":"sess_011","t":20,"command":"ls","output":""}
+{"session_id":"sess_011","t":21,"command":"cd notes","output":""}
+{"session_id":"sess_011","t":22,"command":"pwd","output":""}
+{"session_id":"sess_011","t":23,"command":"ls","output":""}
+{"session_id":"sess_011","t":24,"command":"touch notes.py","output":""}
+{"session_id":"sess_011","t":25,"command":"ls","output":""}
+{"session_id":"sess_011","t":26,"command":"cat notes.py","output":""}
+{"session_id":"sess_011","t":27,"command":"ls -laa","output":""}
+{"session_id":"sess_011","t":28,"command":"touch helper.py","output":""}
+{"session_id":"sess_011","t":29,"command":"ls -al","output":""}
+{"session_id":"sess_011","t":30,"command":"cd ..","output":""}
+{"session_id":"sess_011","t":31,"command":"ls","output":""}
+{"session_id":"sess_011","t":32,"command":"cd scripts","output":""}
+{"session_id":"sess_011","t":33,"command":"pwd","output":""}
+{"session_id":"sess_011","t":34,"command":"ls","output":""}
+{"session_id":"sess_011","t":35,"command":"touch deploy.sh","output":""}
+{"session_id":"sess_011","t":36,"command":"ls","output":""}
+{"session_id":"sess_011","t":37,"command":"cat deploy.sh","output":""}
+{"session_id":"sess_011","t":38,"command":"scp nowhere.txt root@badhost:/tmp","output":""}
+{"session_id":"sess_011","t":39,"command":"cd ..","output":""}
+{"session_id":"sess_011","t":40,"command":"cd ..","output":""}
+{"session_id":"sess_011","t":41,"command":"pwd","output":""}
+{"session_id":"sess_011","t":42,"command":"cd logs","output":""}
+{"session_id":"sess_011","t":43,"command":"ls","output":""}
+{"session_id":"sess_011","t":44,"command":"cat error.log","output":""}
+{"session_id":"sess_011","t":45,"command":"cd ..","output":""}
+{"session_id":"sess_011","t":46,"command":"uname","output":""}
+{"session_id":"sess_011","t":47,"command":"id","output":""}
+{"session_id":"sess_011","t":48,"command":"whoami","output":""}
+{"session_id":"sess_011","t":49,"command":"ls","output":""}
+{"session_id":"sess_011","t":50,"command":"cat README.txt","output":""}
+{"session_id":"sess_011","t":51,"command":"pwd","output":""}
+{"session_id":"sess_011","t":52,"command":"ls -al","output":""}
+{"session_id":"sess_011","t":53,"command":"pwd","output":""}
+{"session_id":"sess_011","t":54,"command":"ls","output":""}
+{"session_id":"sess_011","t":55,"command":"ls -al","output":""}
+{"session_id":"sess_011","t":56,"command":"cat README.txt","output":""}
+{"session_id":"sess_011","t":57,"command":"whoami","output":""}
+{"session_id":"sess_011","t":58,"command":"id","output":""}
+{"session_id":"sess_011","t":59,"command":"uname","output":""}
+{"session_id":"sess_011","t":60,"command":"pwd","output":""}
+{"session_id":"sess_011","t":61,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_011","t":62,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_011","t":63,"command":"stat README.txt","output":""}
+{"session_id":"sess_011","t":64,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_011","t":65,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_011","t":66,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_011","t":67,"command":"echo test","output":""}
+{"session_id":"sess_011","t":68,"command":"history","output":""}
+{"session_id":"sess_011","t":69,"command":"ps","output":""}
+{"session_id":"sess_011","t":70,"command":"date","output":""}
+{"session_id":"sess_011","t":71,"command":"hostname","output":""}
+{"session_id":"sess_011","t":72,"command":"env","output":""}
+{"session_id":"sess_011","t":73,"command":"clear","output":""}
+{"session_id":"sess_012","t":0,"command":"pwd","output":""}
+{"session_id":"sess_012","t":1,"command":"ls","output":""}
+{"session_id":"sess_012","t":2,"command":"cd logs","output":""}
+{"session_id":"sess_012","t":3,"command":"ls","output":""}
+{"session_id":"sess_012","t":4,"command":"cat access.log","output":""}
+{"session_id":"sess_012","t":5,"command":"cat error.log","output":""}
+{"session_id":"sess_012","t":6,"command":"cat user.log","output":""}
+{"session_id":"sess_012","t":7,"command":"ls -al","output":""}
+{"session_id":"sess_012","t":8,"command":"cd ..","output":""}
+{"session_id":"sess_012","t":9,"command":"pwd","output":""}
+{"session_id":"sess_012","t":10,"command":"cd documents","output":""}
+{"session_id":"sess_012","t":11,"command":"ls","output":""}
+{"session_id":"sess_012","t":12,"command":"touch report.txt","output":""}
+{"session_id":"sess_012","t":13,"command":"touch status.txt","output":""}
+{"session_id":"sess_012","t":14,"command":"ls","output":""}
+{"session_id":"sess_012","t":15,"command":"cat report.txt","output":""}
+{"session_id":"sess_012","t":16,"command":"cat status.txt","output":""}
+{"session_id":"sess_012","t":17,"command":"ls -al","output":""}
+{"session_id":"sess_012","t":18,"command":"cd ..","output":""}
+{"session_id":"sess_012","t":19,"command":"pwd","output":""}
+{"session_id":"sess_012","t":20,"command":"cd projects","output":""}
+{"session_id":"sess_012","t":21,"command":"ls","output":""}
+{"session_id":"sess_012","t":22,"command":"cd ops","output":""}
+{"session_id":"sess_012","t":23,"command":"pwd","output":""}
+{"session_id":"sess_012","t":24,"command":"ls","output":""}
+{"session_id":"sess_012","t":25,"command":"touch deploy.py","output":""}
+{"session_id":"sess_012","t":26,"command":"touch config.yml","output":""}
+{"session_id":"sess_012","t":27,"command":"ls","output":""}
+{"session_id":"sess_012","t":28,"command":"cat config.ymll","output":""}
+{"session_id":"sess_012","t":29,"command":"cat deploy.py","output":""}
+{"session_id":"sess_012","t":30,"command":"cat config.yml","output":""}
+{"session_id":"sess_012","t":31,"command":"ls -al","output":""}
+{"session_id":"sess_012","t":32,"command":"cd ..","output":""}
+{"session_id":"sess_012","t":33,"command":"ls","output":""}
+{"session_id":"sess_012","t":34,"command":"cd test","output":""}
+{"session_id":"sess_012","t":35,"command":"pwd","output":""}
+{"session_id":"sess_012","t":36,"command":"ls","output":""}
+{"session_id":"sess_012","t":37,"command":"touch case1.txt","output":""}
+{"session_id":"sess_012","t":38,"command":"touch case2.txt","output":""}
+{"session_id":"sess_012","t":39,"command":"ls","output":""}
+{"session_id":"sess_012","t":40,"command":"cat case1.txt","output":""}
+{"session_id":"sess_012","t":41,"command":"cat case2.txt","output":""}
+{"session_id":"sess_012","t":42,"command":"chown root:root case1.txttt","output":""}
+{"session_id":"sess_012","t":43,"command":"cd ..","output":""}
+{"session_id":"sess_012","t":44,"command":"cd ..","output":""}
+{"session_id":"sess_012","t":45,"command":"pwd","output":""}
+{"session_id":"sess_012","t":46,"command":"uname -a","output":""}
+{"session_id":"sess_012","t":47,"command":"id -u","output":""}
+{"session_id":"sess_012","t":48,"command":"whoami","output":""}
+{"session_id":"sess_012","t":49,"command":"ls","output":""}
+{"session_id":"sess_012","t":50,"command":"pwd","output":""}
+{"session_id":"sess_012","t":51,"command":"ls -al","output":""}
+{"session_id":"sess_012","t":52,"command":"pwd","output":""}
+{"session_id":"sess_012","t":53,"command":"ls","output":""}
+{"session_id":"sess_012","t":54,"command":"ls -al","output":""}
+{"session_id":"sess_012","t":55,"command":"cat README.txt","output":""}
+{"session_id":"sess_012","t":56,"command":"whoami","output":""}
+{"session_id":"sess_012","t":57,"command":"id","output":""}
+{"session_id":"sess_012","t":58,"command":"uname","output":""}
+{"session_id":"sess_012","t":59,"command":"pwd","output":""}
+{"session_id":"sess_012","t":60,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_012","t":61,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_012","t":62,"command":"stat README.txt","output":""}
+{"session_id":"sess_012","t":63,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_012","t":64,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_012","t":65,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_012","t":66,"command":"echo test","output":""}
+{"session_id":"sess_012","t":67,"command":"history","output":""}
+{"session_id":"sess_012","t":68,"command":"ps","output":""}
+{"session_id":"sess_012","t":69,"command":"date","output":""}
+{"session_id":"sess_012","t":70,"command":"hostname","output":""}
+{"session_id":"sess_012","t":71,"command":"env","output":""}
+{"session_id":"sess_013","t":0,"command":"ls","output":""}
+{"session_id":"sess_013","t":1,"command":"pwd","output":""}
+{"session_id":"sess_013","t":2,"command":"cd projects","output":""}
+{"session_id":"sess_013","t":3,"command":"ls","output":""}
+{"session_id":"sess_013","t":4,"command":"cd runner","output":""}
+{"session_id":"sess_013","t":5,"command":"pwd","output":""}
+{"session_id":"sess_013","t":6,"command":"ls","output":""}
+{"session_id":"sess_013","t":7,"command":"touch run.sh","output":""}
+{"session_id":"sess_013","t":8,"command":"touch stop.sh","output":""}
+{"session_id":"sess_013","t":9,"command":"ls","output":""}
+{"session_id":"sess_013","t":10,"command":"chmod +x runn.sh","output":""}
+{"session_id":"sess_013","t":11,"command":"cat run.sh","output":""}
+{"session_id":"sess_013","t":12,"command":"cat stop.sh","output":""}
+{"session_id":"sess_013","t":13,"command":"ls -al","output":""}
+{"session_id":"sess_013","t":14,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":15,"command":"ls","output":""}
+{"session_id":"sess_013","t":16,"command":"cd parser","output":""}
+{"session_id":"sess_013","t":17,"command":"pwd","output":""}
+{"session_id":"sess_013","t":18,"command":"ls","output":""}
+{"session_id":"sess_013","t":19,"command":"touch parse.py","output":""}
+{"session_id":"sess_013","t":20,"command":"touch data.json","output":""}
+{"session_id":"sess_013","t":21,"command":"ls","output":""}
+{"session_id":"sess_013","t":22,"command":"cat parse.py","output":""}
+{"session_id":"sess_013","t":23,"command":"cat data.json","output":""}
+{"session_id":"sess_013","t":24,"command":"ls -al","output":""}
+{"session_id":"sess_013","t":25,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":26,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":27,"command":"pwd","output":""}
+{"session_id":"sess_013","t":28,"command":"cd documents","output":""}
+{"session_id":"sess_013","t":29,"command":"ls","output":""}
+{"session_id":"sess_013","t":30,"command":"touch parser_notes.txt","output":""}
+{"session_id":"sess_013","t":31,"command":"ls","output":""}
+{"session_id":"sess_013","t":32,"command":"cat parser_notes.txt","output":""}
+{"session_id":"sess_013","t":33,"command":"touch parser_todo.txt","output":""}
+{"session_id":"sess_013","t":34,"command":"ls -al","output":""}
+{"session_id":"sess_013","t":35,"command":"dd if=/dev/zero of=/nope bs=1M count=1","output":""}
+{"session_id":"sess_013","t":36,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":37,"command":"pwd","output":""}
+{"session_id":"sess_013","t":38,"command":"cd logs","output":""}
+{"session_id":"sess_013","t":39,"command":"ls","output":""}
+{"session_id":"sess_013","t":40,"command":"cat access.log","output":""}
+{"session_id":"sess_013","t":41,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":42,"command":"uname","output":""}
+{"session_id":"sess_013","t":43,"command":"uname -a","output":""}
+{"session_id":"sess_013","t":44,"command":"id","output":""}
+{"session_id":"sess_013","t":45,"command":"whoami","output":""}
+{"session_id":"sess_013","t":46,"command":"ls","output":""}
+{"session_id":"sess_013","t":47,"command":"cat README.txt","output":""}
+{"session_id":"sess_013","t":48,"command":"pwd","output":""}
+{"session_id":"sess_013","t":49,"command":"ls -al","output":""}
+{"session_id":"sess_013","t":50,"command":"cd projects","output":""}
+{"session_id":"sess_013","t":51,"command":"ls","output":""}
+{"session_id":"sess_013","t":52,"command":"cd ..","output":""}
+{"session_id":"sess_013","t":53,"command":"pwd","output":""}
+{"session_id":"sess_013","t":54,"command":"pwd","output":""}
+{"session_id":"sess_013","t":55,"command":"ls","output":""}
+{"session_id":"sess_013","t":56,"command":"ls -al","output":""}
+{"session_id":"sess_013","t":57,"command":"cat README.txt","output":""}
+{"session_id":"sess_013","t":58,"command":"whoami","output":""}
+{"session_id":"sess_013","t":59,"command":"id","output":""}
+{"session_id":"sess_013","t":60,"command":"uname","output":""}
+{"session_id":"sess_013","t":61,"command":"pwd","output":""}
+{"session_id":"sess_013","t":62,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_013","t":63,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_013","t":64,"command":"stat README.txt","output":""}
+{"session_id":"sess_013","t":65,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_013","t":66,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_013","t":67,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_013","t":68,"command":"echo test","output":""}
+{"session_id":"sess_013","t":69,"command":"history","output":""}
+{"session_id":"sess_013","t":70,"command":"ps","output":""}
+{"session_id":"sess_013","t":71,"command":"date","output":""}
+{"session_id":"sess_013","t":72,"command":"hostname","output":""}
+{"session_id":"sess_013","t":73,"command":"env","output":""}
+{"session_id":"sess_013","t":74,"command":"clear","output":""}
+{"session_id":"sess_013","t":75,"command":"true","output":""}
+{"session_id":"sess_013","t":76,"command":"falsee","output":""}
+{"session_id":"sess_013","t":77,"command":"cat missing.file","output":""}
+{"session_id":"sess_014","t":0,"command":"pwd","output":""}
+{"session_id":"sess_014","t":1,"command":"ls","output":""}
+{"session_id":"sess_014","t":2,"command":"lsdqawq","output":""}
+{"session_id":"sess_014","t":3,"command":"ls","output":""}
+{"session_id":"sess_014","t":4,"command":"cd logs","output":""}
+{"session_id":"sess_014","t":5,"command":"pwd","output":""}
+{"session_id":"sess_014","t":6,"command":"ls","output":""}
+{"session_id":"sess_014","t":7,"command":"cat user.log","output":""}
+{"session_id":"sess_014","t":8,"command":"cat error.log","output":""}
+{"session_id":"sess_014","t":9,"command":"ls -al","output":""}
+{"session_id":"sess_014","t":10,"command":"cd ..","output":""}
+{"session_id":"sess_014","t":11,"command":"pwd","output":""}
+{"session_id":"sess_014","t":12,"command":"cd documents","output":""}
+{"session_id":"sess_014","t":13,"command":"ls","output":""}
+{"session_id":"sess_014","t":14,"command":"touch incident.txt","output":""}
+{"session_id":"sess_014","t":15,"command":"ls","output":""}
+{"session_id":"sess_014","t":16,"command":"cat incident.txt","output":""}
+{"session_id":"sess_014","t":17,"command":"touch followup.txt","output":""}
+{"session_id":"sess_014","t":18,"command":"ls -al","output":""}
+{"session_id":"sess_014","t":19,"command":"cd ..","output":""}
+{"session_id":"sess_014","t":20,"command":"pwd","output":""}
+{"session_id":"sess_014","t":21,"command":"cd projects","output":""}
+{"session_id":"sess_014","t":22,"command":"ls","output":""}
+{"session_id":"sess_014","t":23,"command":"cd debug","output":""}
+{"session_id":"sess_014","t":24,"command":"pwd","output":""}
+{"session_id":"sess_014","t":25,"command":"ls","output":""}
+{"session_id":"sess_014","t":26,"command":"touch debug.sh","output":""}
+{"session_id":"sess_014","t":27,"command":"touch trace.txt","output":""}
+{"session_id":"sess_014","t":28,"command":"ls","output":""}
+{"session_id":"sess_014","t":29,"command":"cat debg.sh","output":""}
+{"session_id":"sess_014","t":30,"command":"cat debug.sh","output":""}
+{"session_id":"sess_014","t":31,"command":"cat trace.txt","output":""}
+{"session_id":"sess_014","t":32,"command":"ls -al","output":""}
+{"session_id":"sess_014","t":33,"command":"cd ..","output":""}
+{"session_id":"sess_014","t":34,"command":"ls","output":""}
+{"session_id":"sess_014","t":35,"command":"cd tools","output":""}
+{"session_id":"sess_014","t":36,"command":"pwd","output":""}
+{"session_id":"sess_014","t":37,"command":"ls","output":""}
+{"session_id":"sess_014","t":38,"command":"touch inspect.py","output":""}
+{"session_id":"sess_014","t":39,"command":"ls","output":""}
+{"session_id":"sess_014","t":40,"command":"cat inspect.py","output":""}
+{"session_id":"sess_014","t":41,"command":"sudo sux","output":""}
+{"session_id":"sess_014","t":42,"command":"cd ..","output":""}
+{"session_id":"sess_014","t":43,"command":"cd ..","output":""}
+{"session_id":"sess_014","t":44,"command":"pwd","output":""}
+{"session_id":"sess_014","t":45,"command":"id","output":""}
+{"session_id":"sess_014","t":46,"command":"id -u","output":""}
+{"session_id":"sess_014","t":47,"command":"whoami","output":""}
+{"session_id":"sess_014","t":48,"command":"uname","output":""}
+{"session_id":"sess_014","t":49,"command":"cat README.txt","output":""}
+{"session_id":"sess_014","t":50,"command":"ls","output":""}
+{"session_id":"sess_014","t":51,"command":"pwd","output":""}
+{"session_id":"sess_014","t":52,"command":"ls -al","output":""}
+{"session_id":"sess_014","t":53,"command":"pwd","output":""}
+{"session_id":"sess_014","t":54,"command":"ls","output":""}
+{"session_id":"sess_014","t":55,"command":"ls -al","output":""}
+{"session_id":"sess_014","t":56,"command":"cat README.txt","output":""}
+{"session_id":"sess_014","t":57,"command":"whoami","output":""}
+{"session_id":"sess_014","t":58,"command":"id","output":""}
+{"session_id":"sess_014","t":59,"command":"uname","output":""}
+{"session_id":"sess_014","t":60,"command":"pwd","output":""}
+{"session_id":"sess_014","t":61,"command":"find . -maxdepth 2 -type f","output":""}
+{"session_id":"sess_014","t":62,"command":"find . -maxdepth 2 -type d","output":""}
+{"session_id":"sess_014","t":63,"command":"stat README.txt","output":""}
+{"session_id":"sess_014","t":64,"command":"head -n 5 README.txt","output":""}
+{"session_id":"sess_014","t":65,"command":"tail -n 5 README.txt","output":""}
+{"session_id":"sess_014","t":66,"command":"wc -l README.txt","output":""}
+{"session_id":"sess_014","t":67,"command":"echo test","output":""}
