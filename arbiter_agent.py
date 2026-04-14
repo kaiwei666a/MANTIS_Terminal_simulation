@@ -362,6 +362,7 @@ class VulnerabilityAgentLLM:
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": 0.0,
                 "max_tokens": int(cfg.get("max_tokens", 1800)),
+                "response_format": {"type": "json_object"},
             }
             r = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=body, timeout=45)
             if r.status_code == 200:

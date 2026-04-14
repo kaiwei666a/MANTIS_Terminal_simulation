@@ -268,7 +268,6 @@ def _generate_gpt(
 ) -> str:
     messages = _build_messages(command, planning_advice, session_log, system_log)
 
-    # 可选：dump prompt，方便你对齐 FT 版本做对比
     if DUMP_PROMPT:
         try:
             with open(DUMP_PROMPT_PATH, "w", encoding="utf-8") as f:
