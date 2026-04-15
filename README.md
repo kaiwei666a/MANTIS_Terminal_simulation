@@ -1,8 +1,4 @@
-# ACL-terminal-simulation
-
-Goal: Quickly run the Terminal simulation locally for development/testing using a temporary SSH host key and a test response agent. (Some functions are simplified for easy testing, such as SSH connection part, etc.)
-
-> Note on model files: Due to repository size limits, we do not include the fine-tuned model checkpoints in this repo.  
+# MANTIS-terminal-simulation  
 
 
  
@@ -47,3 +43,12 @@ ssh root@127.0.0.1
 > **Ubuntu note:** If you run this on Ubuntu, please start the simulation with `sudo` to avoid permission/binding issues (e.g., opening privileged ports).
 > 
 > **External access:** For connections from outside your local machine/network, deploy the service on a public host with a public IP and ensure the SSH port is exposed in your firewall/security group.
+
+
+
+## Data
+
+The dataset for this project is publicly available on Hugging Face:
+
+**Hugging Face:** [https://huggingface.co/datasets/kaiwei123/routing-dataset]
+                  [https://huggingface.co/datasets/kaiwei123/response_data_snapshot]
