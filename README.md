@@ -1,8 +1,4 @@
-# ACL-terminal-simulation
-
-Goal: Quickly run the Terminal simulation locally for development/testing using a temporary SSH host key and a test response agent. (Some functions are simplified for easy testing, such as SSH connection part, etc.)
-
-> Note on model files: Due to repository size limits, we do not include the fine-tuned model checkpoints in this repo.  
+# MANTIS-terminal-simulation  
 
 
  
