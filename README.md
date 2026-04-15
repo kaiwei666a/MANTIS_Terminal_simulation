@@ -52,4 +52,4 @@ The dataset for this project is publicly available on Hugging Face:
 
 **Hugging Face:** [your-link-here]
 
-This dataset contains terminal interaction data designed for training and evaluating high-interaction terminal simulation systems, including multi-turn command-response behaviors and state-consistent environment interactions.
+
