@@ -43,6 +43,48 @@ Optional: restore system SSH service after testing:
 sudo systemctl start ssh || sudo systemctl start sshd
 ```
 
+## Linux (sudo + port 22) Quick Start
+
+Use this flow on Linux when you want the simulator to bind privileged SSH port `22`.
+
+1. Open `Terminal_simulation.py` and set:
+```python
+PORT = 22
+```
+
+2. Prepare environment (Conda example):
+```bash
+conda create -n mantis-sim python=3.10 -y
+conda activate mantis-sim
+python -m pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+
+3. Set API key in current shell:
+```bash
+export OPENAI_API_KEY="your_openai_api_key"
+```
+
+4. If your system SSH service already uses port `22`, stop it first:
+```bash
+sudo systemctl stop ssh || sudo systemctl stop sshd
+```
+
+5. Start simulator with sudo (keep env vars like `OPENAI_API_KEY`):
+```bash
+sudo -E "$(which python)" ./Terminal_simulation.py
+```
+
+6. Test connection from another terminal:
+```bash
+ssh root@127.0.0.1
+```
+
+Optional: restore system SSH service after testing:
+```bash
+sudo systemctl start ssh || sudo systemctl start sshd
+```
+
 ## 1) Prerequisites
 
 - Windows 10/11 (PowerShell)
