@@ -28,7 +28,7 @@ from paramiko import (
 )
 
 HOST = "0.0.0.0"
-PORT = 22
+PORT = 2222
 
 USERNAME = "root"
 PASSWORD = None
@@ -271,11 +271,9 @@ class HoneypotServer(paramiko.ServerInterface):
         self.exec_command: Optional[str] = None
         self.shell_requested: bool = False
 
-    # ✅ 关键：告诉客户端我们支持 "none"（无认证）和 "password"（兼容某些客户端）
     def get_allowed_auths(self, username):
         return "none,password"
 
-    # ✅ 关键：无认证直接通过（最像“免密码”）
     # def check_auth_none(self, username):
     #     append_auth_log(
     #         event="ssh_auth_attempt",
@@ -291,7 +289,7 @@ class HoneypotServer(paramiko.ServerInterface):
     #     )
     #     return paramiko.AUTH_SUCCESSFUL
 
-    # ✅ 兼容：如果客户端还是走 password，也直接放行
+
     def check_auth_password(self, username, password):
         append_auth_log(
             event="ssh_auth_attempt",
@@ -844,8 +842,7 @@ class RootedSFTP(SFTPServerInterface):
                 if parent and not os.path.exists(parent):
                     os.makedirs(parent, exist_ok=True)
 
-            # Prefer Python-level modes for portability (especially on Windows).
-            # This avoids os.open flag combinations that can fail in some SFTP clients.
+
             if write_requested and read_requested:
                 if wants_append:
                     py_mode = "a+b"
@@ -978,13 +975,11 @@ def _ensure_parent(path: str):
         os.makedirs(parent, exist_ok=True)
 
 def _convert_sftp_pflags_to_os(pflags: int) -> int:
-    # Some Paramiko versions already pass OS-style flags into open();
-    # in that case keep them as-is.
+
     if int(pflags) & ~0x3F:
         return int(pflags)
 
-    # SFTP v3 pflags:
-    # READ=0x01, WRITE=0x02, APPEND=0x04, CREAT=0x08, TRUNC=0x10, EXCL=0x20
+
     P_READ = 0x01
     P_WRITE = 0x02
     P_APPEND = 0x04
@@ -1731,7 +1726,6 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                             break
                     break
 
-                # Ctrl+O write out
                 if k == "\x0f":
                     try:
                         _write_file(abs_path, "\n".join(lines))
@@ -1744,7 +1738,6 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                     _render_nano(filename, lines, cy, cx, msg, dirty)
                     continue
 
-                # arrows
                 if k == "\x1b[A":  # up
                     cy = _clip(cy - 1, 0, len(lines) - 1)
                     cx = _clip(cx, 0, len(lines[cy]))
@@ -1764,7 +1757,6 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                     _render_nano(filename, lines, cy, cx, "", dirty)
                     continue
 
-                # Enter
                 if k in ("\r", "\n"):
                     left = lines[cy][:cx]
                     right = lines[cy][cx:]
@@ -1776,7 +1768,7 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                     _render_nano(filename, lines, cy, cx, "", dirty)
                     continue
 
-                # Backspace
+
                 if k == "\x7f":
                     if cx > 0:
                         s = lines[cy]
@@ -1794,7 +1786,6 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                     _render_nano(filename, lines, cy, cx, "", dirty)
                     continue
 
-                # printable char
                 if len(k) == 1 and (" " <= k <= "~"):
                     s = lines[cy]
                     lines[cy] = s[:cx] + k + s[cx:]
@@ -1803,7 +1794,7 @@ def run_agent_shell(chan, session_id: str, remote_addr: str):
                     _render_nano(filename, lines, cy, cx, "", dirty)
                     continue
 
-                # otherwise ignore
+
         finally:
             _nano_show_cursor()
             _safe_send(chan, "\r\n")
@@ -2172,7 +2163,7 @@ def handle_exec_command_once(chan, session_id: str, remote_addr: str, exec_cmd: 
                 cmd,
                 current_path,
                 file_tree,
-                pruned_history=[],          # exec 是单次命令，这里留空即可
+                pruned_history=[],       
                 pre_snapshot=pre_snapshot,
                 post_snapshot=post_snapshot,
             )
@@ -2198,7 +2189,6 @@ def handle_exec_command_once(chan, session_id: str, remote_addr: str, exec_cmd: 
                 pass
             return
 
-    # default: read
     try:
         system_log = refresh_system_log_for_planning(system_log, vuln_agent)
         current_path = system_log.get("cwd", current_path)
@@ -2297,7 +2287,6 @@ def handle_connection(client_sock, addr):
                     pass
                 return
 
-            # ✅ NEW: non-scp exec gets logged + responded
             handle_exec_command_once(chan, session_id, remote_addr, exec_cmd)
             try:
                 chan.close()

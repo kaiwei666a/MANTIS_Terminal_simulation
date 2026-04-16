@@ -320,11 +320,13 @@ def call_openai_text(
     return (resp.choices[0].message.content or "").strip()
 
 
-# ===================== Local classifier (safe/safe-fs/unsafe) =====================
+
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-_FT_MODEL_PATH = r"/home/kaikai/Documents/ACL-terminal-simulation/model/ModernBERT-base_jaur_1"
+_BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+_DEFAULT_MODEL_PATH = os.path.join(_BASE_DIR, "model", "ModernBERT-base_jaur_1")
+_FT_MODEL_PATH = os.getenv("CLASSIFIER_MODEL_DIR", _DEFAULT_MODEL_PATH)
 
 ID2LABEL = {0: "safe", 1: "safe-fs", 2: "unsafe"}
 LABEL2ID = {v: k for k, v in ID2LABEL.items()}
@@ -375,7 +377,6 @@ def validate_command(
         return "unsafe"
 
 
-# ===================== Optional: history pruning runtime =====================
 try:
     from history_pruning import OnlinePruner
 except Exception:
@@ -412,7 +413,6 @@ class PlanningRuntime:
         )
 
 
-# ===================== Planning for SAFE commands =====================
 def plan_terminal_response(
     client: OpenAI,
     command: str,
@@ -486,7 +486,6 @@ def plan_terminal_response(
     )
 
 
-# ===================== Router: safe / safe-fs / unsafe =====================
 class RouteResult(TypedDict, total=False):
     classification: str
     dispatched_to: str

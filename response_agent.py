@@ -179,22 +179,17 @@ from typing import Any, Dict, List, Optional
 
 from openai import OpenAI
 
-# =====================
-# Config
-# =====================
+
 DEFAULT_RESPONSE_MODEL = os.getenv("RESPONSE_AGENT_MODEL", "gpt-4o-mini")
 
 MAX_NEW_TOKENS = int(os.getenv("RESPONSE_AGENT_MAX_NEW_TOKENS", "512"))
-TEMPERATURE = float(os.getenv("RESPONSE_AGENT_TEMPERATURE", "0.3"))
+TEMPERATURE = float(os.getenv("RESPONSE_AGENT_TEMPERATURE", "0.1"))
 TOP_P = float(os.getenv("RESPONSE_AGENT_TOP_P", "0.95"))
 
 DUMP_PROMPT = os.getenv("RESPONSE_AGENT_DUMP_PROMPT", "0").strip() == "1"
 DUMP_PROMPT_PATH = os.getenv("RESPONSE_AGENT_DUMP_PROMPT_PATH", "response_agent_last_prompt.txt")
 
 
-# =====================
-# Instruction (same spirit as your FT training)
-# =====================
 TRAIN_INSTRUCTION = (
     "You are a Linux OS terminal. Your task is to simulate exact CLI behavior. "
     "You must only respond with the terminal output enclosed in a single code block (```), "
@@ -295,9 +290,7 @@ def render_response(
     client: Optional[OpenAI] = None,
     model: Optional[str] = None,
 ) -> str:
-    """
-    Returns: pure terminal output text (WITHOUT ``` fences).
-    """
+
     c = client or init_client()
     return _generate_gpt(
         client=c,
