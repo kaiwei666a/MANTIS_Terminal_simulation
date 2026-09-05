@@ -1,8 +1,9 @@
-version: '3.8'
-
 services:
   sftp:
-    image: atmoz/sftp:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.sftp
+    image: mantis-terminal-sftp:latest
     container_name: terminal_sftp
     ports:
       - "8022:22"

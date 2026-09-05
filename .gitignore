@@ -1,0 +1,17 @@
+__pycache__/
+.ruff_cache/
+*.py[cod]
+
+# Runtime state, logs, uploaded files, and generated SSH keys
+records/*
+!records/README.md
+*.log
+__missing_test_state__.json
+
+# Training-only artifacts; keep the root inference model files.
+model/**/checkpoint-*/
+model/**/*.npy
+model/**/*classification_report*.txt
+model/**/training_args.bin
+model/**/label_map.json
+model/

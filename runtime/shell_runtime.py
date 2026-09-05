@@ -1,0 +1,1265 @@
+from __future__ import annotations
+
+import copy
+import json
+import os
+import re
+import shlex
+import time
+from typing import Any, Dict, List, Optional, Tuple
+
+from agents.arbiter_agent import VulnerabilityAgentLLM
+from system_state import load_system_log, save_system_log
+from runtime.command_runtime import (
+    PlanningRuntime,
+    client,
+    refresh_system_log_for_planning,
+    render_command_response,
+    validate_command,
+)
+from storage.session_store import (
+    append_auth_log,
+    load_session_log,
+    log_attack,
+    record_session,
+    save_session_log,
+)
+from server.ssh_io import _safe_send
+from terminal_config import (
+    HOSTNAME,
+    LOAD_SESSION_FROM_FILE,
+    LOAD_SYSTEM_FROM_FILE,
+    PERSIST_SYSTEM_TO_FILE,
+    PORT,
+    SUDO_PASSWORD,
+    SYSTEM_JSON,
+    TOP_REFRESH_SEC,
+)
+from transfer.transfer_backend import docker_fetch_file, docker_fetch_git_clone
+from tools.common import fmt_eastern, now_eastern, ts_utc_isoz
+from tools.ubuntu_commands import (
+    classify_known_ubuntu_command,
+    command_is_available,
+    ensure_default_packages,
+    known_command_names,
+    primary_command_name,
+)
+from tools.ubuntu_fs_session import (
+    apply_login_identity,
+    read_session_file,
+    resolve_session_path,
+    write_session_file,
+)
+from tools.ubuntu_ls import format_name_columns, list_directory_entries
+from tools.ubuntu_read_tools import (
+    command_exit_status,
+    render_authoritative_shell_output,
+)
+from tools.ubuntu_session_tools import (
+    record_login_session,
+    record_logout_session,
+)
+from tools.ubuntu_sysinfo_tools import format_shell_prompt
+from tools.ubuntu_top_tool import (
+    build_top_state,
+    render_top_frame_fallback,
+    style_top_interactive_frame,
+    update_time_plus,
+)
+
+
+def send_response_lines_shell(chan, text: str, prompt: str, chunk_size: int = 1024):
+    if text is None:
+        text = ""
+    normalized = text.replace("\r\n", "\n").rstrip("\n")
+    lines = normalized.split("\n") if normalized else []
+    for line in lines:
+        if line == "":
+            _safe_send(chan, "\r\n")
+            continue
+        b = line.encode("utf-8", errors="ignore")
+        for i in range(0, len(b), chunk_size):
+            chunk = b[i:i+chunk_size].decode("utf-8", errors="ignore")
+            _safe_send(chan, chunk)
+        _safe_send(chan, "\r\n")
+    _safe_send(chan, prompt)
+
+
+
+def run_agent_shell(
+    chan,
+    session_id: str,
+    remote_addr: str,
+    login_username: str,
+    terminal_state: Optional[Any] = None,
+):
+    login_time = now_eastern()
+    vuln_agent = VulnerabilityAgentLLM(
+        session_id=session_id,
+        download_file_fetcher=docker_fetch_file,
+        download_git_fetcher=docker_fetch_git_clone,
+    )
+
+    session_log: List[Dict[str, Any]] = load_session_log() if LOAD_SESSION_FROM_FILE else []
+    save_session_log(session_log)
+
+    file_syslog = load_system_log(SYSTEM_JSON) if LOAD_SYSTEM_FROM_FILE else None
+    if isinstance(file_syslog, dict):
+        system_log: Dict[str, Any] = file_syslog
+    else:
+        system_log = copy.deepcopy(vuln_agent.system_log)
+
+    system_log["timestamp"] = ts_utc_isoz()
+    apply_login_identity(system_log, login_username, HOSTNAME)
+    ensure_default_packages(system_log)
+    record_login_session(system_log, login_username, remote_addr, login_time, session_id)
+    system_log["cwd"] = str(system_log["identity"]["home"])
+    vuln_agent.system_log = system_log
+    save_system_log(vuln_agent.system_log_path, system_log)
+
+    current_path = system_log.get("cwd", str(system_log["identity"]["home"]))
+    file_tree = system_log.get("filesystem", {})
+
+    CSI = "\x1b["
+
+    planner = PlanningRuntime(K=30)
+
+    def _prompt() -> str:
+        return format_shell_prompt(
+            login_username,
+            HOSTNAME,
+            current_path,
+            system_log.get("identity", {}) or {},
+        )
+
+    def _redraw_line(buffer: List[str], cursor: int):
+        _safe_send(chan, "\r")
+        line = _prompt() + "".join(buffer)
+        _safe_send(chan, line)
+        _safe_send(chan, "\x1b[K")
+        back = len(buffer) - cursor
+        if back > 0:
+            _safe_send(chan, f"{CSI}{back}D")
+
+    def _tab_complete():
+        nonlocal buffer, cursor, last_tab_state
+        start = cursor
+        while start > 0 and buffer[start - 1] != " ":
+            start -= 1
+        word = "".join(buffer[start:cursor])
+        is_first_word = "".join(buffer[:start]).strip() == ""
+
+        if is_first_word:
+            prefix = word
+            entries = [(name, False) for name in known_command_names(system_log) if name.startswith(prefix)]
+        else:
+            if "/" in word:
+                dir_part, _, prefix = word.rpartition("/")
+                dir_part = dir_part or "/"
+            else:
+                dir_part, prefix = ".", word
+            listing = list_directory_entries(system_log, dir_part)
+            entries = [(name, is_dir) for name, is_dir in (listing or []) if name.startswith(prefix)]
+
+        if not entries:
+            last_tab_state = None
+            return
+
+        names = sorted(name for name, _ in entries)
+        if len(entries) == 1:
+            name, is_dir = entries[0]
+            remainder = name[len(prefix):]
+            insertion = list(remainder) + (["/"] if is_dir else [" "])
+            buffer[cursor:cursor] = insertion
+            cursor += len(insertion)
+            _redraw_line(buffer, cursor)
+            last_tab_state = None
+            return
+
+        common = os.path.commonprefix(names)
+        if len(common) > len(prefix):
+            remainder = common[len(prefix):]
+            buffer[cursor:cursor] = list(remainder)
+            cursor += len(remainder)
+            _redraw_line(buffer, cursor)
+            last_tab_state = None
+            return
+
+        state_key = ("".join(buffer), cursor)
+        if last_tab_state == state_key:
+            _safe_send(chan, "\r\n")
+            _safe_send(chan, format_name_columns(names).replace("\n", "\r\n"))
+            _safe_send(chan, "\r\n")
+            _redraw_line(buffer, cursor)
+            last_tab_state = None
+        else:
+            _safe_send(chan, "\x07")
+            last_tab_state = state_key
+
+    def _resolve_path(p: str) -> str:
+        home_path = str((system_log.get("identity") or {}).get("home") or "/home/user")
+        return resolve_session_path(p, current_path, home_path)
+
+    def _read_file(abs_path: str) -> str:
+        return read_session_file(abs_path, system_log)
+
+    def _write_file(abs_path: str, content: str):
+        write_session_file(abs_path, content, system_log)
+        vuln_agent.system_log = system_log
+        if PERSIST_SYSTEM_TO_FILE:
+            try:
+                save_system_log(vuln_agent.system_log_path, system_log)
+            except Exception:
+                pass
+
+    _top_session_start = time.time()
+    _top_cpu_time_by_pid: Dict[int, float] = {}
+    _top_last_frame_time = 0.0
+    _top_own_pid: Optional[int] = None
+
+    def _build_top_state(syslog: Dict[str, Any]) -> Dict[str, Any]:
+        nonlocal _top_own_pid
+        state, _top_own_pid = build_top_state(syslog, _top_session_start, _top_cpu_time_by_pid, _top_own_pid)
+        return state
+
+    def _top_frame() -> str:
+        nonlocal _top_last_frame_time
+
+        refresh_system_log_for_planning(system_log, vuln_agent)
+
+        now = time.time()
+        delta = now - _top_last_frame_time if _top_last_frame_time > 0 else TOP_REFRESH_SEC
+        _top_last_frame_time = now
+
+        state = _build_top_state(system_log)
+        update_time_plus(state["processes"], delta, _top_cpu_time_by_pid)
+        authoritative_frame = render_top_frame_fallback(state)
+
+        try:
+            from agents.response_agent import render_top_response
+
+            rendered = render_top_response(
+                state,
+                client=client,
+                authoritative_frame=authoritative_frame,
+            )
+            required_markers = ("top -", "Tasks:", "%Cpu(s):", "MiB Mem", "PID")
+            if not rendered or not all(marker in rendered for marker in required_markers):
+                raise ValueError("LLM returned an incomplete top frame")
+            if rendered.rstrip("\r\n") != authoritative_frame.rstrip("\r\n"):
+                return authoritative_frame
+            return rendered.rstrip("\r\n")
+        except Exception as e:
+            log_attack(f"[{session_id}] top LLM refresh failed; using local fallback: {e}", "warn")
+            return authoritative_frame
+
+    def _run_top_interactive(interval: float = TOP_REFRESH_SEC):
+        old_timeout = None
+        last_frame = ""
+        try:
+            try:
+                old_timeout = chan.gettimeout()
+            except Exception:
+                old_timeout = None
+
+            try:
+                chan.settimeout(0.0)  
+            except Exception:
+                pass
+            _safe_send(chan, "\x1b[?1049h\x1b[?25l\x1b[H\x1b[2J")
+            last_render = 0.0
+
+            while True:
+                now = time.time()
+                if now - last_render >= interval:
+                    terminal_width = int(getattr(terminal_state, "pty_width", 80) or 80)
+                    last_frame = style_top_interactive_frame(
+                        _top_frame(),
+                        terminal_width=terminal_width,
+                    ).replace("\n", "\r\n")
+
+                    _safe_send(chan, "\x1b[H\x1b[2J")
+                    _safe_send(chan, last_frame)
+                    last_render = time.time()
+
+                if chan.recv_ready():
+                    data = chan.recv(1024)
+                    if not data:
+                        return
+                    if b"q" in data or b"Q" in data or b"\x03" in data:
+                        return
+
+                time.sleep(0.05)
+        finally:
+            _safe_send(chan, "\x1b[0m\x1b[?25h\x1b[?1049l\r\x1b[K")
+            if last_frame:
+                _safe_send(chan, last_frame)
+                _safe_send(chan, "\x1b[0m\r\n")
+            try:
+                chan.settimeout(old_timeout)
+            except Exception:
+                pass
+
+    def _run_cat_stdin_redirect(abs_path: str, append: bool) -> bool:
+        old_timeout = None
+        try:
+            try:
+                old_timeout = chan.gettimeout()
+            except Exception:
+                old_timeout = None
+            chan.settimeout(None)
+            prefix = _read_file(abs_path) if append else ""
+            _write_file(abs_path, prefix)
+            collected: List[str] = []
+            while True:
+                data = chan.recv(1)
+                if not data:
+                    break
+                char = data.decode("utf-8", errors="ignore")
+                if char == "\x04":
+                    break
+                if char == "\x03":
+                    _safe_send(chan, "^C\r\n")
+                    _write_file(abs_path, prefix + "".join(collected))
+                    return False
+                if char in {"\r", "\n"}:
+                    if char == "\r":
+                        collected.append("\n")
+                        _safe_send(chan, "\r\n")
+                    continue
+                if char == "\x7f":
+                    if collected and collected[-1] != "\n":
+                        collected.pop()
+                        _safe_send(chan, "\b \b")
+                    continue
+                collected.append(char)
+                _safe_send(chan, char)
+            _write_file(abs_path, prefix + "".join(collected))
+            if not collected or collected[-1] != "\n":
+                _safe_send(chan, "\r\n")
+            return True
+        finally:
+            try:
+                chan.settimeout(old_timeout)
+            except Exception:
+                pass
+
+    def _run_ping_interactive(command: str) -> Tuple[str, int]:
+        try:
+            tokens = shlex.split(command, posix=True)
+        except ValueError:
+            return "ping: usage error", 2
+        count: Optional[int] = None
+        host = ""
+        index = 1
+        while index < len(tokens):
+            token = tokens[index]
+            if token in {"-c", "--count"} and index + 1 < len(tokens):
+                try:
+                    count = max(1, int(tokens[index + 1]))
+                except ValueError:
+                    return f"ping: invalid argument: '{tokens[index + 1]}'", 2
+                index += 2
+                continue
+            if token.startswith("-"):
+                return f"ping: invalid option -- '{token.lstrip('-')[:1]}'", 2
+            host = token
+            index += 1
+        if not host:
+            return "ping: usage error: Destination address required", 2
+
+        address = {
+            "www.google.com": "142.250.72.196",
+            "google.com": "142.250.72.14",
+            "localhost": "127.0.0.1",
+        }.get(host, host)
+        ttl = 117 if not re.fullmatch(r"\d{1,3}(?:\.\d{1,3}){3}", host) else 64
+        lines = [f"PING {host} ({address}) 56(84) bytes of data."]
+        _safe_send(chan, lines[0] + "\r\n")
+        samples = [0.123, 0.118, 0.121, 0.119, 0.124]
+        sent = 0
+        interrupted = False
+        old_timeout = None
+        try:
+            try:
+                old_timeout = chan.gettimeout()
+            except Exception:
+                old_timeout = None
+            chan.settimeout(0.0)
+            next_reply = time.monotonic()
+            while count is None or sent < count:
+                if chan.recv_ready():
+                    incoming = chan.recv(1024)
+                    if not incoming:
+                        interrupted = True
+                        break
+                    if b"\x03" in incoming:
+                        interrupted = True
+                        _safe_send(chan, "^C\r\n")
+                        break
+                now = time.monotonic()
+                if now >= next_reply:
+                    sent += 1
+                    sample = samples[(sent - 1) % len(samples)]
+                    line = f"64 bytes from {address}: icmp_seq={sent} ttl={ttl} time={sample:.3f} ms"
+                    lines.append(line)
+                    _safe_send(chan, line + "\r\n")
+                    next_reply = now + 1.0
+                time.sleep(0.03)
+        finally:
+            try:
+                chan.settimeout(old_timeout)
+            except Exception:
+                pass
+
+        elapsed = max(0, (sent - 1) * 1000)
+        summary = [
+            f"--- {host} ping statistics ---",
+            f"{sent} packets transmitted, {sent} received, 0% packet loss, time {elapsed}ms",
+        ]
+        if sent:
+            used = samples[: min(sent, len(samples))]
+            average = sum(used) / len(used)
+            summary.append(f"rtt min/avg/max/mdev = {min(used):.3f}/{average:.3f}/{max(used):.3f}/0.002 ms")
+        for line in summary:
+            _safe_send(chan, line + "\r\n")
+        lines.extend(summary)
+        return "\n".join(lines), 130 if interrupted else 0
+
+    def _nano_clear():
+        _safe_send(chan, "\x1b[H\x1b[2J")
+
+    def _nano_hide_cursor():
+        _safe_send(chan, "\x1b[?25l")
+
+    def _nano_show_cursor():
+        _safe_send(chan, "\x1b[?25h")
+
+    def _nano_move_cursor(row: int, col: int):
+        _safe_send(chan, f"{CSI}{row};{col}H")
+
+    def _clip(n: int, lo: int, hi: int) -> int:
+        return max(lo, min(hi, n))
+
+    def _recv_key_blocking() -> str:
+        b = chan.recv(1)
+        if not b:
+            return ""
+        ch = b.decode("utf-8", errors="ignore")
+        if ch != "\x1b":
+            return ch
+
+        b2 = chan.recv(1)
+        if not b2:
+            return "\x1b"
+        ch2 = b2.decode("utf-8", errors="ignore")
+        if ch2 != "[":
+            return "\x1b" + ch2
+
+        b3 = chan.recv(1)
+        if not b3:
+            return "\x1b["
+        ch3 = b3.decode("utf-8", errors="ignore")
+        return "\x1b[" + ch3
+
+    def _prompt_sudo_password(cmd: str) -> bool:
+
+        old_timeout = None
+        try:
+            old_timeout = chan.gettimeout()
+        except Exception:
+            pass
+        try:
+            chan.settimeout(None)
+        except Exception:
+            pass
+        try:
+            active_user = str((system_log.get("identity") or {}).get("user") or login_username)
+            is_su = bool(re.match(r"^\s*su\b", cmd))
+            prompt_text = "Password: " if is_su else f"[sudo] password for {active_user}: "
+            fail_text = "su: Authentication failure\r\n" if is_su else "sudo: 3 incorrect password attempts\r\n"
+            for attempt in range(3):
+                _safe_send(chan, prompt_text)
+                pw_chars: List[str] = []
+                while True:
+                    k = _recv_key_blocking()
+                    if k == "":
+                        return False
+                    if k in ("\r", "\n"):
+                        break
+                    if k == "\x03":
+                        _safe_send(chan, "^C\r\n")
+                        return False
+                    if k == "\x7f":
+                        if pw_chars:
+                            pw_chars.pop()
+                        continue
+                    if len(k) == 1 and (k.isprintable() or k == " "):
+                        pw_chars.append(k)
+                _safe_send(chan, "\r\n")
+                if "".join(pw_chars) == SUDO_PASSWORD:
+                    return True
+                if attempt < 2:
+                    _safe_send(chan, "Sorry, try again.\r\n")
+            _safe_send(chan, fail_text)
+            return False
+        finally:
+            try:
+                chan.settimeout(old_timeout)
+            except Exception:
+                pass
+
+    def _render_nano(filename: str, lines: List[str], cy: int, cx: int, msg: str, dirty: bool,
+                     rows: int = 24, cols: int = 80):
+
+        text_rows = max(1, rows - 3) 
+        top = 0
+        if cy >= top + text_rows:
+            top = cy - text_rows + 1
+        if cy < top:
+            top = cy
+
+        _nano_clear()
+
+        head = f"  GNU nano  {filename}"
+        if dirty:
+            head += "  [Modified]"
+        _safe_send(chan, head[:cols].ljust(cols) + "\r\n")
+
+        for r in range(text_rows):
+            li = top + r
+            s = lines[li] if li < len(lines) else ""
+            _safe_send(chan, s[:cols].ljust(cols) + "\r\n")
+
+        help_line = "^O WriteOut   ^X Exit"
+        _safe_send(chan, help_line[:cols].ljust(cols) + "\r\n")
+
+        _safe_send(chan, (msg or "")[:cols].ljust(cols))
+
+        vy = 2 + (cy - top)  
+        vx = 1 + cx
+        vy = _clip(vy, 2, rows - 2)
+        vx = _clip(vx, 1, cols)
+        _nano_move_cursor(vy, vx)
+
+    def _run_nano_interactive(abs_path: str):
+
+        old_timeout = None
+        try:
+            try:
+                old_timeout = chan.gettimeout()
+            except Exception:
+                old_timeout = None
+            try:
+                chan.settimeout(None)
+            except Exception:
+                pass
+
+            filename = abs_path
+            content = _read_file(abs_path)
+            lines = content.split("\n")
+            if not lines:
+                lines = [""]
+
+            cy, cx = 0, 0
+            dirty = False
+            msg = ""
+
+            _nano_hide_cursor()
+            _render_nano(filename, lines, cy, cx, msg, dirty)
+
+            while True:
+                k = _recv_key_blocking()
+                if k == "":
+                    break
+
+                if k == "\x18":
+                    if not dirty:
+                        msg = "Exit"
+                        _render_nano(filename, lines, cy, cx, msg, dirty)
+                        break
+
+                    msg = "Save modified buffer? (y/n)"
+                    _render_nano(filename, lines, cy, cx, msg, dirty)
+                    while True:
+                        kk = _recv_key_blocking().lower()
+                        if kk in ("y", "n"):
+                            if kk == "y":
+                                try:
+                                    _write_file(abs_path, "\n".join(lines))
+                                    dirty = False
+                                    msg = "Wrote file"
+                                except PermissionError:
+                                    msg = "Error writing file: Permission denied"
+                                except Exception as e:
+                                    msg = f"Error writing file: {e}"
+                            else:
+                                msg = "Discarded changes"
+                            _render_nano(filename, lines, cy, cx, msg, dirty)
+                            break
+                    break
+
+    
+                if k == "\x0f":
+                    try:
+                        _write_file(abs_path, "\n".join(lines))
+                        dirty = False
+                        msg = "Wrote file"
+                    except PermissionError:
+                        msg = "Error writing file: Permission denied"
+                    except Exception as e:
+                        msg = f"Error writing file: {e}"
+                    _render_nano(filename, lines, cy, cx, msg, dirty)
+                    continue
+
+                if k == "\x1b[A":
+                    cy = _clip(cy - 1, 0, len(lines) - 1)
+                    cx = _clip(cx, 0, len(lines[cy]))
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+                if k == "\x1b[B":
+                    cy = _clip(cy + 1, 0, len(lines) - 1)
+                    cx = _clip(cx, 0, len(lines[cy]))
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+                if k == "\x1b[C":
+                    cx = _clip(cx + 1, 0, len(lines[cy]))
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+                if k == "\x1b[D":
+                    cx = _clip(cx - 1, 0, len(lines[cy]))
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+
+                if k in ("\r", "\n"):
+                    left = lines[cy][:cx]
+                    right = lines[cy][cx:]
+                    lines[cy] = left
+                    lines.insert(cy + 1, right)
+                    cy += 1
+                    cx = 0
+                    dirty = True
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+
+
+                if k == "\x7f":
+                    if cx > 0:
+                        s = lines[cy]
+                        lines[cy] = s[:cx - 1] + s[cx:]
+                        cx -= 1
+                        dirty = True
+                    elif cy > 0:
+                        prev = lines[cy - 1]
+                        cur = lines[cy]
+                        cx = len(prev)
+                        lines[cy - 1] = prev + cur
+                        del lines[cy]
+                        cy -= 1
+                        dirty = True
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+
+                if len(k) == 1 and (" " <= k <= "~"):
+                    s = lines[cy]
+                    lines[cy] = s[:cx] + k + s[cx:]
+                    cx += 1
+                    dirty = True
+                    _render_nano(filename, lines, cy, cx, "", dirty)
+                    continue
+
+        finally:
+            _nano_show_cursor()
+            _safe_send(chan, "\r\n")
+            try:
+                chan.settimeout(old_timeout)
+            except Exception:
+                pass
+
+    buffer: List[str] = []
+    cursor: int = 0
+    history: List[str] = []
+    hist_idx: int = 0
+    last_exit_status: int = 0
+    last_tab_state: Optional[Tuple[str, int]] = None
+    sudo_authenticated: bool = False
+
+    _safe_send(chan, "\r\n")
+    _safe_send(chan, "Welcome to Ubuntu 22.04 LTS (GNU/Linux 5.15.0-84-generic x86_64)\r\n")
+    _safe_send(chan, f"Last login: {fmt_eastern('%a %b %d %H:%M:%S %Y')} from {remote_addr.split(':')[0]}\r\n")
+    _safe_send(chan, _prompt())
+
+    esc_mode = False
+    esc_buf = ""
+
+    def _authoritative_shell_output(command: str, prior_status: int) -> Optional[str]:
+        return render_authoritative_shell_output(
+            command,
+            prior_status,
+            system_log,
+            current_path,
+            login_username,
+            HOSTNAME,
+            history,
+            lambda: _build_top_state(system_log)["processes"],
+        )
+
+    def _command_status(command: str, output: str, classification: str) -> int:
+        return command_exit_status(command, output, classification, system_log)
+    def _accept_line():
+        nonlocal buffer, cursor, history, hist_idx, system_log, current_path, file_tree, last_exit_status, sudo_authenticated
+        cmd = "".join(buffer).strip()
+        log_attack(f"[{session_id}] Command received: {cmd}")
+        _safe_send(chan, "\r\n")
+
+        if cmd == "":
+            _safe_send(chan, _prompt())
+            buffer.clear()
+            cursor = 0
+            hist_idx = len(history)
+            return None
+
+        if cmd.lower() == "exit":
+            _safe_send(chan, "logout\r\n")
+            record_logout_session(system_log, session_id, now_eastern())
+            save_system_log(vuln_agent.system_log_path, system_log)
+            append_auth_log(event="disconnect", session_id=session_id, username=login_username,
+                            hostname=HOSTNAME, remote_addr=remote_addr, success=True, note="session closed", proto="ssh", local_port=PORT)
+            try:
+                chan.send_exit_status(last_exit_status)
+            except Exception:
+                pass
+            return "EXIT"
+
+        history.append(cmd)
+        hist_idx = len(history)
+        shell_width = int(getattr(terminal_state, "pty_width", 80) or 80)
+        prior_exit_status = last_exit_status
+
+        if not sudo_authenticated and re.match(r"^\s*(?:sudo\b|su\b)", cmd):
+            if _prompt_sudo_password(cmd):
+                sudo_authenticated = True
+            else:
+                last_exit_status = 1
+                buffer.clear()
+                cursor = 0
+                _safe_send(chan, _prompt())
+                return None
+
+        redirect_match = re.fullmatch(r"\s*cat\s*(>>?)\s*(?:'([^']+)'|\"([^\"]+)\"|(\S+))\s*", cmd)
+        if redirect_match:
+            operator, single_name, double_name, plain_name = redirect_match.groups()
+            target = single_name or double_name or plain_name or ""
+            abs_path = _resolve_path(target)
+            try:
+                completed = _run_cat_stdin_redirect(abs_path, append=operator == ">>")
+                rendered = "" if completed else "^C"
+                last_exit_status = 0 if completed else 130
+            except PermissionError:
+                rendered = f"bash: {target}: Permission denied"
+                send_response_lines_shell(chan, rendered, "")
+                last_exit_status = 1
+            record_session(session_log, cmd, rendered, "write")
+            _safe_send(chan, _prompt())
+            buffer.clear()
+            cursor = 0
+            hist_idx = len(history)
+            return None
+
+        if re.match(r"^\s*ping(?:\s|$)", cmd):
+            rendered, last_exit_status = _run_ping_interactive(cmd)
+            record_session(session_log, cmd, rendered, "read")
+            _safe_send(chan, _prompt())
+            buffer.clear()
+            cursor = 0
+            hist_idx = len(history)
+            return None
+
+        if cmd == "top" or cmd.startswith("top "):
+            try:
+                args = cmd.split()[1:]
+                batch = False
+                iters = 1
+                refresh_interval = TOP_REFRESH_SEC
+
+                i = 0
+                while i < len(args):
+                    a = args[i]
+                    if a == "--batch":
+                        batch = True
+                    elif a == "--iterations" and i + 1 < len(args) and args[i + 1].isdigit():
+                        iters = max(1, int(args[i + 1]))
+                        i += 1
+                    elif a == "--delay" and i + 1 < len(args):
+                        try:
+                            refresh_interval = max(0.5, float(args[i + 1]))
+                            i += 1
+                        except ValueError:
+                            pass
+                    elif a.startswith("-") and not a.startswith("--") and len(a) > 1:
+                        j = 1
+                        while j < len(a):
+                            flag = a[j]
+                            if flag == "b":
+                                batch = True
+                                j += 1
+                            elif flag in ("n", "d"):
+                                rest = a[j + 1:]
+                                value: Optional[str] = None
+                                if rest:
+                                    value = rest
+                                    j = len(a)
+                                elif i + 1 < len(args):
+                                    value = args[i + 1]
+                                    i += 1
+                                    j = len(a)
+                                else:
+                                    j = len(a)
+                                if flag == "n" and value is not None and value.isdigit():
+                                    iters = max(1, int(value))
+                                elif flag == "d" and value is not None:
+                                    try:
+                                        refresh_interval = max(0.5, float(value))
+                                    except ValueError:
+                                        pass
+                            else:
+                                j += 1
+                    i += 1
+
+                if batch:
+                    frames: List[str] = []
+                    for frame_index in range(iters):
+                        frames.append(_top_frame())
+                        if frame_index + 1 < iters:
+                            time.sleep(refresh_interval)
+                    out_text = "\n\n".join(frames)
+                    send_response_lines_shell(chan, out_text, _prompt())
+                    record_session(session_log, cmd, out_text, "read")
+                else:
+                    record_session(session_log, cmd, "<interactive top>", "read")
+                    _run_top_interactive(interval=refresh_interval)
+                    _safe_send(chan, _prompt())
+                last_exit_status = 0
+
+            except Exception as e:
+                send_response_lines_shell(chan, f"top: {e}", _prompt())
+                record_session(session_log, cmd, f"top: {e}", "read")
+                last_exit_status = 1
+
+            buffer.clear()
+            cursor = 0
+            hist_idx = len(history)
+            return None
+
+        if cmd == "nano" or cmd.startswith("nano "):
+            try:
+                parts = cmd.split(maxsplit=1)
+                if len(parts) < 2 or not parts[1].strip():
+                    out = "nano: missing file operand"
+                    send_response_lines_shell(chan, out, _prompt())
+                    record_session(session_log, cmd, out, "read")
+                    last_exit_status = 1
+                else:
+                    rel = parts[1].strip()
+                    abs_path = _resolve_path(rel)
+                    record_session(session_log, cmd, "<interactive nano>", "read")
+                    _run_nano_interactive(abs_path)
+                    _safe_send(chan, _prompt())
+                    last_exit_status = 0
+            except Exception as e:
+                out = f"nano: {e}"
+                send_response_lines_shell(chan, out, _prompt())
+                record_session(session_log, cmd, out, "read")
+                last_exit_status = 1
+
+            buffer.clear()
+            cursor = 0
+            hist_idx = len(history)
+            return None
+
+
+        try:
+            known_label = classify_known_ubuntu_command(cmd, system_log)
+            if known_label is not None:
+                classification = known_label
+            elif hasattr(vuln_agent, "route_label"):
+                classification = vuln_agent.route_label(cmd, client=client)
+            else:
+                classification = validate_command(client, cmd)
+        except Exception as e:
+            log_attack(f"[{session_id}] classify error: {e}", "warn")
+            classification = "read"
+
+
+        pruned_history = planner.get_pruned_history() if planner is not None else []
+
+        if classification == "rejection":
+            tool = (cmd.split() or ["cmd"])[0]
+            output = f"bash: {tool}: command not found"
+            send_response_lines_shell(chan, output, _prompt())
+            record_session(session_log, cmd, output, classification)
+            last_exit_status = 127
+            try:
+                pre_snapshot = copy.deepcopy(system_log)
+                post_snapshot = copy.deepcopy(system_log)
+                planner.step(cmd, output, pre_snapshot, post_snapshot)
+            except Exception:
+                pass
+
+        elif classification == "write":
+            try:
+                pre_snapshot = copy.deepcopy(system_log)
+
+                system_log = vuln_agent.process_write_command(cmd, client=client)
+                current_path = system_log.get("cwd", current_path)
+                file_tree = system_log.get("filesystem", file_tree)
+
+                if not bool(getattr(vuln_agent, "last_handled_local", False)):
+                    rendered = str(system_log.get("last_output") or "")
+                    last_exit_status = int(system_log.get("last_exit_status", 0) or 0)
+                else:
+                    post_snapshot = copy.deepcopy(system_log)
+                    system_ctx = copy.deepcopy(post_snapshot)
+                    system_ctx["pre_snapshot"] = pre_snapshot
+                    authoritative = _authoritative_shell_output(cmd, prior_exit_status)
+                    if authoritative is None:
+                        authoritative = str(system_log.get("last_output") or "")
+                    rendered = render_command_response(
+                        cmd,
+                        classification,
+                        pruned_history,
+                        system_ctx,
+                        authoritative_reference=authoritative,
+                        width=shell_width,
+                        login_username=login_username,
+                        remote_addr=remote_addr,
+                        login_time=login_time,
+                    )
+                    last_exit_status = _command_status(cmd, rendered, classification)
+
+                post_snapshot = copy.deepcopy(system_log)
+
+                send_response_lines_shell(chan, rendered, _prompt())
+                record_session(session_log, cmd, rendered, classification)
+                planner.step(cmd, rendered, pre_snapshot, post_snapshot)
+
+            except Exception as e:
+                log_attack(f"[{session_id}] write render error: {e}", "warn")
+                tool = (cmd.split() or ["cmd"])[0]
+                err = f"{tool}: Resource temporarily unavailable"
+                send_response_lines_shell(chan, err, _prompt())
+                record_session(session_log, cmd, err, classification)
+                last_exit_status = 1
+                try:
+                    pre_snapshot = copy.deepcopy(system_log)
+                    post_snapshot = copy.deepcopy(system_log)
+                    planner.step(cmd, err, pre_snapshot, post_snapshot)
+                except Exception:
+                    pass
+
+        else:
+            try:
+                system_log = refresh_system_log_for_planning(system_log, vuln_agent)
+                current_path = system_log.get("cwd", current_path)
+                file_tree = system_log.get("filesystem", file_tree)
+
+                pre_snapshot = copy.deepcopy(system_log)
+                post_snapshot = copy.deepcopy(system_log)
+                system_ctx = copy.deepcopy(post_snapshot)
+                system_ctx["pre_snapshot"] = pre_snapshot
+
+                authoritative = _authoritative_shell_output(cmd, prior_exit_status)
+                rendered = render_command_response(
+                    cmd,
+                    classification,
+                    pruned_history,
+                    system_ctx,
+                    authoritative_reference=authoritative,
+                    width=shell_width,
+                    login_username=login_username,
+                    remote_addr=remote_addr,
+                    login_time=login_time,
+                )
+
+            except Exception as e:
+                log_attack(f"[{session_id}] render error: {e}", "warn")
+                tool = primary_command_name(cmd) or "cmd"
+                if command_is_available(cmd, system_log) is True:
+                    rendered = f"{tool}: Resource temporarily unavailable"
+                else:
+                    rendered = f"bash: {tool}: command not found"
+                try:
+                    pre_snapshot = copy.deepcopy(system_log)
+                    post_snapshot = copy.deepcopy(system_log)
+                except Exception:
+                    pre_snapshot, post_snapshot = {}, {}
+
+            if cmd == "clear":
+                _safe_send(chan, "\x1b[H\x1b[2J")
+                _safe_send(chan, _prompt())
+            else:
+                send_response_lines_shell(chan, rendered, _prompt())
+            record_session(session_log, cmd, rendered, classification)
+            last_exit_status = _command_status(cmd, rendered, classification)
+            try:
+                planner.step(cmd, rendered, pre_snapshot, post_snapshot)
+            except Exception:
+                pass
+        buffer.clear()
+        cursor = 0
+        return None
+
+    while True:
+        data = chan.recv(1024)
+        if not data:
+            break
+        chunk = data.decode("utf-8", errors="ignore")
+
+        i = 0
+        while i < len(chunk):
+            ch = chunk[i]
+            i += 1
+
+            if esc_mode:
+                esc_buf += ch
+                if ch.isalpha() or ch == "~":
+                    seq = esc_buf
+                    esc_mode = False
+                    esc_buf = ""
+                    last_tab_state = None
+
+                    if seq in ("[C", "OC"):
+                        if cursor < len(buffer):
+                            cursor += 1
+                            _safe_send(chan, CSI + "1C")
+                    elif seq in ("[D", "OD"):
+                        if cursor > 0:
+                            cursor -= 1
+                            _safe_send(chan, CSI + "1D")
+                    elif seq in ("[A",):
+                        if history:
+                            if hist_idx > 0:
+                                hist_idx -= 1
+                            buffer = list(history[hist_idx])
+                            cursor = len(buffer)
+                            _redraw_line(buffer, cursor)
+                    elif seq in ("[B",):
+                        if history:
+                            if hist_idx < len(history) - 1:
+                                hist_idx += 1
+                                buffer = list(history[hist_idx])
+                            else:
+                                hist_idx = len(history)
+                                buffer = []
+                            cursor = len(buffer)
+                            _redraw_line(buffer, cursor)
+                    elif seq in ("[3~",):
+                        if cursor < len(buffer):
+                            del buffer[cursor]
+                            _redraw_line(buffer, cursor)
+                    elif seq in ("[H", "[1~", "OH"):
+                        cursor = 0
+                        _redraw_line(buffer, cursor)
+                    elif seq in ("[F", "[4~", "OF"):
+                        cursor = len(buffer)
+                        _redraw_line(buffer, cursor)
+                continue
+
+            if ch == "\x1b":
+                esc_mode = True
+                esc_buf = ""
+                continue
+
+            if ch == "\t":
+                _tab_complete()
+                continue
+
+            last_tab_state = None
+
+            if ch in ("\r", "\n"):
+                r = _accept_line()
+                if r == "EXIT":
+                    return
+                continue
+
+            if ch == "\x7f":
+                if cursor > 0:
+                    cursor -= 1
+                    del buffer[cursor]
+                    _redraw_line(buffer, cursor)
+                continue
+
+            buffer.insert(cursor, ch)
+            cursor += 1
+            _redraw_line(buffer, cursor)
+
+    record_logout_session(system_log, session_id, now_eastern())
+    save_system_log(vuln_agent.system_log_path, system_log)
+
+def handle_exec_command_once(
+    chan,
+    session_id: str,
+    remote_addr: str,
+    exec_cmd: str,
+    login_username: str,
+):
+    login_time = now_eastern()
+
+    vuln_agent = VulnerabilityAgentLLM(
+        session_id=session_id,
+        download_file_fetcher=docker_fetch_file,
+        download_git_fetcher=docker_fetch_git_clone,
+    )
+
+    session_log: List[Dict[str, Any]] = load_session_log() if LOAD_SESSION_FROM_FILE else []
+    save_session_log(session_log)
+
+    file_syslog = load_system_log(SYSTEM_JSON) if LOAD_SYSTEM_FROM_FILE else None
+    if isinstance(file_syslog, dict):
+        system_log: Dict[str, Any] = file_syslog
+    else:
+        system_log = copy.deepcopy(vuln_agent.system_log)
+
+    system_log["timestamp"] = ts_utc_isoz()
+    apply_login_identity(system_log, login_username, HOSTNAME)
+    ensure_default_packages(system_log)
+    system_log["cwd"] = str(system_log["identity"]["home"])
+    vuln_agent.system_log = system_log
+
+    current_path = system_log.get("cwd", str(system_log["identity"]["home"]))
+    file_tree = system_log.get("filesystem", {})
+
+    cmd = (exec_cmd or "").strip()
+    log_attack(f"[{session_id}] EXEC received (no-pty): {cmd}")
+
+    if not cmd:
+        try:
+            chan.send_exit_status(0)
+        except Exception:
+            pass
+        return
+
+    if cmd == "hostname":
+        rendered = HOSTNAME + "\n"
+        _safe_send(chan, rendered.replace("\n", "\r\n"))
+        record_session(session_log, cmd, rendered, "read")
+        try:
+            chan.send_exit_status(0)
+        except Exception:
+            pass
+        return
+
+    if re.match(r"^\s*(?:sudo\b(?!.*\s-S(?:\s|$))|su\b)", cmd):
+        rendered = "sudo: a terminal is required to read the password\n"
+        _safe_send(chan, rendered.replace("\n", "\r\n"))
+        record_session(session_log, cmd, rendered, "rejection")
+        try:
+            chan.send_exit_status(1)
+        except Exception:
+            pass
+        return
+
+    try:
+        if hasattr(vuln_agent, "route_label"):
+            classification = vuln_agent.route_label(cmd, client=client)
+        else:
+            classification = validate_command(client, cmd)
+    except Exception as e:
+        log_attack(f"[{session_id}] exec classify error: {e}", "warn")
+        classification = "read"
+
+    if classification == "rejection":
+        tool = (cmd.split() or ["cmd"])[0]
+        output = f"bash: {tool}: command not found\n"
+        _safe_send(chan, output.replace("\n", "\r\n"))
+        record_session(session_log, cmd, output, classification)
+        try:
+            chan.send_exit_status(127)
+        except Exception:
+            pass
+        return
+
+    if classification == "write":
+        try:
+            pre_snapshot = copy.deepcopy(system_log)
+
+            system_log = vuln_agent.process_write_command(cmd, client=client)
+            current_path = system_log.get("cwd", current_path)
+            file_tree = system_log.get("filesystem", file_tree)
+
+            if not bool(getattr(vuln_agent, "last_handled_local", False)):
+                rendered = str(system_log.get("last_output") or "")
+                exit_status = int(system_log.get("last_exit_status", 0) or 0)
+            else:
+                post_snapshot = copy.deepcopy(system_log)
+                system_ctx = copy.deepcopy(post_snapshot)
+                system_ctx["pre_snapshot"] = pre_snapshot
+                rendered = render_command_response(
+                    cmd,
+                    classification,
+                    [],
+                    system_ctx,
+                    authoritative_reference=str(system_log.get("last_output") or ""),
+                    login_username=login_username,
+                    remote_addr=remote_addr,
+                    login_time=login_time,
+                )
+                exit_status = 0 if not str(system_log.get("last_output") or "") else 1
+            if not rendered.endswith("\n"):
+                rendered += "\n"
+
+            _safe_send(chan, rendered.replace("\n", "\r\n"))
+            record_session(session_log, cmd, rendered, classification)
+            try:
+                chan.send_exit_status(exit_status)
+            except Exception:
+                pass
+            return
+        except Exception as e:
+            log_attack(f"[{session_id}] exec write render error: {e}", "warn")
+            tool = (cmd.split() or ["cmd"])[0]
+            err = f"{tool}: Resource temporarily unavailable\n"
+            _safe_send(chan, err.replace("\n", "\r\n"))
+            record_session(session_log, cmd, err, classification)
+            try:
+                chan.send_exit_status(1)
+            except Exception:
+                pass
+            return
+
+    try:
+        system_log = refresh_system_log_for_planning(system_log, vuln_agent)
+        current_path = system_log.get("cwd", current_path)
+        file_tree = system_log.get("filesystem", file_tree)
+
+        pre_snapshot = copy.deepcopy(system_log)
+        post_snapshot = copy.deepcopy(system_log)
+        system_ctx = copy.deepcopy(post_snapshot)
+        system_ctx["pre_snapshot"] = pre_snapshot
+
+        rendered = render_command_response(
+            cmd,
+            classification,
+            [],
+            system_ctx,
+            is_tty=False,
+            login_username=login_username,
+            remote_addr=remote_addr,
+            login_time=login_time,
+        )
+        if not rendered.endswith("\n"):
+            rendered += "\n"
+    except Exception as e:
+        log_attack(f"[{session_id}] exec render error: {e}", "warn")
+        tool = primary_command_name(cmd) or "cmd"
+        if command_is_available(cmd, system_log) is True:
+            rendered = f"{tool}: Resource temporarily unavailable\n"
+        else:
+            rendered = f"bash: {tool}: command not found\n"
+
+    _safe_send(chan, rendered.replace("\n", "\r\n"))
+    record_session(session_log, cmd, rendered, classification)
+    try:
+        chan.send_exit_status(0)
+    except Exception:
+        pass
